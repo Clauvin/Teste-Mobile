@@ -309,7 +309,6 @@ MonoBehaviour:
   guidelinesPanel: {fileID: 0}
   feedbackPanel: {fileID: 0}
   aboutPanel: {fileID: 0}
-  languagePanel: {fileID: 0}
   guidelinesButton: {fileID: 1089131314896796463}
   mainFeedbackButton: {fileID: 1751638475}
   aboutButton: {fileID: 981285571}
@@ -556,6 +555,11 @@ PrefabInstance:
       propertyPath: mainPanelManager
       value: 
       objectReference: {fileID: 522111828}
+    - target: {fileID: 1089131315268174231, guid: 435bdab67d6d6ad4087979bc55edf943,
+        type: 3}
+      propertyPath: m_Name
+      value: About Button
+      objectReference: {fileID: 0}
     - target: {fileID: 1089131315268174312, guid: 435bdab67d6d6ad4087979bc55edf943,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -701,6 +705,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: whenPressed
       objectReference: {fileID: 0}
+    - target: {fileID: 1089131316367198493, guid: 435bdab67d6d6ad4087979bc55edf943,
+        type: 3}
+      propertyPath: m_Name
+      value: Guidelines Button
+      objectReference: {fileID: 0}
     - target: {fileID: 1089131316367198494, guid: 435bdab67d6d6ad4087979bc55edf943,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -720,6 +729,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1089131316439205699, guid: 435bdab67d6d6ad4087979bc55edf943,
+        type: 3}
+      propertyPath: m_Name
+      value: Main Panel Buttons Layout Manager
+      objectReference: {fileID: 0}
+    - target: {fileID: 1089131316475533939, guid: 435bdab67d6d6ad4087979bc55edf943,
+        type: 3}
+      propertyPath: m_Name
+      value: Feedback Button
       objectReference: {fileID: 0}
     - target: {fileID: 1089131316475533940, guid: 435bdab67d6d6ad4087979bc55edf943,
         type: 3}

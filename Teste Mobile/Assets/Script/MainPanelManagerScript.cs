@@ -10,7 +10,6 @@ public class MainPanelManagerScript : MonoBehaviour
     public GameObject guidelinesPanel;
     public GameObject feedbackPanel;
     public GameObject aboutPanel;
-    public GameObject languagePanel;
 
     public Button guidelinesButton;
     public Button mainFeedbackButton;
@@ -25,9 +24,10 @@ public class MainPanelManagerScript : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        /*formPanel.SetActive(false);
-        helpPanel.SetActive(false);
-        exitPanel.SetActive(false);*/
+        mainPanel.SetActive(true);
+        guidelinesPanel.SetActive(false);
+        feedbackPanel.SetActive(false);
+        aboutPanel.SetActive(false);
     }
 
     public string loadGuidelinesCheck()
