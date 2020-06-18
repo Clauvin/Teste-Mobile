@@ -2201,6 +2201,17 @@ PrefabInstance:
       propertyPath: m_Text
       value: Guidelines Map for Gamification Risk Requirements
       objectReference: {fileID: 0}
+    - target: {fileID: 1089131316367198481, guid: 435bdab67d6d6ad4087979bc55edf943,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 11500000, guid: 8786237dfcf6b4b44b162fdc7da28526,
+        type: 3}
+    - target: {fileID: 1089131316367198481, guid: 435bdab67d6d6ad4087979bc55edf943,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1089131316367198494, guid: 435bdab67d6d6ad4087979bc55edf943,
         type: 3}
       propertyPath: m_AnchorMin.y
