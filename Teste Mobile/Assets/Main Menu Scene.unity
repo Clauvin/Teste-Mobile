@@ -1060,6 +1060,60 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &522111828
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 522111830}
+  - component: {fileID: 522111829}
+  m_Layer: 0
+  m_Name: Main Panel Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &522111829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 522111828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8786237dfcf6b4b44b162fdc7da28526, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  guidelinesPanel: {fileID: 0}
+  feedbackPanel: {fileID: 0}
+  aboutPanel: {fileID: 729298339}
+  languagePanel: {fileID: 0}
+  guidelinesButton: {fileID: 0}
+  mainFeedbackButton: {fileID: 0}
+  aboutButton: {fileID: 981285571}
+  exitButton: {fileID: 0}
+  formPanel: {fileID: 670707757}
+  helpPanel: {fileID: 0}
+  exitPanel: {fileID: 171810387}
+--- !u!4 &522111830
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 522111828}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 180, y: 317.7323, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &670707757
 GameObject:
   m_ObjectHideFlags: 0
@@ -1730,7 +1784,6 @@ GameObject:
   - component: {fileID: 1784029075}
   - component: {fileID: 1784029073}
   - component: {fileID: 1784029074}
-  - component: {fileID: 1784029077}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1821,29 +1874,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &1784029077
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1784029072}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8786237dfcf6b4b44b162fdc7da28526, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  guidelinesPanel: {fileID: 0}
-  feedbackPanel: {fileID: 0}
-  aboutPanel: {fileID: 729298339}
-  languagePanel: {fileID: 0}
-  guidelinesButton: {fileID: 0}
-  mainFeedbackButton: {fileID: 0}
-  aboutButton: {fileID: 981285571}
-  exitButton: {fileID: 0}
-  formPanel: {fileID: 670707757}
-  helpPanel: {fileID: 0}
-  exitPanel: {fileID: 171810387}
 --- !u!1 &1793488113
 GameObject:
   m_ObjectHideFlags: 0
@@ -2070,7 +2100,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1784029072}
+      objectReference: {fileID: 522111828}
     - target: {fileID: 1089131315268174315, guid: 435bdab67d6d6ad4087979bc55edf943,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
