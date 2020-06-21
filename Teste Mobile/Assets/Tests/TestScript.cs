@@ -1,58 +1,122 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
+using System.Reflection;
 using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 
 namespace Tests
 {
-    public class TestScript
+    [TestFixture]
+    [Author("Cláuvin Almeida", "almeidaclauvin@gmail.com")]
+    public class TestMainPanelManagerScript
     {
+        MainPanelManagerScript main_panel_manager_script;
+
         [SetUp]
         public void ResetScene()
         {
-
-            
-
-        }
-
-        // A Test behaves as an ordinary method
-        [Test]
-        public void NewTestScriptSimplePasses()
-        {
-            // Use the Assert class to test conditions
-        }
-
-        // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use
-        // `yield return null;` to skip a frame.
-        [UnityTest]
-        public IEnumerator NewTestScriptWithEnumeratorPasses()
-        {
-            // Use the Assert class to test conditions.
-            // Use yield to skip a frame.
-            yield return null;
+            main_panel_manager_script = new MainPanelManagerScript();
+            main_panel_manager_script.aboutPanel = new GameObject();
+            main_panel_manager_script.feedbackPanel = new GameObject();
+            main_panel_manager_script.guidelinesPanel = new GameObject();
+            main_panel_manager_script.mainPanel = new GameObject();
         }
 
         [Test]
-        public void BasicTest()
+        public void NewPanelShow()
         {
-
-            bool isActive = false;
-
-            Assert.AreEqual(false, isActive);
-
+            Assert.AreEqual(main_panel_manager_script.showMainPanel(),
+                (string)MainPanelManagerScript.result_message_show_main_panel_true);
         }
 
         [Test]
-        public void CatchingErrors()
+        public void NewPanelHide()
         {
+            Assert.AreEqual(main_panel_manager_script.hideMainPanel(),
+                (string)MainPanelManagerScript.result_message_hide_main_panel_true);
+        }
 
-            GameObject gameObject = new GameObject("test");
+        [Test]
+        public void GuidelinesPanelShow()
+        {
+            Assert.AreEqual(main_panel_manager_script.showGuidelinesPanel(),
+                (string)MainPanelManagerScript.result_message_show_guidelines_panel_true);
+        }
 
-            Assert.Throws<MissingComponentException>(
-                () => gameObject.GetComponent<Rigidbody>().velocity = Vector3.one
-            );
+        [Test]
+        public void GuidelinesPanelHide()
+        {
+            Assert.AreEqual(main_panel_manager_script.hideGuidelinesPanel(),
+                (string)MainPanelManagerScript.result_message_hide_guidelines_panel_true);
+        }
 
+        [Test]
+        public void MainFeedbackShow()
+        {
+            Assert.AreEqual(main_panel_manager_script.showMainFeedbackPanel(),
+                (string)MainPanelManagerScript.result_message_show_feedback_panel_true);
+        }
+
+        [Test]
+        public void MainFeedbackHide()
+        {
+            Assert.AreEqual(main_panel_manager_script.hideMainFeedbackPanel(),
+                (string)MainPanelManagerScript.result_message_hide_feedback_panel_true);
+        }
+
+        [Test]
+        public void MainAboutShow()
+        {
+            Assert.AreEqual(main_panel_manager_script.showAboutPanel(),
+                (string)MainPanelManagerScript.result_message_show_about_panel_true);
+        }
+
+        [Test]
+        public void MainAboutHide()
+        {
+            Assert.AreEqual(main_panel_manager_script.hideAboutPanel(),
+                (string)MainPanelManagerScript.result_message_hide_about_panel_true);
+        }
+
+        [Test]
+        public void SetPanel()
+        {
+            MethodInfo method = GetMethod(main_panel_manager_script, "setPanel");
+            if (!main_panel_manager_script.mainPanel.activeSelf)
+                Assert.Fail("The main panel should be active at start.");
+
+            method.Invoke(main_panel_manager_script, new object[] { main_panel_manager_script.mainPanel, false });
+
+            if (main_panel_manager_script.mainPanel.activeSelf)
+                Assert.Fail("SetPanel did not make main_panel_manager_script inactive");
+
+            Assert.Pass();
+        }
+
+        [Test]
+        public void SendMessageAboutActive()
+        {
+            MethodInfo method = GetMethod(main_panel_manager_script, "sendMessageAboutActive");
+
+            object passed = method.Invoke(main_panel_manager_script, new object[]
+                { main_panel_manager_script.mainPanel, true, "passed", "haven't passed" });
+
+            if (passed.ToString().Equals("passed")) Assert.Pass();
+            else Assert.Fail();
+        }
+
+        private MethodInfo GetMethod(Object the_object, string methodName)
+        {
+            if (string.IsNullOrWhiteSpace(methodName))
+                Assert.Fail("methodName cannot be null or whitespace");
+
+            var method = the_object.GetType()
+                .GetMethod(methodName, BindingFlags.NonPublic | BindingFlags.Instance);
+
+            if (method == null)
+                Assert.Fail(string.Format("{0} method not found", methodName));
+
+            return method;
         }
     }
 }

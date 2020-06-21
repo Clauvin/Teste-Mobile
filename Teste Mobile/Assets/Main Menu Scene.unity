@@ -187,12 +187,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &360269107 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1089131316092910466, guid: 435bdab67d6d6ad4087979bc55edf943,
-    type: 3}
-  m_PrefabInstance: {fileID: 1089131314896796456}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -285,7 +279,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 522111830}
-  - component: {fileID: 522111829}
   m_Layer: 0
   m_Name: Main Panel Manager
   m_TagString: Untagged
@@ -293,26 +286,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &522111829
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 522111828}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8786237dfcf6b4b44b162fdc7da28526, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mainPanel: {fileID: 360269107}
-  guidelinesPanel: {fileID: 0}
-  feedbackPanel: {fileID: 0}
-  aboutPanel: {fileID: 0}
-  guidelinesButton: {fileID: 1089131314896796463}
-  mainFeedbackButton: {fileID: 1751638475}
-  aboutButton: {fileID: 981285571}
-  exitButton: {fileID: 1089131314896796459}
 --- !u!4 &522111830
 Transform:
   m_ObjectHideFlags: 0
@@ -327,18 +300,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &981285571 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1089131315268174315, guid: 435bdab67d6d6ad4087979bc55edf943,
-    type: 3}
-  m_PrefabInstance: {fileID: 1089131314896796456}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1835139467}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!224 &1263911083 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1089131316092910467, guid: 435bdab67d6d6ad4087979bc55edf943,
@@ -351,18 +312,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1089131314896796456}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1751638475 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1089131316475533943, guid: 435bdab67d6d6ad4087979bc55edf943,
-    type: 3}
-  m_PrefabInstance: {fileID: 1089131314896796456}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1751638471}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1751638478
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -520,6 +469,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1784029076}
     m_Modifications:
+    - target: {fileID: 1089131314672188144, guid: 435bdab67d6d6ad4087979bc55edf943,
+        type: 3}
+      propertyPath: m_Name
+      value: Exit Button
+      objectReference: {fileID: 0}
     - target: {fileID: 1089131314672188145, guid: 435bdab67d6d6ad4087979bc55edf943,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -772,27 +726,3 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 435bdab67d6d6ad4087979bc55edf943, type: 3}
---- !u!114 &1089131314896796459 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1089131314672188148, guid: 435bdab67d6d6ad4087979bc55edf943,
-    type: 3}
-  m_PrefabInstance: {fileID: 1089131314896796456}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1823666880}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1089131314896796463 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1089131316367198481, guid: 435bdab67d6d6ad4087979bc55edf943,
-    type: 3}
-  m_PrefabInstance: {fileID: 1089131314896796456}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
