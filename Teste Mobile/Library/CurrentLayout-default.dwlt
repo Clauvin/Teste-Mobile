@@ -112,10 +112,10 @@ MonoBehaviour:
     y: 30
     width: 1366
     height: 594
-  m_MinSize: {x: 579, y: 342}
-  m_MaxSize: {x: 12004, y: 8042}
+  m_MinSize: {x: 578, y: 300}
+  m_MaxSize: {x: 12003, y: 8021}
   vertical: 0
-  controlID: 58
+  controlID: 373
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -137,10 +137,10 @@ MonoBehaviour:
     y: 0
     width: 942
     height: 594
-  m_MinSize: {x: 303, y: 342}
-  m_MaxSize: {x: 8003, y: 8042}
+  m_MinSize: {x: 302, y: 300}
+  m_MaxSize: {x: 8002, y: 8021}
   vertical: 1
-  controlID: 99
+  controlID: 374
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -161,11 +161,11 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 942
-    height: 351
-  m_MinSize: {x: 303, y: 221}
-  m_MaxSize: {x: 8003, y: 4021}
+    height: 323
+  m_MinSize: {x: 302, y: 200}
+  m_MaxSize: {x: 8002, y: 4021}
   vertical: 0
-  controlID: 100
+  controlID: 415
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -184,12 +184,12 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 309
-    height: 351
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 15}
+    height: 323
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 13}
   m_Panes:
-  - {fileID: 15}
+  - {fileID: 13}
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &9
@@ -210,14 +210,14 @@ MonoBehaviour:
     x: 309
     y: 0
     width: 633
-    height: 351
+    height: 323
   m_MinSize: {x: 102, y: 121}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 12}
   m_Panes:
-  - {fileID: 16}
-  - {fileID: 13}
   - {fileID: 14}
+  - {fileID: 15}
+  - {fileID: 16}
   - {fileID: 17}
   - {fileID: 12}
   m_Selected: 4
@@ -238,9 +238,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 351
+    y: 323
     width: 942
-    height: 243
+    height: 271
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 19}
@@ -298,19 +298,19 @@ MonoBehaviour:
     x: 309
     y: 73
     width: 631
-    height: 330
+    height: 302
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
-    ID: 127
-    splitterInitialOffset: 0
+    ID: 432
+    splitterInitialOffset: 246
     currentActiveSplitter: -1
-    realSizes: c300000041000000
+    realSizes: 9f00000049000000
     relativeSizes:
-    - 0.75
-    - 0.25
+    - 0.6846154
+    - 0.31538463
     minSizes: 2000000020000000
     maxSizes: 0000000000000000
-    lastTotalSize: 260
+    lastTotalSize: 232
     splitSize: 6
     xOffset: 0
   m_TestTypeToolbarIndex: 0
@@ -322,7 +322,7 @@ MonoBehaviour:
       name: Teste Mobile
       fullName: Teste Mobile
       resultStatus: 1
-      duration: 0.2852831
+      duration: 0.202353
       messages: 
       output: 
       stacktrace: 
@@ -338,7 +338,7 @@ MonoBehaviour:
       name: Tests.dll
       fullName: C:/GitHub/Teste-Mobile/Teste Mobile/Library/ScriptAssemblies/Tests.dll
       resultStatus: 1
-      duration: 0.238808
+      duration: 0.1504127
       messages: 
       output: 
       stacktrace: 
@@ -354,7 +354,7 @@ MonoBehaviour:
       name: Tests
       fullName: Tests
       resultStatus: 1
-      duration: 0.2165418
+      duration: 0.1285453
       messages: 
       output: 
       stacktrace: 
@@ -370,7 +370,7 @@ MonoBehaviour:
       name: TestMainPanelManagerScript
       fullName: Tests.TestMainPanelManagerScript
       resultStatus: 1
-      duration: 0.1986489
+      duration: 0.1108821
       messages: 
       output: 
       stacktrace: 
@@ -381,61 +381,16 @@ MonoBehaviour:
       categories: []
       parentId: 1010
       parentUniqueId: Tests.dll/[Tests][suite]
-    - id: 1007
-      uniqueId: Tests.dll/Tests/TestMainPanelManagerScript/[Tests][Tests.TestMainPanelManagerScript.BasicTest]
-      name: BasicTest
-      fullName: Tests.TestMainPanelManagerScript.BasicTest
-      resultStatus: 1
-      duration: 0.0427477
-      messages: 
-      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
-        This is not allowed.  MonoBehaviours can only be added using AddComponent().
-        Alternatively, your script can inherit from ScriptableObject or no base class
-        at all
-
-'
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1004
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.TestMainPanelManagerScript][suite]
-    - id: 1008
-      uniqueId: Tests.dll/Tests/TestMainPanelManagerScript/[Tests][Tests.TestMainPanelManagerScript.CatchingErrors]
-      name: CatchingErrors
-      fullName: Tests.TestMainPanelManagerScript.CatchingErrors
-      resultStatus: 1
-      duration: 0.0098221
-      messages: 
-      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
-        This is not allowed.  MonoBehaviours can only be added using AddComponent().
-        Alternatively, your script can inherit from ScriptableObject or no base class
-        at all
-
-'
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1004
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.TestMainPanelManagerScript][suite]
     - id: 1005
       uniqueId: Tests.dll/Tests/TestMainPanelManagerScript/[Tests][Tests.TestMainPanelManagerScript.GuidelinesPanelHide]
       name: GuidelinesPanelHide
       fullName: Tests.TestMainPanelManagerScript.GuidelinesPanelHide
       resultStatus: 1
-      duration: 0.003777
+      duration: 0.0305945
       messages: 
-      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
-        This is not allowed.  MonoBehaviours can only be added using AddComponent().
-        Alternatively, your script can inherit from ScriptableObject or no base class
-        at all
+      output: 'Setup started
+
+        Setup finished
 
 '
       stacktrace: 
@@ -452,12 +407,11 @@ MonoBehaviour:
       name: GuidelinesPanelShow
       fullName: Tests.TestMainPanelManagerScript.GuidelinesPanelShow
       resultStatus: 1
-      duration: 0.0029909
+      duration: 0.0015043
       messages: 
-      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
-        This is not allowed.  MonoBehaviours can only be added using AddComponent().
-        Alternatively, your script can inherit from ScriptableObject or no base class
-        at all
+      output: 'Setup started
+
+        Setup finished
 
 '
       stacktrace: 
@@ -474,12 +428,11 @@ MonoBehaviour:
       name: MainAboutHide
       fullName: Tests.TestMainPanelManagerScript.MainAboutHide
       resultStatus: 1
-      duration: 0.0031776
+      duration: 0.0014012
       messages: 
-      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
-        This is not allowed.  MonoBehaviours can only be added using AddComponent().
-        Alternatively, your script can inherit from ScriptableObject or no base class
-        at all
+      output: 'Setup started
+
+        Setup finished
 
 '
       stacktrace: 
@@ -496,12 +449,11 @@ MonoBehaviour:
       name: MainAboutShow
       fullName: Tests.TestMainPanelManagerScript.MainAboutShow
       resultStatus: 1
-      duration: 0.0031016
+      duration: 0.0009857
       messages: 
-      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
-        This is not allowed.  MonoBehaviours can only be added using AddComponent().
-        Alternatively, your script can inherit from ScriptableObject or no base class
-        at all
+      output: 'Setup started
+
+        Setup finished
 
 '
       stacktrace: 
@@ -518,12 +470,11 @@ MonoBehaviour:
       name: MainFeedbackHide
       fullName: Tests.TestMainPanelManagerScript.MainFeedbackHide
       resultStatus: 1
-      duration: 0.003113
+      duration: 0.0010756
       messages: 
-      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
-        This is not allowed.  MonoBehaviours can only be added using AddComponent().
-        Alternatively, your script can inherit from ScriptableObject or no base class
-        at all
+      output: 'Setup started
+
+        Setup finished
 
 '
       stacktrace: 
@@ -540,12 +491,11 @@ MonoBehaviour:
       name: MainFeedbackShow
       fullName: Tests.TestMainPanelManagerScript.MainFeedbackShow
       resultStatus: 1
-      duration: 0.0073303
+      duration: 0.0011233
       messages: 
-      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
-        This is not allowed.  MonoBehaviours can only be added using AddComponent().
-        Alternatively, your script can inherit from ScriptableObject or no base class
-        at all
+      output: 'Setup started
+
+        Setup finished
 
 '
       stacktrace: 
@@ -562,12 +512,11 @@ MonoBehaviour:
       name: NewPanelHide
       fullName: Tests.TestMainPanelManagerScript.NewPanelHide
       resultStatus: 1
-      duration: 0.0027876
+      duration: 0.0012993
       messages: 
-      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
-        This is not allowed.  MonoBehaviours can only be added using AddComponent().
-        Alternatively, your script can inherit from ScriptableObject or no base class
-        at all
+      output: 'Setup started
+
+        Setup finished
 
 '
       stacktrace: 
@@ -584,12 +533,16 @@ MonoBehaviour:
       name: NewPanelShow
       fullName: Tests.TestMainPanelManagerScript.NewPanelShow
       resultStatus: 1
-      duration: 0.0031336
+      duration: 0.0013321
       messages: 
-      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
-        This is not allowed.  MonoBehaviours can only be added using AddComponent().
-        Alternatively, your script can inherit from ScriptableObject or no base class
-        at all
+      output: 'Setup started
+
+        Setup finished
+
+        NewPanelShow
+
+        teste
+        2
 
 '
       stacktrace: 
@@ -601,19 +554,67 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1001
       parentUniqueId: Tests.dll/Tests/[Tests][Tests.TestMainPanelManagerScript][suite]
-    m_ResultText: 'NewPanelHide (0,003s)
+    - id: 1011
+      uniqueId: Tests.dll/Tests/TestMainPanelManagerScript/[Tests][Tests.TestMainPanelManagerScript.SendMessageAboutActive]
+      name: SendMessageAboutActive
+      fullName: Tests.TestMainPanelManagerScript.SendMessageAboutActive
+      resultStatus: 1
+      duration: 0.0133589
+      messages: 
+      output: 'Setup started
+
+        Setup finished
+
+'
+      stacktrace: 'at Tests.TestMainPanelManagerScript.SendMessageAboutActive ()
+        [0x00061] in C:\GitHub\Teste-Mobile\Teste Mobile\Assets\Tests\TestScript.cs:124
+
+'
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.TestMainPanelManagerScript][suite]
+    - id: 1010
+      uniqueId: Tests.dll/Tests/TestMainPanelManagerScript/[Tests][Tests.TestMainPanelManagerScript.SetPanel]
+      name: SetPanel
+      fullName: Tests.TestMainPanelManagerScript.SetPanel
+      resultStatus: 1
+      duration: 0.0023517
+      messages: 
+      output: 'Setup started
+
+        Setup finished
+
+'
+      stacktrace: 'at Tests.TestMainPanelManagerScript.SetPanel () [0x0007e] in C:\GitHub\Teste-Mobile\Teste
+        Mobile\Assets\Tests\TestScript.cs:113
+
+'
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.TestMainPanelManagerScript][suite]
+    m_ResultText: 'GuidelinesPanelHide (0,031s)
 
       ---
 
-      You are trying to create
-      a MonoBehaviour using the ''new'' keyword.  This is not allowed.  MonoBehaviours
-      can only be added using AddComponent(). Alternatively, your script can inherit
-      from ScriptableObject or no base class at all'
+      Setup started
+
+      Setup
+      finished'
     m_ResultStacktrace: 
     m_TestListState:
-      scrollPos: {x: 0, y: 33}
-      m_SelectedIDs: 27784b1f
-      m_LastClickedID: 525039655
+      scrollPos: {x: 0, y: 69}
+      m_SelectedIDs: e4ad9725
+      m_LastClickedID: 630697444
       m_ExpandedIDs: b51413b7e9a5e2e48e3cc011537bbd2a8359db41ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -699,128 +700,6 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12015, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Game
-    m_Image: {fileID: -2087823869225018852, guid: 0000000000000000d000000000000000,
-      type: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 309
-    y: 73
-    width: 631
-    height: 292
-  m_ViewDataDictionary: {fileID: 0}
-  m_SerializedViewNames: []
-  m_SerializedViewValues: []
-  m_SerializedCustomFieldsNames: []
-  m_SerializedCustomFieldsValues: []
-  m_PlayModeViewName: GameView
-  m_ShowGizmos: 0
-  m_TargetDisplay: 0
-  m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 360, y: 640}
-  m_TextureFilterMode: 0
-  m_TextureHideFlags: 61
-  m_RenderIMGUI: 1
-  m_MaximizeOnPlay: 0
-  m_UseMipMap: 0
-  m_VSyncEnabled: 0
-  m_Gizmos: 0
-  m_Stats: 0
-  m_SelectedSizes: 00000000000000000000000012000000000000000000000000000000000000000000000000000000
-  m_ZoomArea:
-    m_HRangeLocked: 0
-    m_VRangeLocked: 0
-    hZoomLockedByDefault: 0
-    vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -315.5
-    m_HBaseRangeMax: 315.5
-    m_VBaseRangeMin: -135.5
-    m_VBaseRangeMax: 135.5
-    m_HAllowExceedBaseRangeMin: 1
-    m_HAllowExceedBaseRangeMax: 1
-    m_VAllowExceedBaseRangeMin: 1
-    m_VAllowExceedBaseRangeMax: 1
-    m_ScaleWithWindow: 0
-    m_HSlider: 0
-    m_VSlider: 0
-    m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
-    m_EnableSliderZoomHorizontal: 0
-    m_EnableSliderZoomVertical: 0
-    m_UniformScale: 1
-    m_UpDirection: 1
-    m_DrawArea:
-      serializedVersion: 2
-      x: 0
-      y: 21
-      width: 631
-      height: 271
-    m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 315.5, y: 135.5}
-    m_MarginLeft: 0
-    m_MarginRight: 0
-    m_MarginTop: 0
-    m_MarginBottom: 0
-    m_LastShownAreaInsideMargins:
-      serializedVersion: 2
-      x: -315.5
-      y: -135.5
-      width: 631
-      height: 271
-    m_MinimalGUI: 1
-  m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 631, y: 292}
-  m_ClearInEditMode: 1
-  m_NoCameraWarning: 1
-  m_LowResolutionForAspectRatios: 01000001000000000000
-  m_XRRenderMode: 0
-  m_RenderTexture: {fileID: 0}
---- !u!114 &14
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 13854, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 300, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Project Settings
-    m_Image: {fileID: 8487775502441791945, guid: 0000000000000000d000000000000000,
-      type: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 309
-    y: 73
-    width: 631
-    height: 293
-  m_ViewDataDictionary: {fileID: 0}
-  m_PosLeft: {x: 0, y: 0}
-  m_PosRight: {x: 0, y: 0}
-  m_Scope: 1
-  m_SplitterFlex: 0.2
---- !u!114 &15
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12061, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
@@ -837,14 +716,14 @@ MonoBehaviour:
     x: 0
     y: 73
     width: 308
-    height: 330
+    height: 302
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 86f0ffff98f0ffff12f2ffffb6f2ffffc8f2ffff4ef3ffffa0f3ffffb2f3ffff34f5ffff20f8ffff22f8ffff34f8ffff08f9ffff2afbffff8e3e0000
+      m_ExpandedIDs: 8eedffffa0edffff3cefffffe0effffff2efffffa4f0ffff02f2ffff14f2ffff9af2ffff3af4ffff4cf4ffffd2f4ffff70f5ffff82f5ffffe8f6ffff3af7ffff4cf7ffffd2f7ffff70f8ffff82f8ffff08f9ffffa6f9ffffb8f9ffff42faffff6afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -868,7 +747,7 @@ MonoBehaviour:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
   m_WindowGUID: 489535285481d4c4ea049c295e4859d7
---- !u!114 &16
+--- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -983,6 +862,128 @@ MonoBehaviour:
   m_SceneVisActive: 1
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
+--- !u!114 &15
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12015, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Game
+    m_Image: {fileID: -2087823869225018852, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 309
+    y: 73
+    width: 631
+    height: 302
+  m_ViewDataDictionary: {fileID: 0}
+  m_SerializedViewNames: []
+  m_SerializedViewValues: []
+  m_SerializedCustomFieldsNames: []
+  m_SerializedCustomFieldsValues: []
+  m_PlayModeViewName: GameView
+  m_ShowGizmos: 0
+  m_TargetDisplay: 0
+  m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
+  m_TargetSize: {x: 360, y: 640}
+  m_TextureFilterMode: 0
+  m_TextureHideFlags: 61
+  m_RenderIMGUI: 1
+  m_MaximizeOnPlay: 0
+  m_UseMipMap: 0
+  m_VSyncEnabled: 0
+  m_Gizmos: 0
+  m_Stats: 0
+  m_SelectedSizes: 00000000000000000000000012000000000000000000000000000000000000000000000000000000
+  m_ZoomArea:
+    m_HRangeLocked: 0
+    m_VRangeLocked: 0
+    hZoomLockedByDefault: 0
+    vZoomLockedByDefault: 0
+    m_HBaseRangeMin: -180
+    m_HBaseRangeMax: 180
+    m_VBaseRangeMin: -320
+    m_VBaseRangeMax: 320
+    m_HAllowExceedBaseRangeMin: 1
+    m_HAllowExceedBaseRangeMax: 1
+    m_VAllowExceedBaseRangeMin: 1
+    m_VAllowExceedBaseRangeMax: 1
+    m_ScaleWithWindow: 0
+    m_HSlider: 0
+    m_VSlider: 0
+    m_IgnoreScrollWheelUntilClicked: 0
+    m_EnableMouseInput: 1
+    m_EnableSliderZoomHorizontal: 0
+    m_EnableSliderZoomVertical: 0
+    m_UniformScale: 1
+    m_UpDirection: 1
+    m_DrawArea:
+      serializedVersion: 2
+      x: 0
+      y: 21
+      width: 631
+      height: 281
+    m_Scale: {x: 0.43906254, y: 0.4390625}
+    m_Translation: {x: 315.5, y: 140.5}
+    m_MarginLeft: 0
+    m_MarginRight: 0
+    m_MarginTop: 0
+    m_MarginBottom: 0
+    m_LastShownAreaInsideMargins:
+      serializedVersion: 2
+      x: -718.5765
+      y: -320
+      width: 1437.153
+      height: 640
+    m_MinimalGUI: 1
+  m_defaultScale: 0.4390625
+  m_LastWindowPixelSize: {x: 631, y: 302}
+  m_ClearInEditMode: 1
+  m_NoCameraWarning: 1
+  m_LowResolutionForAspectRatios: 01000001000000000000
+  m_XRRenderMode: 0
+  m_RenderTexture: {fileID: 0}
+--- !u!114 &16
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 13854, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 300, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Project Settings
+    m_Image: {fileID: 8487775502441791945, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 309
+    y: 73
+    width: 631
+    height: 293
+  m_ViewDataDictionary: {fileID: 0}
+  m_PosLeft: {x: 0, y: 0}
+  m_PosRight: {x: 0, y: 0}
+  m_Scope: 1
+  m_SplitterFlex: 0.2
 --- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1031,9 +1032,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 386
+    y: 396
     width: 941
-    height: 260
+    height: 250
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -1048,20 +1049,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Script
+    - Assets/Tests
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Script
+  - Assets/Tests
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\GitHub\Teste-Mobile\Teste Mobile
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 3e3a0000
-    m_LastClickedID: 14910
-    m_ExpandedIDs: 00000000303a0000
+    m_SelectedIDs: 863a0000
+    m_LastClickedID: 14982
+    m_ExpandedIDs: 00000000763a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1089,7 +1090,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000303a0000
+    m_ExpandedIDs: 00000000763a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1167,9 +1168,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 424
+    y: 396
     width: 941
-    height: 222
+    height: 250
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &20
 MonoBehaviour:

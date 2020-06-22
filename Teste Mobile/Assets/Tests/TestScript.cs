@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Reflection;
 using NUnit.Framework;
 using UnityEngine;
@@ -11,22 +12,41 @@ namespace Tests
     public class TestMainPanelManagerScript
     {
         MainPanelManagerScript main_panel_manager_script;
+        GameObject obj;
 
         [SetUp]
         public void ResetScene()
         {
-            main_panel_manager_script = new MainPanelManagerScript();
+            TestContext.WriteLine("Setup started");
+            obj = new GameObject();
+            main_panel_manager_script = obj.AddComponent<MainPanelManagerScript>();
             main_panel_manager_script.aboutPanel = new GameObject();
             main_panel_manager_script.feedbackPanel = new GameObject();
             main_panel_manager_script.guidelinesPanel = new GameObject();
             main_panel_manager_script.mainPanel = new GameObject();
+            TestContext.WriteLine("Setup finished");
         }
 
         [Test]
         public void NewPanelShow()
         {
-            Assert.AreEqual(main_panel_manager_script.showMainPanel(),
-                (string)MainPanelManagerScript.result_message_show_main_panel_true);
+
+            Action del = this.NewPanelShow;
+            string ret = del.Method.Name;
+
+            try
+            {
+                TestContext.WriteLine(ret);
+                TestContext.WriteLine("teste 2");
+                Assert.AreEqual(main_panel_manager_script.showMainPanel(),
+                    (string)MainPanelManagerScript.result_message_show_main_panel_true);
+            }
+            catch (AssertionException ae)
+            {
+                TestContext.WriteLine("teste");
+                Assert.Fail();
+            }
+
         }
 
         [Test]
@@ -105,7 +125,7 @@ namespace Tests
             else Assert.Fail();
         }
 
-        private MethodInfo GetMethod(Object the_object, string methodName)
+        private MethodInfo GetMethod(UnityEngine.Object the_object, string methodName)
         {
             if (string.IsNullOrWhiteSpace(methodName))
                 Assert.Fail("methodName cannot be null or whitespace");
