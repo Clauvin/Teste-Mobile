@@ -8,11 +8,17 @@ using UnityEngine.TestTools;
 namespace Tests
 {
     [TestFixture]
-    [Author("Cláuvin Almeida", "almeidaclauvin@gmail.com")]
+    [Author("Cláuvin", "")]
     public class TestMainPanelManagerScript
     {
         MainPanelManagerScript main_panel_manager_script;
         GameObject obj;
+
+        [OneTimeSetUp]
+        public void WriteStartOfLog()
+        {
+            WriteTestLogScript.WriteString("TestScript tests starting.");
+        }
 
         [SetUp]
         public void ResetScene()
@@ -34,26 +40,45 @@ namespace Tests
             Action del = this.NewPanelShow;
             string ret = del.Method.Name;
 
+            WriteTestLogScript.WriteString("Starting " + ret + " test.");
+
             try
             {
-                TestContext.WriteLine(ret);
-                TestContext.WriteLine("teste 2");
                 Assert.AreEqual(main_panel_manager_script.showMainPanel(),
                     (string)MainPanelManagerScript.result_message_show_main_panel_true);
             }
             catch (AssertionException ae)
             {
-                TestContext.WriteLine("teste");
+                WriteTestLogScript.TestFailed(ret);
                 Assert.Fail();
+                return;
             }
+
+            WriteTestLogScript.TestPassed(ret);
 
         }
 
         [Test]
         public void NewPanelHide()
         {
-            Assert.AreEqual(main_panel_manager_script.hideMainPanel(),
-                (string)MainPanelManagerScript.result_message_hide_main_panel_true);
+            Action del = this.NewPanelHide;
+            string ret = del.Method.Name;
+
+            try
+            {
+                WriteTestLogScript.WriteString("Starting " + ret + " test.");
+                Assert.AreEqual(main_panel_manager_script.showMainPanel(),
+                    (string)MainPanelManagerScript.result_message_hide_main_panel_true);
+            }
+            catch (AssertionException ae)
+            {
+                WriteTestLogScript.TestFailed(ret);
+                Assert.Fail();
+                return;
+            }
+
+            WriteTestLogScript.TestPassed(ret);
+
         }
 
         [Test]
@@ -123,6 +148,12 @@ namespace Tests
 
             if (passed.ToString().Equals("passed")) Assert.Pass();
             else Assert.Fail();
+        }
+
+        [OneTimeTearDown]
+        public void WriteEndOfLog()
+        {
+            WriteTestLogScript.WriteString("TestScript tests finishing.");
         }
 
         private MethodInfo GetMethod(UnityEngine.Object the_object, string methodName)

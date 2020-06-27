@@ -1,0 +1,6 @@
+TestScript tests starting.
+TestScript tests finishing.
+TestScript tests starting.
+Starting NewPanelHide test.
+WARNING! NewPanelHide test failed.
+TestScript tests finishing.

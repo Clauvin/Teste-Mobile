@@ -112,10 +112,10 @@ MonoBehaviour:
     y: 30
     width: 1366
     height: 594
-  m_MinSize: {x: 578, y: 300}
-  m_MaxSize: {x: 12003, y: 8021}
+  m_MinSize: {x: 579, y: 492}
+  m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 373
+  controlID: 98
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -137,10 +137,10 @@ MonoBehaviour:
     y: 0
     width: 942
     height: 594
-  m_MinSize: {x: 302, y: 300}
-  m_MaxSize: {x: 8002, y: 8021}
+  m_MinSize: {x: 303, y: 492}
+  m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 374
+  controlID: 99
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -162,10 +162,10 @@ MonoBehaviour:
     y: 0
     width: 942
     height: 323
-  m_MinSize: {x: 302, y: 200}
-  m_MaxSize: {x: 8002, y: 4021}
+  m_MinSize: {x: 303, y: 221}
+  m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 415
+  controlID: 100
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -232,7 +232,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ConsoleWindow
+  m_Name: ProjectBrowser
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -241,14 +241,14 @@ MonoBehaviour:
     y: 323
     width: 942
     height: 271
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 19}
+  m_MinSize: {x: 231, y: 271}
+  m_MaxSize: {x: 10001, y: 10021}
+  m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
   - {fileID: 19}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -301,7 +301,7 @@ MonoBehaviour:
     height: 302
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
-    ID: 432
+    ID: 127
     splitterInitialOffset: 246
     currentActiveSplitter: -1
     realSizes: 9f00000049000000
@@ -321,9 +321,9 @@ MonoBehaviour:
       uniqueId: '[Teste Mobile][suite]'
       name: Teste Mobile
       fullName: Teste Mobile
-      resultStatus: 1
-      duration: 0.202353
-      messages: 
+      resultStatus: 2
+      duration: 0.132397
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -337,9 +337,9 @@ MonoBehaviour:
       uniqueId: '[C:/GitHub/Teste-Mobile/Teste Mobile/Library/ScriptAssemblies/Tests.dll][suite]'
       name: Tests.dll
       fullName: C:/GitHub/Teste-Mobile/Teste Mobile/Library/ScriptAssemblies/Tests.dll
-      resultStatus: 1
-      duration: 0.1504127
-      messages: 
+      resultStatus: 2
+      duration: 0.1014299
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -353,9 +353,9 @@ MonoBehaviour:
       uniqueId: Tests.dll/[Tests][suite]
       name: Tests
       fullName: Tests
-      resultStatus: 1
-      duration: 0.1285453
-      messages: 
+      resultStatus: 2
+      duration: 0.0831974
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -369,9 +369,9 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/[Tests][Tests.TestMainPanelManagerScript][suite]
       name: TestMainPanelManagerScript
       fullName: Tests.TestMainPanelManagerScript
-      resultStatus: 1
-      duration: 0.1108821
-      messages: 
+      resultStatus: 2
+      duration: 0.0762484
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -511,15 +511,18 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/TestMainPanelManagerScript/[Tests][Tests.TestMainPanelManagerScript.NewPanelHide]
       name: NewPanelHide
       fullName: Tests.TestMainPanelManagerScript.NewPanelHide
-      resultStatus: 1
-      duration: 0.0012993
+      resultStatus: 2
+      duration: 0.0398587
       messages: 
       output: 'Setup started
 
         Setup finished
 
 '
-      stacktrace: 
+      stacktrace: 'at Tests.TestMainPanelManagerScript.NewPanelHide () [0x00053]
+        in C:\GitHub\Teste-Mobile\Teste Mobile\Assets\Tests\TestScript.cs:76
+
+'
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -533,16 +536,16 @@ MonoBehaviour:
       name: NewPanelShow
       fullName: Tests.TestMainPanelManagerScript.NewPanelShow
       resultStatus: 1
-      duration: 0.0013321
+      duration: 0.0226004
       messages: 
       output: 'Setup started
 
         Setup finished
 
-        NewPanelShow
+        Starting NewPanelShow
+        test.
 
-        teste
-        2
+        NewPanelShow test passed.
 
 '
       stacktrace: 
@@ -602,19 +605,27 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1001
       parentUniqueId: Tests.dll/Tests/[Tests][Tests.TestMainPanelManagerScript][suite]
-    m_ResultText: 'GuidelinesPanelHide (0,031s)
+    m_ResultText: 'NewPanelHide (0,040s)
 
       ---
 
-      Setup started
+      at Tests.TestMainPanelManagerScript.NewPanelHide
+      () [0x00053] in C:\GitHub\Teste-Mobile\Teste Mobile\Assets\Tests\TestScript.cs:76
+
+      ---
 
       Setup
-      finished'
-    m_ResultStacktrace: 
+      started
+
+      Setup finished'
+    m_ResultStacktrace: 'at Tests.TestMainPanelManagerScript.NewPanelHide () [0x00053]
+      in C:\GitHub\Teste-Mobile\Teste Mobile\Assets\Tests\TestScript.cs:76
+
+'
     m_TestListState:
       scrollPos: {x: 0, y: 69}
-      m_SelectedIDs: e4ad9725
-      m_LastClickedID: 630697444
+      m_SelectedIDs: 27784b1f
+      m_LastClickedID: 525039655
       m_ExpandedIDs: b51413b7e9a5e2e48e3cc011537bbd2a8359db41ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -723,7 +734,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 8eedffffa0edffff3cefffffe0effffff2efffffa4f0ffff02f2ffff14f2ffff9af2ffff3af4ffff4cf4ffffd2f4ffff70f5ffff82f5ffffe8f6ffff3af7ffff4cf7ffffd2f7ffff70f8ffff82f8ffff08f9ffffa6f9ffffb8f9ffff42faffff6afbffff
+      m_ExpandedIDs: 8cf1ffff9ef1ffff2af2ffffccf2ffffdef2ffff6af3ffffbcf3ffffcef3ffff5af4fffffaf4ffff0cf5ffff98f5ffff3cf6ffff4ef6ffffdaf6ffff3af7ffff4cf7ffffd8f7ffffecf8fffffef8ffff8ef9ffff6afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1049,19 +1060,19 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Tests
+    - Assets/Resources
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Tests
+  - Assets/Resources
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\GitHub\Teste-Mobile\Teste Mobile
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 863a0000
-    m_LastClickedID: 14982
+    m_SelectedIDs: 8a3e0000
+    m_LastClickedID: 16010
     m_ExpandedIDs: 00000000763a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1117,7 +1128,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c623000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
