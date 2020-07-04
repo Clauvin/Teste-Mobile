@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -112,10 +112,10 @@ MonoBehaviour:
     y: 30
     width: 1366
     height: 594
-  m_MinSize: {x: 579, y: 492}
-  m_MaxSize: {x: 14002, y: 14042}
+  m_MinSize: {x: 577, y: 321}
+  m_MaxSize: {x: 12002, y: 8042}
   vertical: 0
-  controlID: 98
+  controlID: 103
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -137,10 +137,10 @@ MonoBehaviour:
     y: 0
     width: 942
     height: 594
-  m_MinSize: {x: 303, y: 492}
-  m_MaxSize: {x: 10001, y: 14042}
+  m_MinSize: {x: 302, y: 321}
+  m_MaxSize: {x: 8002, y: 8042}
   vertical: 1
-  controlID: 99
+  controlID: 104
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -162,10 +162,10 @@ MonoBehaviour:
     y: 0
     width: 942
     height: 323
-  m_MinSize: {x: 303, y: 221}
-  m_MaxSize: {x: 8003, y: 4021}
+  m_MinSize: {x: 302, y: 200}
+  m_MaxSize: {x: 8002, y: 4021}
   vertical: 0
-  controlID: 100
+  controlID: 105
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -232,7 +232,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectBrowser
+  m_Name: ConsoleWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -241,14 +241,14 @@ MonoBehaviour:
     y: 323
     width: 942
     height: 271
-  m_MinSize: {x: 231, y: 271}
-  m_MaxSize: {x: 10001, y: 10021}
-  m_ActualView: {fileID: 18}
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 18}
   - {fileID: 19}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -268,8 +268,8 @@ MonoBehaviour:
     y: 0
     width: 424
     height: 594
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -301,7 +301,7 @@ MonoBehaviour:
     height: 302
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
-    ID: 127
+    ID: 132
     splitterInitialOffset: 246
     currentActiveSplitter: -1
     realSizes: 9f00000049000000
@@ -322,7 +322,7 @@ MonoBehaviour:
       name: Teste Mobile
       fullName: Teste Mobile
       resultStatus: 2
-      duration: 0.132397
+      duration: 0.1093147
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -338,7 +338,7 @@ MonoBehaviour:
       name: Tests.dll
       fullName: C:/GitHub/Teste-Mobile/Teste Mobile/Library/ScriptAssemblies/Tests.dll
       resultStatus: 2
-      duration: 0.1014299
+      duration: 0.0716492
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -354,7 +354,7 @@ MonoBehaviour:
       name: Tests
       fullName: Tests
       resultStatus: 2
-      duration: 0.0831974
+      duration: 0.0632894
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -365,13 +365,73 @@ MonoBehaviour:
       categories: []
       parentId: 1009
       parentUniqueId: '[C:/GitHub/Teste-Mobile/Teste Mobile/Library/ScriptAssemblies/Tests.dll][suite]'
+    - id: 1001
+      uniqueId: Tests.dll/Tests/[Tests][Tests.AboutPanelTestScript][suite]
+      name: AboutPanelTestScript
+      fullName: Tests.AboutPanelTestScript
+      resultStatus: 2
+      duration: 0.0530839
+      messages: One or more child tests had errors
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1016
+      parentUniqueId: Tests.dll/[Tests][suite]
+    - id: 1003
+      uniqueId: Tests.dll/Tests/AboutPanelTestScript/[Tests][Tests.AboutPanelTestScript.AboutPanelTestScriptWithEnumeratorPasses]
+      name: AboutPanelTestScriptWithEnumeratorPasses
+      fullName: Tests.AboutPanelTestScript.AboutPanelTestScriptWithEnumeratorPasses
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.AboutPanelTestScript][suite]
+    - id: 1002
+      uniqueId: Tests.dll/Tests/AboutPanelTestScript/[Tests][Tests.AboutPanelTestScript.BackButtonWorks]
+      name: BackButtonWorks
+      fullName: Tests.AboutPanelTestScript.BackButtonWorks
+      resultStatus: 2
+      duration: 0.0204178
+      messages: 'System.NullReferenceException : Object reference not set to an instance
+        of an object'
+      output: 'Setup started
+
+        Setup finished
+
+'
+      stacktrace: "  at Tests.AboutPanelTestScript.BackButtonWorks () [0x0003c] in
+        C:\\GitHub\\Teste-Mobile\\Teste Mobile\\Assets\\Tests\\AboutPanelTestScript.cs:40
+        \r\n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\r\n 
+        at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
+        System.Globalization.CultureInfo culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 "
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.AboutPanelTestScript][suite]
     - id: 1004
       uniqueId: Tests.dll/Tests/[Tests][Tests.TestMainPanelManagerScript][suite]
       name: TestMainPanelManagerScript
       fullName: Tests.TestMainPanelManagerScript
-      resultStatus: 2
-      duration: 0.0762484
-      messages: One or more child tests had errors
+      resultStatus: 1
+      duration: 0.0700579
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -449,7 +509,7 @@ MonoBehaviour:
       name: MainAboutShow
       fullName: Tests.TestMainPanelManagerScript.MainAboutShow
       resultStatus: 1
-      duration: 0.0009857
+      duration: 0.0289977
       messages: 
       output: 'Setup started
 
@@ -605,28 +665,25 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1001
       parentUniqueId: Tests.dll/Tests/[Tests][Tests.TestMainPanelManagerScript][suite]
-    m_ResultText: 'NewPanelHide (0,040s)
-
-      ---
-
-      at Tests.TestMainPanelManagerScript.NewPanelHide
-      () [0x00053] in C:\GitHub\Teste-Mobile\Teste Mobile\Assets\Tests\TestScript.cs:76
-
-      ---
-
-      Setup
-      started
-
-      Setup finished'
-    m_ResultStacktrace: 'at Tests.TestMainPanelManagerScript.NewPanelHide () [0x00053]
-      in C:\GitHub\Teste-Mobile\Teste Mobile\Assets\Tests\TestScript.cs:76
-
-'
+    m_ResultText: "BackButtonWorks (0,020s)\n---\nSystem.NullReferenceException :
+      Object reference not set to an instance of an object\n---\nat Tests.AboutPanelTestScript.BackButtonWorks
+      () [0x0003c] in C:\\GitHub\\Teste-Mobile\\Teste Mobile\\Assets\\Tests\\AboutPanelTestScript.cs:40
+      \r\n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\r\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0\n---\nSetup started\r\nSetup
+      finished"
+    m_ResultStacktrace: "  at Tests.AboutPanelTestScript.BackButtonWorks () [0x0003c]
+      in C:\\GitHub\\Teste-Mobile\\Teste Mobile\\Assets\\Tests\\AboutPanelTestScript.cs:40
+      \r\n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\r\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 "
     m_TestListState:
-      scrollPos: {x: 0, y: 69}
-      m_SelectedIDs: 27784b1f
-      m_LastClickedID: 525039655
-      m_ExpandedIDs: b51413b7e9a5e2e48e3cc011537bbd2a8359db41ffffff7f
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 02d37129
+      m_LastClickedID: 695325442
+      m_ExpandedIDs: b51413b7e9a5e2e4c69cc6e68e3cc011537bbd2a8359db41ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -734,21 +791,21 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 8cf1ffff9ef1ffff2af2ffffccf2ffffdef2ffff6af3ffffbcf3ffffcef3ffff5af4fffffaf4ffff0cf5ffff98f5ffff3cf6ffff4ef6ffffdaf6ffff3af7ffff4cf7ffffd8f7ffffecf8fffffef8ffff8ef9ffff6afbffff
+      m_ExpandedIDs: fcb3ffff0eb4ffff84b4ffff12b6ffff24b6ffffb0b6ffff2ab7ffff3cb7ffffc8b7ffff8cb8ffff9eb8ffffbab8ffff56fbffff5efbffff6afbffff6c39000002500000045000000a500000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: Canvas
+        m_OriginalName: Canvas
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: 20490
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 8}
       m_SearchString: 
@@ -782,7 +839,7 @@ MonoBehaviour:
     x: 309
     y: 73
     width: 631
-    height: 292
+    height: 302
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: 6e88c859191d24542ab55b115bdfd6cb
@@ -794,9 +851,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 125.7228, y: 311.9601, z: -10.375}
+    m_Target: {x: 176.04933, y: 324.18698, z: -25.25}
     speed: 2
-    m_Value: {x: 125.7228, y: 311.9601, z: -10.375}
+    m_Value: {x: 176.04933, y: 324.18698, z: -25.25}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -846,9 +903,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 349.9342
+    m_Target: 367.8192
     speed: 2
-    m_Value: 349.9342
+    m_Value: 367.8192
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1060,20 +1117,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Resources
+    - Assets/Tests
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Resources
+  - Assets/Tests
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\GitHub\Teste-Mobile\Teste Mobile
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 8a3e0000
-    m_LastClickedID: 16010
-    m_ExpandedIDs: 00000000763a0000
+    m_SelectedIDs: 8c3a0000
+    m_LastClickedID: 14988
+    m_ExpandedIDs: 000000007c3a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1101,7 +1158,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000763a0000
+    m_ExpandedIDs: 000000007c3a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1145,7 +1202,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 10}
+      m_ClientGUIView: {fileID: 11}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0

@@ -67,7 +67,7 @@ namespace Tests
             try
             {
                 WriteTestLogScript.WriteString("Starting " + ret + " test.");
-                Assert.AreEqual(main_panel_manager_script.showMainPanel(),
+                Assert.AreEqual(main_panel_manager_script.hideMainPanel(),
                     (string)MainPanelManagerScript.result_message_hide_main_panel_true);
             }
             catch (AssertionException ae)

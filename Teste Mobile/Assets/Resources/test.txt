@@ -4,3 +4,9 @@ TestScript tests starting.
 Starting NewPanelHide test.
 WARNING! NewPanelHide test failed.
 TestScript tests finishing.
+TestScript tests starting.
+TestScript tests finishing.
+TestScript tests starting.
+TestScript tests finishing.
+AboutPanelTestScript tests starting.
+Starting BackButtonWorks test.

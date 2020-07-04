@@ -14,8 +14,9 @@ GameObject:
   - component: {fileID: 1089131314672188148}
   - component: {fileID: 1089131314672188147}
   - component: {fileID: 1089131314672188146}
+  - component: {fileID: 1823666886}
   m_Layer: 5
-  m_Name: Exit
+  m_Name: Exit Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -124,8 +125,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: ExitPress
+      - m_Target: {fileID: 1823666886}
+        m_MethodName: whenPressed
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -165,6 +166,19 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
   m_EffectDistance: {x: 1, y: -1}
   m_UseGraphicAlpha: 1
+--- !u!114 &1823666886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1089131314672188144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 872e66b55cd9d87438fbce9621c8dda9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainPanelManager: {fileID: 0}
 --- !u!1 &1089131315268174231
 GameObject:
   m_ObjectHideFlags: 0
@@ -179,8 +193,9 @@ GameObject:
   - component: {fileID: 1089131315268174315}
   - component: {fileID: 1089131315268174314}
   - component: {fileID: 1089131315268174313}
+  - component: {fileID: 1835139473}
   m_Layer: 5
-  m_Name: About
+  m_Name: About Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -289,8 +304,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: 2f1760bb94e72e349b712e48d9333217, type: 3}
-        m_MethodName: 
+      - m_Target: {fileID: 1835139473}
+        m_MethodName: whenPressed
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -330,6 +345,19 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
   m_EffectDistance: {x: 1, y: -1}
   m_UseGraphicAlpha: 1
+--- !u!114 &1835139473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1089131315268174231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f0981a94e2f4094686cef9daa63ba97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainPanelManager: {fileID: 0}
 --- !u!1 &1089131316092910466
 GameObject:
   m_ObjectHideFlags: 0
@@ -532,7 +560,7 @@ GameObject:
   - component: {fileID: 1089131316367198495}
   - component: {fileID: 1089131314896796458}
   m_Layer: 5
-  m_Name: Guidelines
+  m_Name: Guidelines Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -642,7 +670,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1089131314896796458}
-        m_MethodName: testFunction
+        m_MethodName: whenPressed
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -695,7 +723,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainPanelManager: {fileID: 0}
-  mainPanelManagerScript: {fileID: 0}
 --- !u!1 &1089131316439205699
 GameObject:
   m_ObjectHideFlags: 0
@@ -707,7 +734,7 @@ GameObject:
   - component: {fileID: 1089131316439205700}
   - component: {fileID: 1089131316439205701}
   m_Layer: 5
-  m_Name: Buttons Layout Manager
+  m_Name: Main Panel Buttons Layout Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -775,8 +802,9 @@ GameObject:
   - component: {fileID: 1089131316475533943}
   - component: {fileID: 1089131316475533942}
   - component: {fileID: 1089131316475533941}
+  - component: {fileID: 1751638478}
   m_Layer: 5
-  m_Name: Feedback
+  m_Name: Feedback Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -885,8 +913,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: FormPress
+      - m_Target: {fileID: 1751638478}
+        m_MethodName: whenPressed
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -926,3 +954,16 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
   m_EffectDistance: {x: 1, y: -1}
   m_UseGraphicAlpha: 1
+--- !u!114 &1751638478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1089131316475533939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e1e441ff66bc5f42a80a3a559a4bb8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainPanelManager: {fileID: 0}
