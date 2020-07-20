@@ -23,7 +23,11 @@ public class AboutButtonScript : ButtonScript
 
     override public void whenPressed()
     {
-        if ((mainPanelManagerScript == null) && (mainPanelManager != null)) loadMainPanelManager(); 
+        if ((mainPanelManagerScript == null) && (mainPanelManager != null)) loadMainPanelManager();
+        else if (mainPanelManager == null)
+        {
+            throw new System.NullReferenceException("AboutButtonScript.mainPanelManager is null.");
+        }
 
         mainPanelManagerScript.hideMainPanel();
         mainPanelManagerScript.showAboutPanel();
