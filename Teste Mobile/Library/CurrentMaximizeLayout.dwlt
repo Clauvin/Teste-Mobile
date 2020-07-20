@@ -45,22 +45,22 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 309
+    x: 318
     y: 73
-    width: 631
-    height: 330
+    width: 650
+    height: 302
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
     ID: -1
-    splitterInitialOffset: 246
+    splitterInitialOffset: 364
     currentActiveSplitter: -1
-    realSizes: b200000052000000
+    realSizes: 8800000060000000
     relativeSizes:
-    - 0.6846154
-    - 0.31538463
+    - 0.5861386
+    - 0.4138614
     minSizes: 2000000020000000
     maxSizes: 0000000000000000
-    lastTotalSize: 260
+    lastTotalSize: 232
     splitSize: 6
     xOffset: 0
   m_TestTypeToolbarIndex: 0
@@ -72,7 +72,7 @@ MonoBehaviour:
       name: Teste Mobile
       fullName: Teste Mobile
       resultStatus: 2
-      duration: 0.1687091
+      duration: 0.1686163
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -88,7 +88,7 @@ MonoBehaviour:
       name: Tests.dll
       fullName: C:/GitHub/Teste-Mobile/Teste Mobile/Library/ScriptAssemblies/Tests.dll
       resultStatus: 2
-      duration: 0.1116819
+      duration: 0.128079
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -104,7 +104,7 @@ MonoBehaviour:
       name: Tests
       fullName: Tests
       resultStatus: 2
-      duration: 0.0835907
+      duration: 0.0699256
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -115,12 +115,12 @@ MonoBehaviour:
       categories: []
       parentId: 1009
       parentUniqueId: '[C:/GitHub/Teste-Mobile/Teste Mobile/Library/ScriptAssemblies/Tests.dll][suite]'
-    - id: 1004
-      uniqueId: Tests.dll/Tests/[Tests][Tests.TestMainPanelManagerScript][suite]
-      name: TestMainPanelManagerScript
-      fullName: Tests.TestMainPanelManagerScript
+    - id: 1001
+      uniqueId: Tests.dll/Tests/[Tests][Tests.AboutPanelTestScript][suite]
+      name: AboutPanelTestScript
+      fullName: Tests.AboutPanelTestScript
       resultStatus: 2
-      duration: 0.0699991
+      duration: 0.0607932
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -129,177 +129,84 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1010
+      parentId: 1016
       parentUniqueId: Tests.dll/[Tests][suite]
-    - id: 1005
-      uniqueId: Tests.dll/Tests/TestMainPanelManagerScript/[Tests][Tests.TestMainPanelManagerScript.GuidelinesPanelHide]
-      name: GuidelinesPanelHide
-      fullName: Tests.TestMainPanelManagerScript.GuidelinesPanelHide
-      resultStatus: 1
-      duration: 0.0365931
-      messages: 
-      output: 'Setup started
-
-        You are trying to create a MonoBehaviour using
-        the ''new'' keyword.  This is not allowed.  MonoBehaviours can only be added
-        using AddComponent(). Alternatively, your script can inherit from ScriptableObject
-        or no base class at all
-
-        Setup finished
-
-'
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.TestMainPanelManagerScript][suite]
-    - id: 1004
-      uniqueId: Tests.dll/Tests/TestMainPanelManagerScript/[Tests][Tests.TestMainPanelManagerScript.GuidelinesPanelShow]
-      name: GuidelinesPanelShow
-      fullName: Tests.TestMainPanelManagerScript.GuidelinesPanelShow
-      resultStatus: 1
-      duration: 0.0027229
-      messages: 
-      output: 'Setup started
-
-        You are trying to create a MonoBehaviour using
-        the ''new'' keyword.  This is not allowed.  MonoBehaviours can only be added
-        using AddComponent(). Alternatively, your script can inherit from ScriptableObject
-        or no base class at all
-
-        Setup finished
-
-'
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.TestMainPanelManagerScript][suite]
-    - id: 1009
-      uniqueId: Tests.dll/Tests/TestMainPanelManagerScript/[Tests][Tests.TestMainPanelManagerScript.MainAboutHide]
-      name: MainAboutHide
-      fullName: Tests.TestMainPanelManagerScript.MainAboutHide
-      resultStatus: 1
-      duration: 0.0025381
-      messages: 
-      output: 'Setup started
-
-        You are trying to create a MonoBehaviour using
-        the ''new'' keyword.  This is not allowed.  MonoBehaviours can only be added
-        using AddComponent(). Alternatively, your script can inherit from ScriptableObject
-        or no base class at all
-
-        Setup finished
-
-'
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.TestMainPanelManagerScript][suite]
-    - id: 1008
-      uniqueId: Tests.dll/Tests/TestMainPanelManagerScript/[Tests][Tests.TestMainPanelManagerScript.MainAboutShow]
-      name: MainAboutShow
-      fullName: Tests.TestMainPanelManagerScript.MainAboutShow
-      resultStatus: 1
-      duration: 0.0024168
-      messages: 
-      output: 'Setup started
-
-        You are trying to create a MonoBehaviour using
-        the ''new'' keyword.  This is not allowed.  MonoBehaviours can only be added
-        using AddComponent(). Alternatively, your script can inherit from ScriptableObject
-        or no base class at all
-
-        Setup finished
-
-'
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.TestMainPanelManagerScript][suite]
-    - id: 1007
-      uniqueId: Tests.dll/Tests/TestMainPanelManagerScript/[Tests][Tests.TestMainPanelManagerScript.MainFeedbackHide]
-      name: MainFeedbackHide
-      fullName: Tests.TestMainPanelManagerScript.MainFeedbackHide
-      resultStatus: 1
-      duration: 0.0024983
-      messages: 
-      output: 'Setup started
-
-        You are trying to create a MonoBehaviour using
-        the ''new'' keyword.  This is not allowed.  MonoBehaviours can only be added
-        using AddComponent(). Alternatively, your script can inherit from ScriptableObject
-        or no base class at all
-
-        Setup finished
-
-'
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.TestMainPanelManagerScript][suite]
-    - id: 1006
-      uniqueId: Tests.dll/Tests/TestMainPanelManagerScript/[Tests][Tests.TestMainPanelManagerScript.MainFeedbackShow]
-      name: MainFeedbackShow
-      fullName: Tests.TestMainPanelManagerScript.MainFeedbackShow
-      resultStatus: 1
-      duration: 0.0028536
-      messages: 
-      output: 'Setup started
-
-        You are trying to create a MonoBehaviour using
-        the ''new'' keyword.  This is not allowed.  MonoBehaviours can only be added
-        using AddComponent(). Alternatively, your script can inherit from ScriptableObject
-        or no base class at all
-
-        Setup finished
-
-'
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.TestMainPanelManagerScript][suite]
     - id: 1003
-      uniqueId: Tests.dll/Tests/TestMainPanelManagerScript/[Tests][Tests.TestMainPanelManagerScript.NewPanelHide]
-      name: NewPanelHide
-      fullName: Tests.TestMainPanelManagerScript.NewPanelHide
-      resultStatus: 1
-      duration: 0.0027747
+      uniqueId: Tests.dll/Tests/AboutPanelTestScript/[Tests][Tests.AboutPanelTestScript.AboutPanelTestScriptWithEnumeratorPasses]
+      name: AboutPanelTestScriptWithEnumeratorPasses
+      fullName: Tests.AboutPanelTestScript.AboutPanelTestScriptWithEnumeratorPasses
+      resultStatus: 0
+      duration: 0
       messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.AboutPanelTestScript][suite]
+    - id: 1002
+      uniqueId: Tests.dll/Tests/AboutPanelTestScript/[Tests][Tests.AboutPanelTestScript.BackButtonWorks]
+      name: BackButtonWorks
+      fullName: Tests.AboutPanelTestScript.BackButtonWorks
+      resultStatus: 2
+      duration: 0.0249338
+      messages: 'SetUp : System.NullReferenceException : Object reference not set
+        to an instance of an object'
       output: 'Setup started
 
-        You are trying to create a MonoBehaviour using
-        the ''new'' keyword.  This is not allowed.  MonoBehaviours can only be added
-        using AddComponent(). Alternatively, your script can inherit from ScriptableObject
-        or no base class at all
+        Null
+
+        1
+
+        InitTestScene637297379567581493
+
+        InitTestScene637297379567581493
+
+        Null
+
+'
+      stacktrace: "--SetUp\r\n  at Tests.AboutPanelTestScript.ResetScene () [0x00081]
+        in C:\\GitHub\\Teste-Mobile\\Teste Mobile\\Assets\\Tests\\AboutPanelTestScript.cs:36
+        \r\n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\r\n 
+        at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
+        System.Globalization.CultureInfo culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 "
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.AboutPanelTestScript][suite]
+    - id: 1004
+      uniqueId: Tests.dll/Tests/[Tests][Tests.MainPanelManagerTestScript][suite]
+      name: MainPanelManagerTestScript
+      fullName: Tests.MainPanelManagerTestScript
+      resultStatus: 1
+      duration: 0.0849742
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1016
+      parentUniqueId: Tests.dll/[Tests][suite]
+    - id: 1008
+      uniqueId: Tests.dll/Tests/MainPanelManagerTestScript/[Tests][Tests.MainPanelManagerTestScript.GuidelinesPanelHide]
+      name: GuidelinesPanelHide
+      fullName: Tests.MainPanelManagerTestScript.GuidelinesPanelHide
+      resultStatus: 1
+      duration: 0.0200076
+      messages: 
+      output: 'Setup started
 
         Setup finished
 
@@ -311,131 +218,180 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1001
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.TestMainPanelManagerScript][suite]
-    - id: 1002
-      uniqueId: Tests.dll/Tests/TestMainPanelManagerScript/[Tests][Tests.TestMainPanelManagerScript.NewPanelShow]
-      name: NewPanelShow
-      fullName: Tests.TestMainPanelManagerScript.NewPanelShow
-      resultStatus: 2
-      duration: 0.0283339
-      messages: 'System.Reflection.TargetParameterCountException : Number of parameters
-        specified does not match the expected number.'
-      output: 'Setup started
-
-        You are trying to create a MonoBehaviour using
-        the ''new'' keyword.  This is not allowed.  MonoBehaviours can only be added
-        using AddComponent(). Alternatively, your script can inherit from ScriptableObject
-        or no base class at all
-
-        Setup finished
-
-'
-      stacktrace: "  at System.Reflection.MonoMethod.ConvertValues (System.Reflection.Binder
-        binder, System.Object[] args, System.Reflection.ParameterInfo[] pinfo, System.Globalization.CultureInfo
-        culture, System.Reflection.BindingFlags invokeAttr) [0x00008] in <437ba245d8404784b9fbab9b439ac908>:0
-        \r\n  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
-        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
-        System.Globalization.CultureInfo culture) [0x00011] in <437ba245d8404784b9fbab9b439ac908>:0
-        \r\n  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[]
-        parameters) [0x00000] in <437ba245d8404784b9fbab9b439ac908>:0 \r\n  at NUnit.Framework.Internal.Reflect.InvokeMethod
-        (System.Reflection.MethodInfo method, System.Object fixture, System.Object[]
-        args) [0x0005e] in <59819be142c34115ade688f6962021f1>:0 "
+      parentId: 1004
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.MainPanelManagerTestScript][suite]
+    - id: 1007
+      uniqueId: Tests.dll/Tests/MainPanelManagerTestScript/[Tests][Tests.MainPanelManagerTestScript.GuidelinesPanelShow]
+      name: GuidelinesPanelShow
+      fullName: Tests.MainPanelManagerTestScript.GuidelinesPanelShow
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1001
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.TestMainPanelManagerScript][suite]
+      parentId: 1004
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.MainPanelManagerTestScript][suite]
+    - id: 1012
+      uniqueId: Tests.dll/Tests/MainPanelManagerTestScript/[Tests][Tests.MainPanelManagerTestScript.MainAboutHide]
+      name: MainAboutHide
+      fullName: Tests.MainPanelManagerTestScript.MainAboutHide
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1004
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.MainPanelManagerTestScript][suite]
     - id: 1011
-      uniqueId: Tests.dll/Tests/TestMainPanelManagerScript/[Tests][Tests.TestMainPanelManagerScript.SendMessageAboutActive]
-      name: SendMessageAboutActive
-      fullName: Tests.TestMainPanelManagerScript.SendMessageAboutActive
-      resultStatus: 1
-      duration: 0.017262
+      uniqueId: Tests.dll/Tests/MainPanelManagerTestScript/[Tests][Tests.MainPanelManagerTestScript.MainAboutShow]
+      name: MainAboutShow
+      fullName: Tests.MainPanelManagerTestScript.MainAboutShow
+      resultStatus: 0
+      duration: 0
       messages: 
-      output: 'Setup started
-
-        You are trying to create a MonoBehaviour using
-        the ''new'' keyword.  This is not allowed.  MonoBehaviours can only be added
-        using AddComponent(). Alternatively, your script can inherit from ScriptableObject
-        or no base class at all
-
-        Setup finished
-
-'
-      stacktrace: 'at Tests.TestMainPanelManagerScript.SendMessageAboutActive ()
-        [0x00061] in C:\GitHub\Teste-Mobile\Teste Mobile\Assets\Tests\TestScript.cs:116
-
-'
+      output: 
+      stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1001
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.TestMainPanelManagerScript][suite]
+      parentId: 1004
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.MainPanelManagerTestScript][suite]
     - id: 1010
-      uniqueId: Tests.dll/Tests/TestMainPanelManagerScript/[Tests][Tests.TestMainPanelManagerScript.SetPanel]
-      name: SetPanel
-      fullName: Tests.TestMainPanelManagerScript.SetPanel
-      resultStatus: 1
-      duration: 0.0033215
+      uniqueId: Tests.dll/Tests/MainPanelManagerTestScript/[Tests][Tests.MainPanelManagerTestScript.MainFeedbackHide]
+      name: MainFeedbackHide
+      fullName: Tests.MainPanelManagerTestScript.MainFeedbackHide
+      resultStatus: 0
+      duration: 0
       messages: 
-      output: 'Setup started
-
-        You are trying to create a MonoBehaviour using
-        the ''new'' keyword.  This is not allowed.  MonoBehaviours can only be added
-        using AddComponent(). Alternatively, your script can inherit from ScriptableObject
-        or no base class at all
-
-        Setup finished
-
-'
-      stacktrace: 'at Tests.TestMainPanelManagerScript.SetPanel () [0x0007e] in C:\GitHub\Teste-Mobile\Teste
-        Mobile\Assets\Tests\TestScript.cs:105
-
-'
+      output: 
+      stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1001
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.TestMainPanelManagerScript][suite]
-    m_ResultText: "NewPanelShow (0,028s)\n---\nSystem.Reflection.TargetParameterCountException
-      : Number of parameters specified does not match the expected number.\n---\nat
-      System.Reflection.MonoMethod.ConvertValues (System.Reflection.Binder binder,
-      System.Object[] args, System.Reflection.ParameterInfo[] pinfo, System.Globalization.CultureInfo
-      culture, System.Reflection.BindingFlags invokeAttr) [0x00008] in <437ba245d8404784b9fbab9b439ac908>:0
-      \r\n  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      parentId: 1004
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.MainPanelManagerTestScript][suite]
+    - id: 1009
+      uniqueId: Tests.dll/Tests/MainPanelManagerTestScript/[Tests][Tests.MainPanelManagerTestScript.MainFeedbackShow]
+      name: MainFeedbackShow
+      fullName: Tests.MainPanelManagerTestScript.MainFeedbackShow
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1004
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.MainPanelManagerTestScript][suite]
+    - id: 1006
+      uniqueId: Tests.dll/Tests/MainPanelManagerTestScript/[Tests][Tests.MainPanelManagerTestScript.NewPanelHide]
+      name: NewPanelHide
+      fullName: Tests.MainPanelManagerTestScript.NewPanelHide
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1004
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.MainPanelManagerTestScript][suite]
+    - id: 1005
+      uniqueId: Tests.dll/Tests/MainPanelManagerTestScript/[Tests][Tests.MainPanelManagerTestScript.NewPanelShow]
+      name: NewPanelShow
+      fullName: Tests.MainPanelManagerTestScript.NewPanelShow
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1004
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.MainPanelManagerTestScript][suite]
+    - id: 1014
+      uniqueId: Tests.dll/Tests/MainPanelManagerTestScript/[Tests][Tests.MainPanelManagerTestScript.SendMessageAboutActive]
+      name: SendMessageAboutActive
+      fullName: Tests.MainPanelManagerTestScript.SendMessageAboutActive
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1004
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.MainPanelManagerTestScript][suite]
+    - id: 1013
+      uniqueId: Tests.dll/Tests/MainPanelManagerTestScript/[Tests][Tests.MainPanelManagerTestScript.SetPanel]
+      name: SetPanel
+      fullName: Tests.MainPanelManagerTestScript.SetPanel
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1004
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.MainPanelManagerTestScript][suite]
+    m_ResultText: "BackButtonWorks (0,025s)\n---\nSetUp : System.NullReferenceException
+      : Object reference not set to an instance of an object\n---\n--SetUp\r\n  at
+      Tests.AboutPanelTestScript.ResetScene () [0x00081] in C:\\GitHub\\Teste-Mobile\\Teste
+      Mobile\\Assets\\Tests\\AboutPanelTestScript.cs:36 \r\n  at (wrapper managed-to-native)
+      System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\r\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
       invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
-      culture) [0x00011] in <437ba245d8404784b9fbab9b439ac908>:0 \r\n  at System.Reflection.MethodBase.Invoke
-      (System.Object obj, System.Object[] parameters) [0x00000] in <437ba245d8404784b9fbab9b439ac908>:0
-      \r\n  at NUnit.Framework.Internal.Reflect.InvokeMethod (System.Reflection.MethodInfo
-      method, System.Object fixture, System.Object[] args) [0x0005e] in <59819be142c34115ade688f6962021f1>:0\n---\nSetup
-      started\r\nYou are trying to create a MonoBehaviour using the 'new' keyword. 
-      This is not allowed.  MonoBehaviours can only be added using AddComponent().
-      Alternatively, your script can inherit from ScriptableObject or no base class
-      at all\r\nSetup finished"
-    m_ResultStacktrace: "  at System.Reflection.MonoMethod.ConvertValues (System.Reflection.Binder
-      binder, System.Object[] args, System.Reflection.ParameterInfo[] pinfo, System.Globalization.CultureInfo
-      culture, System.Reflection.BindingFlags invokeAttr) [0x00008] in <437ba245d8404784b9fbab9b439ac908>:0
-      \r\n  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0\n---\nSetup started\r\nNull\r\n1\r\nInitTestScene637297379567581493\r\nInitTestScene637297379567581493\r\nNull"
+    m_ResultStacktrace: "--SetUp\r\n  at Tests.AboutPanelTestScript.ResetScene ()
+      [0x00081] in C:\\GitHub\\Teste-Mobile\\Teste Mobile\\Assets\\Tests\\AboutPanelTestScript.cs:36
+      \r\n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\r\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
       invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
-      culture) [0x00011] in <437ba245d8404784b9fbab9b439ac908>:0 \r\n  at System.Reflection.MethodBase.Invoke
-      (System.Object obj, System.Object[] parameters) [0x00000] in <437ba245d8404784b9fbab9b439ac908>:0
-      \r\n  at NUnit.Framework.Internal.Reflect.InvokeMethod (System.Reflection.MethodInfo
-      method, System.Object fixture, System.Object[] args) [0x0005e] in <59819be142c34115ade688f6962021f1>:0 "
+      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 "
     m_TestListState:
-      scrollPos: {x: 0, y: 50}
-      m_SelectedIDs: e29b01ea
-      m_LastClickedID: -368993310
-      m_ExpandedIDs: b51413b7e9a5e2e48e3cc011537bbd2a8359db41ffffff7f
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 02d37129
+      m_LastClickedID: 695325442
+      m_ExpandedIDs: b51413b7d35dceb9e9a5e2e4c69cc6e68e3cc011537bbd2a8359db41ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -531,7 +487,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 942
+    width: 970
     height: 594
   m_MinSize: {x: 303, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
@@ -556,8 +512,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 942
-    height: 351
+    width: 970
+    height: 323
   m_MinSize: {x: 303, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
@@ -579,8 +535,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 309
-    height: 351
+    width: 318
+    height: 323
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 6}
@@ -611,15 +567,15 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 73
-    width: 308
-    height: 330
+    width: 317
+    height: 302
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 3af4ffff4cf4ffffd2f4ffff70f5ffff82f5ffffe8f6ffff3af7ffff4cf7ffffd2f7ffff70f8ffff82f8ffff08f9ffffa6f9ffffb8f9ffff42faffff6afbffff
+      m_ExpandedIDs: d6cbffffe8cbffff5eccffffb0cdffffc2cdffff38ceffff04cfffff16cfffff8ccfffff56d0ffff68d0ffffded0ffff5cd1ffff6ed1ffffe4d1ffff16d7ffff28d7ffff96d7ffffc0d7ffffd2d7ffffbad8ffff8ad9ffff9cd9ffff10daffff2edbffff40dbffff2cdcffff24ddffff36ddffff22defffff2deffff04dffffff0dfffffc8e0ffffdae0ffffc8e1ffff9ce2ffffaee2ffff22e3ffff2ae4ffff3ce4ffffb0e4ffff7ae5ffff8ce5ffff00e6ffff40e7ffffe8e7fffffae7ffff70e8ffff4ceaffff90eaffffa2eaffff18ebffff10edffff54edffff68edffffe0edffff70f3ffffb2f3ffffc4f3ffff50f4ffff18f6ffff2af6ffffa0f6ffff7ef7ffff90f7ffff06f8ffffd0f8ffffe2f8ffff58f9ffffd2f9ffffe4f9ffff7cfaffff6afbffff4e3f0000563f000030410000324100003841000094410000964100009c410000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -658,10 +614,10 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 309
+    x: 318
     y: 0
-    width: 633
-    height: 351
+    width: 652
+    height: 323
   m_MinSize: {x: 102, y: 121}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 2}
@@ -694,10 +650,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 309
+    x: 318
     y: 73
-    width: 631
-    height: 292
+    width: 650
+    height: 302
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: 6e88c859191d24542ab55b115bdfd6cb
@@ -709,9 +665,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 125.7228, y: 311.9601, z: -10.375}
+    m_Target: {x: 176.04933, y: 324.18698, z: -25.25}
     speed: 2
-    m_Value: {x: 125.7228, y: 311.9601, z: -10.375}
+    m_Value: {x: 176.04933, y: 324.18698, z: -25.25}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -761,9 +717,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 349.9342
+    m_Target: 367.8192
     speed: 2
-    m_Value: 349.9342
+    m_Value: 367.8192
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -809,10 +765,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 309
+    x: 318
     y: 73
-    width: 631
-    height: 330
+    width: 650
+    height: 302
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -858,23 +814,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 631
-      height: 309
-    m_Scale: {x: 0.48281252, y: 0.4828125}
-    m_Translation: {x: 315.5, y: 154.5}
+      width: 650
+      height: 281
+    m_Scale: {x: 0.4390625, y: 0.4390625}
+    m_Translation: {x: 325, y: 140.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -653.46277
+      x: -740.2135
       y: -320
-      width: 1306.9255
+      width: 1480.427
       height: 640
     m_MinimalGUI: 1
-  m_defaultScale: 0.4828125
-  m_LastWindowPixelSize: {x: 631, y: 330}
+  m_defaultScale: 0.4390625
+  m_LastWindowPixelSize: {x: 650, y: 302}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000001000000000000
@@ -931,10 +887,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 309
+    x: 318
     y: 73
-    width: 631
-    height: 293
+    width: 650
+    height: 302
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &12
 MonoBehaviour:
@@ -952,9 +908,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 351
-    width: 942
-    height: 243
+    y: 323
+    width: 970
+    height: 271
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 13}
@@ -985,9 +941,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 424
-    width: 941
-    height: 222
+    y: 396
+    width: 969
+    height: 250
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -1002,20 +958,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Tests
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Tests
+  - Assets
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\GitHub\Teste-Mobile\Teste Mobile
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 863a0000
-    m_LastClickedID: 14982
-    m_ExpandedIDs: 00000000763a0000
+    m_SelectedIDs: c03a0000
+    m_LastClickedID: 15040
+    m_ExpandedIDs: 00000000c03a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1031,7 +987,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 12}
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -1043,7 +999,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000763a0000
+    m_ExpandedIDs: 00000000c03a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1070,7 +1026,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c623000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1121,9 +1077,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 424
-    width: 941
-    height: 222
+    y: 396
+    width: 969
+    height: 250
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &15
 MonoBehaviour:
@@ -1140,9 +1096,9 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 942
+    x: 970
     y: 0
-    width: 424
+    width: 396
     height: 594
   m_MinSize: {x: 276, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
@@ -1172,9 +1128,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 942
+    x: 970
     y: 73
-    width: 423
+    width: 395
     height: 573
   m_ViewDataDictionary: {fileID: 0}
   m_OpenAddComponentMenu: 0

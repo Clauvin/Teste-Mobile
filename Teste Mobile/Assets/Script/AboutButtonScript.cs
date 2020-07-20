@@ -12,7 +12,7 @@ public class AboutButtonScript : ButtonScript
     // Start is called before the first frame update
     void Start()
     {
-        mainPanelManagerScript = mainPanelManager.GetComponent<MainPanelManagerScript>();
+        loadMainPanelManager();
     }
 
     // Update is called once per frame
@@ -23,7 +23,18 @@ public class AboutButtonScript : ButtonScript
 
     override public void whenPressed()
     {
+        if ((mainPanelManagerScript == null) && (mainPanelManager != null)){
+
+            loadMainPanelManager();
+
+        }
+
         mainPanelManagerScript.hideMainPanel();
         mainPanelManagerScript.showAboutPanel();
+    }
+
+    private void loadMainPanelManager()
+    {
+        mainPanelManagerScript = mainPanelManager.GetComponent<MainPanelManagerScript>();
     }
 }
