@@ -5,5 +5,4 @@ using UnityEngine;
 abstract public class ButtonScript : MonoBehaviour
 {
     abstract public void whenPressed();
-
 }

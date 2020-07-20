@@ -20,12 +20,7 @@ public class BackToMainFromAboutButtonScript : ButtonScript
 
     public override void whenPressed()
     {
-        if ((mainPanelManagerScript == null) && (mainPanelManager != null))
-        {
-
-            loadMainPanelManager();
-
-        }
+        if ((mainPanelManagerScript == null) && (mainPanelManager != null)) loadMainPanelManager();
 
         mainPanelManagerScript.hideAboutPanel();
         mainPanelManagerScript.showMainPanel();
