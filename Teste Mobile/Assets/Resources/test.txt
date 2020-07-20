@@ -113,3 +113,8 @@ AboutPanelTestScript tests starting.
 Starting BackButtonWorks test.
 AboutPanelTestScript tests starting.
 Starting BackButtonWorks test.
+AboutPanelTestScript tests starting.
+Starting BackButtonWorks test.
+AboutPanelTestScript tests starting.
+Starting BackButtonWorks test.
+BackButtonWorks test passed.
