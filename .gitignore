@@ -9,7 +9,7 @@ Teste Mobile/[Bb]uild/
 Teste Mobile/[Bb]uilds/
 Teste Mobile/[Ll]ogs/
 Teste Mobile/[Mm]emoryCaptures/
-Teste Mobile/[Ll]ibrary/[Aa]rtifactDB
+Teste Mobile/[Ll]ibrary/*
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta
