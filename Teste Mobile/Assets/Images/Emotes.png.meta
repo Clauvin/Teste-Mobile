@@ -1,0 +1,524 @@
+fileFormatVersion: 2
+guid: 8eae8b4494227044daec6f0344e7c995
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3407081104509524442
+    second: Agree a Lot
+  - first:
+      213: -8322702425874062737
+    second: Agree
+  - first:
+      213: 8367865425249610289
+    second: Neutral
+  - first:
+      213: 3564924232581687765
+    second: Sad
+  - first:
+      213: 5009408590829783221
+    second: Disagree Completely
+  - first:
+      213: -1079751589794765733
+    second: Emotes_5
+  - first:
+      213: -3807700631403515124
+    second: Emotes_6
+  - first:
+      213: 1521659264739580947
+    second: Emotes_7
+  - first:
+      213: -2925669146681941442
+    second: Emotes_8
+  - first:
+      213: 8772923341474134374
+    second: Emotes_9
+  - first:
+      213: 3791987002469549473
+    second: Emotes_10
+  - first:
+      213: 5681264777519068341
+    second: Emotes_11
+  - first:
+      213: 4270962797892029775
+    second: Emotes_12
+  - first:
+      213: -9091992961072950655
+    second: Emotes_13
+  - first:
+      213: -4609736097810741548
+    second: Emotes_14
+  - first:
+      213: -8211464320674415014
+    second: Emotes_15
+  - first:
+      213: -1713814975402070373
+    second: Emotes_16
+  - first:
+      213: 8144668558448804815
+    second: Emotes_17
+  - first:
+      213: 7958790405237823153
+    second: Emotes_18
+  - first:
+      213: 8675727492198039021
+    second: Emotes_19
+  - first:
+      213: 8430338537644731048
+    second: Emotes_20
+  - first:
+      213: -5380049636133384812
+    second: Emotes_21
+  - first:
+      213: 921146988622137112
+    second: Emotes_22
+  - first:
+      213: -7538759982699542478
+    second: Emotes_23
+  - first:
+      213: -1842927095909184979
+    second: Emotes_24
+  - first:
+      213: 5228946771494987029
+    second: Emotes_25
+  - first:
+      213: -1205558924517911397
+    second: Emotes_26
+  - first:
+      213: -1469496248505010251
+    second: Emotes_27
+  - first:
+      213: 4507054786140513564
+    second: Emotes_28
+  - first:
+      213: 521063004306056360
+    second: Emotes_29
+  - first:
+      213: 456895828136489963
+    second: Emotes_30
+  - first:
+      213: 2085596561426097997
+    second: Emotes_31
+  - first:
+      213: -1765953845984165204
+    second: Emotes_32
+  - first:
+      213: -3041444392942902193
+    second: Emotes_33
+  - first:
+      213: 8096899005575784155
+    second: Emotes_34
+  - first:
+      213: -499079999868798611
+    second: Emotes_35
+  - first:
+      213: -2181589564963488203
+    second: Emotes_36
+  - first:
+      213: 5893411311498292390
+    second: Emotes_37
+  - first:
+      213: 2014824859827438092
+    second: Emotes_38
+  - first:
+      213: 2955769513575048464
+    second: Emotes_39
+  - first:
+      213: -6017648236062020569
+    second: Emotes_40
+  - first:
+      213: 7849529314367353831
+    second: Emotes_41
+  - first:
+      213: 4174723045916131644
+    second: Emotes_42
+  - first:
+      213: -5895497028067493729
+    second: Emotes_43
+  - first:
+      213: 7359208237752668978
+    second: Emotes_44
+  - first:
+      213: 8895328564470767062
+    second: Emotes_45
+  - first:
+      213: -1259834609500367841
+    second: Emotes_46
+  - first:
+      213: 1360541986276801292
+    second: Emotes_47
+  - first:
+      213: 6723344904905476623
+    second: Emotes_48
+  - first:
+      213: 1247566588753247811
+    second: Emotes_49
+  - first:
+      213: -1179870047776468724
+    second: Emotes_50
+  - first:
+      213: 2345752774271077236
+    second: Emotes_51
+  - first:
+      213: 8154608799683957089
+    second: Emotes_52
+  - first:
+      213: -8774695762270108883
+    second: Emotes_53
+  - first:
+      213: -4548581698507690586
+    second: Emotes_54
+  - first:
+      213: -1907204580548168534
+    second: Emotes_55
+  - first:
+      213: 3193329453488576582
+    second: Emotes_56
+  - first:
+      213: -1332785221036040134
+    second: Emotes_57
+  - first:
+      213: -3280570758859558985
+    second: Emotes_58
+  - first:
+      213: 7950032106967022090
+    second: Emotes_59
+  - first:
+      213: -8435895197496670079
+    second: Emotes_60
+  - first:
+      213: -8441445788311237771
+    second: Emotes_61
+  - first:
+      213: 883359675512428853
+    second: Emotes_62
+  - first:
+      213: -3455996712400518267
+    second: Emotes_63
+  - first:
+      213: -180558949555196523
+    second: Emotes_64
+  - first:
+      213: 3744176353569630491
+    second: Emotes_65
+  - first:
+      213: -101772300631047724
+    second: Emotes_66
+  - first:
+      213: -689938079015583871
+    second: Emotes_67
+  - first:
+      213: -8797996948575718663
+    second: Emotes_68
+  - first:
+      213: -8483688488907372469
+    second: Emotes_69
+  - first:
+      213: 2733751785612246142
+    second: Emotes_70
+  - first:
+      213: 8701710834899491724
+    second: Emotes_71
+  - first:
+      213: -2145813969059321577
+    second: Emotes_72
+  - first:
+      213: 8016847289770307447
+    second: Emotes_73
+  - first:
+      213: -4805380199774272576
+    second: Emotes_74
+  - first:
+      213: -5357010698258059673
+    second: Emotes_75
+  - first:
+      213: 3383201633364500966
+    second: Emotes_76
+  - first:
+      213: -2294872866823500319
+    second: Emotes_77
+  - first:
+      213: -6281216716086244310
+    second: Emotes_78
+  - first:
+      213: -6668343645682882830
+    second: Emotes_79
+  - first:
+      213: 8569788733854583988
+    second: Emotes_80
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 44, y: 510, z: 507, w: 39}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Lumin
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Agree a Lot
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 518
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad95c3b8632684f20800000000000000
+      internalID: 3407081104509524442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agree
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 439
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f62ae7e3d32df7c80800000000000000
+      internalID: -8322702425874062737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neutral
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 280
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13aa648f441a02470800000000000000
+      internalID: 8367865425249610289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sad
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 124
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d9a636a3b7297130800000000000000
+      internalID: 3564924232581687765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Disagree Completely
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 42
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b80337829ef48540800000000000000
+      internalID: 5009408590829783221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
