@@ -7,11 +7,13 @@ public class BackToMainFromLikertFeedbackButtonScript : ButtonScript
     public GameObject mainPanelManager;
     public GameObject feedbackPanelManager;
     MainPanelManagerScript mainPanelManagerScript;
+    FeedbackPanelManagerScript feedbackPanelManagerScript;
 
     // Start is called before the first frame update
     void Start()
     {
         loadMainPanelManager();
+        loadFeedbackPanelManager();
     }
 
     private void loadMainPanelManager()
@@ -19,15 +21,26 @@ public class BackToMainFromLikertFeedbackButtonScript : ButtonScript
         mainPanelManagerScript = mainPanelManager.GetComponent<MainPanelManagerScript>();
     }
 
+    private void loadFeedbackPanelManager()
+    {
+        feedbackPanelManagerScript = feedbackPanelManager.GetComponent<FeedbackPanelManagerScript>();
+    }
+
     public override void whenPressed()
     {
         if ((mainPanelManagerScript == null) && (mainPanelManager != null)) loadMainPanelManager();
         else if (mainPanelManager == null)
         {
-            throw new System.NullReferenceException("BackToMainFromAboutButtonScript.mainPanelManager is null.");
+            throw new System.NullReferenceException("BackToMainFromLikertFeedbackButtonScript.mainPanelManager is null.");
         }
 
-        mainPanelManagerScript.hideAboutPanel();
+        if ((feedbackPanelManagerScript == null) && (feedbackPanelManager != null)) loadFeedbackPanelManager();
+        else if (feedbackPanelManager == null)
+        {
+            throw new System.NullReferenceException("BackToMainFromLikertFeedbackButtonScript.feedbackPanelManager is null.");
+        }
+
+        feedbackPanelManagerScript.hideLikertFeedbackPanel();
         mainPanelManagerScript.showMainPanel();
     }
 
