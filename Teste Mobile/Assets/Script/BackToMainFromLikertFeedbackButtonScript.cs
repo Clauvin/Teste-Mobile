@@ -2,12 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BackToMainFromLikertFeedbackButtonScript : MonoBehaviour
+public class BackToMainFromLikertFeedbackButtonScript : ButtonScript
 {
     public GameObject mainPanelManager;
     public GameObject feedbackPanelManager;
     MainPanelManagerScript mainPanelManagerScript;
-
 
     // Start is called before the first frame update
     void Start()
