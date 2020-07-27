@@ -187,7 +187,12 @@ PrefabInstance:
     - target: {fileID: 422830986652967101, guid: 38c0cd6475a4e1e4b8c14dffd08c3fd2,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -247.1
+      value: -162.94
+      objectReference: {fileID: 0}
+    - target: {fileID: 608802912904183159, guid: 38c0cd6475a4e1e4b8c14dffd08c3fd2,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 645927156075986092, guid: 38c0cd6475a4e1e4b8c14dffd08c3fd2,
         type: 3}
@@ -244,6 +249,12 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1240426584830386459, guid: 38c0cd6475a4e1e4b8c14dffd08c3fd2,
+        type: 3}
+      propertyPath: m_Text
+      value: "Using the guidelines wouldn\u2019t improve my performance in doing
+        my job."
+      objectReference: {fileID: 0}
     - target: {fileID: 1264512786717768481, guid: 38c0cd6475a4e1e4b8c14dffd08c3fd2,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -253,6 +264,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1564598701952459759, guid: 38c0cd6475a4e1e4b8c14dffd08c3fd2,
+        type: 3}
+      propertyPath: m_Text
+      value: I intend to use the guidelines regularly at work.
       objectReference: {fileID: 0}
     - target: {fileID: 1623850455264616867, guid: 38c0cd6475a4e1e4b8c14dffd08c3fd2,
         type: 3}
@@ -284,25 +300,35 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1813859466937067568, guid: 38c0cd6475a4e1e4b8c14dffd08c3fd2,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 35
+      objectReference: {fileID: 0}
     - target: {fileID: 1925930327620152979, guid: 38c0cd6475a4e1e4b8c14dffd08c3fd2,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1925930327620152979, guid: 38c0cd6475a4e1e4b8c14dffd08c3fd2,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1925930327620152979, guid: 38c0cd6475a4e1e4b8c14dffd08c3fd2,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -43
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 1925930327620152979, guid: 38c0cd6475a4e1e4b8c14dffd08c3fd2,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 93.8
+      value: -248.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1925930327620152979, guid: 38c0cd6475a4e1e4b8c14dffd08c3fd2,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1165.5
       objectReference: {fileID: 0}
     - target: {fileID: 1971970043711408952, guid: 38c0cd6475a4e1e4b8c14dffd08c3fd2,
         type: 3}
@@ -692,12 +718,12 @@ PrefabInstance:
     - target: {fileID: 3142817576637100051, guid: 38c0cd6475a4e1e4b8c14dffd08c3fd2,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3142817576637100051, guid: 38c0cd6475a4e1e4b8c14dffd08c3fd2,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3142817576637100051, guid: 38c0cd6475a4e1e4b8c14dffd08c3fd2,
         type: 3}
@@ -707,7 +733,7 @@ PrefabInstance:
     - target: {fileID: 3142817576637100051, guid: 38c0cd6475a4e1e4b8c14dffd08c3fd2,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -381
       objectReference: {fileID: 0}
     - target: {fileID: 3145760189016431423, guid: 38c0cd6475a4e1e4b8c14dffd08c3fd2,
         type: 3}
@@ -728,6 +754,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3341526295061762161, guid: 38c0cd6475a4e1e4b8c14dffd08c3fd2,
+        type: 3}
+      propertyPath: m_Text
+      value: Using the guidelines would enhance my effectiveness in my job.
       objectReference: {fileID: 0}
     - target: {fileID: 3487705999284240891, guid: 38c0cd6475a4e1e4b8c14dffd08c3fd2,
         type: 3}
@@ -764,6 +795,21 @@ PrefabInstance:
       propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3718576134326128361, guid: 38c0cd6475a4e1e4b8c14dffd08c3fd2,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 3970901740624858141, guid: 38c0cd6475a4e1e4b8c14dffd08c3fd2,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 4142863688375607252, guid: 38c0cd6475a4e1e4b8c14dffd08c3fd2,
+        type: 3}
+      propertyPath: m_Text
+      value: I would find the guidelines easy to use.
+      objectReference: {fileID: 0}
     - target: {fileID: 4261465809923026558, guid: 38c0cd6475a4e1e4b8c14dffd08c3fd2,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -777,7 +823,7 @@ PrefabInstance:
     - target: {fileID: 4374666729315653455, guid: 38c0cd6475a4e1e4b8c14dffd08c3fd2,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -257.6
+      value: -162.94
       objectReference: {fileID: 0}
     - target: {fileID: 4435557450155941939, guid: 38c0cd6475a4e1e4b8c14dffd08c3fd2,
         type: 3}
@@ -798,6 +844,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4540056010637411638, guid: 38c0cd6475a4e1e4b8c14dffd08c3fd2,
+        type: 3}
+      propertyPath: m_Text
+      value: "Using the guidelines wouldn\u2019t enhance my effectiveness in my job."
       objectReference: {fileID: 0}
     - target: {fileID: 4715595356472151407, guid: 38c0cd6475a4e1e4b8c14dffd08c3fd2,
         type: 3}
@@ -832,7 +883,7 @@ PrefabInstance:
     - target: {fileID: 4852882377075438247, guid: 38c0cd6475a4e1e4b8c14dffd08c3fd2,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -245.3
+      value: -162.94
       objectReference: {fileID: 0}
     - target: {fileID: 5035589371908114390, guid: 38c0cd6475a4e1e4b8c14dffd08c3fd2,
         type: 3}
@@ -853,6 +904,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -510.78558
+      objectReference: {fileID: 0}
+    - target: {fileID: 5042294029694102350, guid: 38c0cd6475a4e1e4b8c14dffd08c3fd2,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 5091320532604000336, guid: 38c0cd6475a4e1e4b8c14dffd08c3fd2,
+        type: 3}
+      propertyPath: m_Text
+      value: Using the guidelines would improve my performance in doing my job.
       objectReference: {fileID: 0}
     - target: {fileID: 5181061224185653262, guid: 38c0cd6475a4e1e4b8c14dffd08c3fd2,
         type: 3}
@@ -904,6 +965,11 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6485121151784068694, guid: 38c0cd6475a4e1e4b8c14dffd08c3fd2,
+        type: 3}
+      propertyPath: m_Text
+      value: "I wouldn\u2019t find the guidelines easy to use."
+      objectReference: {fileID: 0}
     - target: {fileID: 6506252212989897932, guid: 38c0cd6475a4e1e4b8c14dffd08c3fd2,
         type: 3}
       propertyPath: m_IsActive
@@ -927,7 +993,27 @@ PrefabInstance:
     - target: {fileID: 6601772982196747654, guid: 38c0cd6475a4e1e4b8c14dffd08c3fd2,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -241.3
+      value: -162.94
+      objectReference: {fileID: 0}
+    - target: {fileID: 6843966886314589396, guid: 38c0cd6475a4e1e4b8c14dffd08c3fd2,
+        type: 3}
+      propertyPath: m_Text
+      value: It would be easy for me to become skillful in the use of the guidelines.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6913460985943195231, guid: 38c0cd6475a4e1e4b8c14dffd08c3fd2,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 6955135059706475862, guid: 38c0cd6475a4e1e4b8c14dffd08c3fd2,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 7193454513311024712, guid: 38c0cd6475a4e1e4b8c14dffd08c3fd2,
+        type: 3}
+      propertyPath: m_Text
+      value: I would find the guidelines useful in my job.
       objectReference: {fileID: 0}
     - target: {fileID: 8146409669633000099, guid: 38c0cd6475a4e1e4b8c14dffd08c3fd2,
         type: 3}
@@ -973,6 +1059,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -167.20593
+      objectReference: {fileID: 0}
+    - target: {fileID: 8707495402954936786, guid: 38c0cd6475a4e1e4b8c14dffd08c3fd2,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 8780919019696984921, guid: 38c0cd6475a4e1e4b8c14dffd08c3fd2,
+        type: 3}
+      propertyPath: m_Text
+      value: Using the guidelines at work would improve my productivity.
       objectReference: {fileID: 0}
     - target: {fileID: 8830610352612944459, guid: 38c0cd6475a4e1e4b8c14dffd08c3fd2,
         type: 3}
@@ -1023,6 +1119,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9210525497352440656, guid: 38c0cd6475a4e1e4b8c14dffd08c3fd2,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 35
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38c0cd6475a4e1e4b8c14dffd08c3fd2, type: 3}
