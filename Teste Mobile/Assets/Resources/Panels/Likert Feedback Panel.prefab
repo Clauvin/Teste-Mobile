@@ -183,7 +183,7 @@ GameObject:
   - component: {fileID: 6031842407849195969}
   - component: {fileID: 3147581695053519114}
   - component: {fileID: 8910355377062559045}
-  - component: {fileID: 8691759092622243144}
+  - component: {fileID: 5528679990232351089}
   m_Layer: 5
   m_Name: Next Button
   m_TagString: Untagged
@@ -294,7 +294,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8691759092622243144}
+      - m_Target: {fileID: 0}
         m_MethodName: whenPressed
         m_Mode: 1
         m_Arguments:
@@ -335,7 +335,7 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
   m_EffectDistance: {x: 1, y: -1}
   m_UseGraphicAlpha: 1
---- !u!114 &8691759092622243144
+--- !u!114 &5528679990232351089
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -344,10 +344,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1268483132553931767}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 872e66b55cd9d87438fbce9621c8dda9, type: 3}
+  m_Script: {fileID: 11500000, guid: 0223fdb7dd757454280c4ff6adfaa13c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainPanelManager: {fileID: 0}
+  feedbackPanelManager: {fileID: 0}
 --- !u!1 &2389871904657549353
 GameObject:
   m_ObjectHideFlags: 0

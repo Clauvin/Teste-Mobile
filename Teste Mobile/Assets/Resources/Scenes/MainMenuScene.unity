@@ -145,9 +145,27 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2754703885989591665}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1567833375 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1239125346388757876, guid: 38c0cd6475a4e1e4b8c14dffd08c3fd2,
+    type: 3}
+  m_PrefabInstance: {fileID: 2754703885989591665}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0223fdb7dd757454280c4ff6adfaa13c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1929951324 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1971970044523706788, guid: 38c0cd6475a4e1e4b8c14dffd08c3fd2,
+    type: 3}
+  m_PrefabInstance: {fileID: 2754703885989591665}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2037581501 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1978377723464552666, guid: 38c0cd6475a4e1e4b8c14dffd08c3fd2,
     type: 3}
   m_PrefabInstance: {fileID: 2754703885989591665}
   m_PrefabAsset: {fileID: 0}
@@ -263,6 +281,16 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: -17
       objectReference: {fileID: 0}
+    - target: {fileID: 1026530931010155972, guid: 38c0cd6475a4e1e4b8c14dffd08c3fd2,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1567833375}
+    - target: {fileID: 1026530931010155972, guid: 38c0cd6475a4e1e4b8c14dffd08c3fd2,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: whenPressed
+      objectReference: {fileID: 0}
     - target: {fileID: 1116525473073445337, guid: 38c0cd6475a4e1e4b8c14dffd08c3fd2,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -358,6 +386,11 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1239125346388757876, guid: 38c0cd6475a4e1e4b8c14dffd08c3fd2,
+        type: 3}
+      propertyPath: feedbackPanelManager
+      value: 
+      objectReference: {fileID: 2037581501}
     - target: {fileID: 1240426584830386459, guid: 38c0cd6475a4e1e4b8c14dffd08c3fd2,
         type: 3}
       propertyPath: m_Text
