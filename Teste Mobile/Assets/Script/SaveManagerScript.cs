@@ -14,6 +14,8 @@ public class SaveManagerScript : MonoBehaviour
 
     public static void AddData(string key, string value)
     {
+        if (save_data.ContainsKey(key)) save_data.Remove(key);
+
         save_data.Add(key, value);
     }
 

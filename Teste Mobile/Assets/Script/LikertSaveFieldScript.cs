@@ -5,6 +5,11 @@ using UnityEngine.UI;
 
 public class LikertSaveFieldScript : SaveFieldScript
 {
+    void Start()
+    {
+        value = "3";    
+    }
+
     public void FromLikertToField()
     {
         value = GetComponent<Slider>().value.ToString();
