@@ -35,5 +35,10 @@ public class SaveManagerScript : MonoBehaviour
         //send mail with data to server OR my e-mail.
     }
 
+    private static void CleanData()
+    {
+        save_data.Clear();
+    }
+
 
 }
