@@ -60,6 +60,11 @@ public class SaveManagerScript : MonoBehaviour
 
     public void PassLikertToSaveFile()
     {
+        if (File.Exists(save_file_address))
+        {
+            File.Delete(save_file_address);
+        }
+
         StreamWriter writer = new StreamWriter(save_file_address, true);
         foreach(string key_value in to_save_and_load)
         {
