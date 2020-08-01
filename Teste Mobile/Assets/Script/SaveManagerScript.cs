@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
@@ -13,10 +14,11 @@ public class SaveManagerScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
-
         save_data = new Dictionary<string, string>();
         to_save_and_load = new List<string>();
+
+        FromSaveToLikert();
+        
     }
 
     public static void AddData(string key, string value)
@@ -66,8 +68,30 @@ public class SaveManagerScript : MonoBehaviour
         writer.Close();
     }
 
-    public void FromSaveToLikert()
+    public bool FromSaveToLikert()
     {
+        try
+        {
+            StreamReader reader = new StreamReader(save_file_address, true);
+            while (reader.Peek() >= 0)
+            {
+                to_save_and_load.Add(reader.ReadLine());
+            }
+            reader.Close();
+
+            foreach(string key_value in to_save_and_load)
+            {
+                string[] key_and_value_separated = key_value.Split(new char[] { '|' });
+                save_data.Add(key_and_value_separated[0], key_and_value_separated[1]);
+            }
+            Debug.Log(GetAllData());
+
+            return true;
+        }
+        catch (ArgumentNullException e)
+        {
+            return false;
+        }
         
     }
 

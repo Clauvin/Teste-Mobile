@@ -7,7 +7,22 @@ public class LikertSaveFieldScript : SaveFieldScript
 {
     void Start()
     {
-        value = "3";    
+        if (SaveManagerScript.save_data.ContainsKey(name))
+        {
+            SaveManagerScript.save_data.TryGetValue(name, out value);
+        }
+        else
+        {
+            value = "3";
+        }
+
+        FromFieldToLikert();
+        
+    }
+
+    public void FromFieldToLikert()
+    {
+        GetComponent<Slider>().value = float.Parse(this.value);
     }
 
     public void FromLikertToField()
