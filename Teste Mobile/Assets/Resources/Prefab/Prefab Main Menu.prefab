@@ -1569,6 +1569,16 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6031842407849195969, guid: 2b6a670ea1d17b64886503e7f03c6c13,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1215147517662294537}
+    - target: {fileID: 6031842407849195969, guid: 2b6a670ea1d17b64886503e7f03c6c13,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: FromDictionaryToSave
+      objectReference: {fileID: 0}
     - target: {fileID: 7680997775312299213, guid: 2b6a670ea1d17b64886503e7f03c6c13,
         type: 3}
       propertyPath: m_AnchorMin.x

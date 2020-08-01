@@ -17,5 +17,6 @@ public class SaveFieldScript : MonoBehaviour
     public void SendDataToSaveManager()
     {
         SaveManagerScript.AddData(name, value);
+        Debug.Log("Foi");
     }
 }
