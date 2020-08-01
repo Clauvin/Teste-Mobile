@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SaveManagerScript : MonoBehaviour
 {
-    private static Dictionary<string, string> save_data;
+    public static Dictionary<string, string> save_data;
 
     // Start is called before the first frame update
     void Start()
@@ -29,6 +29,12 @@ public class SaveManagerScript : MonoBehaviour
         }
 
         return data;
+    }
+
+    public void FromDictionaryToJSON()
+    {
+        string json = JsonConvert.SerializeObject(points, Formatting.Indented);
+        Debug.Log(json);
     }
 
     public static void SendAllData()
