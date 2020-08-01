@@ -64,12 +64,14 @@ public class SaveManagerScript : MonoBehaviour
         writer.Close();
     }
 
-    
-
     private static void CleanData()
     {
         save_data.Clear();
     }
 
+    void OnApplicationQuit()
+    {
+        FromDictionaryToSave();
+    }
 
 }
