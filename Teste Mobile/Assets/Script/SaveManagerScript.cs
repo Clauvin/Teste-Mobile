@@ -5,12 +5,16 @@ using UnityEngine;
 
 public class SaveManagerScript : MonoBehaviour
 {
+    private const string save_file_address = "Assets/Resources/save_file.txt";
+
     public static Dictionary<string, string> save_data;
     private static List<string> to_save_and_load;
 
     // Start is called before the first frame update
     void Start()
     {
+
+
         save_data = new Dictionary<string, string>();
         to_save_and_load = new List<string>();
     }
@@ -54,14 +58,17 @@ public class SaveManagerScript : MonoBehaviour
 
     public void PassLikertToSaveFile()
     {
-        string path = "Assets/Resources/save_file.txt";
-
-        StreamWriter writer = new StreamWriter(path, true);
+        StreamWriter writer = new StreamWriter(save_file_address, true);
         foreach(string key_value in to_save_and_load)
         {
             writer.WriteLine(key_value);
         }
         writer.Close();
+    }
+
+    public void FromSaveToLikert()
+    {
+        
     }
 
     private static void CleanData()
