@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class SaveManagerScript : MonoBehaviour
 {
-    private const string save_file_address = "Assets/Resources/save_file.txt";
+    private static string save_file_address;
 
     public static Dictionary<string, string> save_data;
     private static List<string> to_save_and_load;
@@ -14,11 +14,15 @@ public class SaveManagerScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        save_file_address = Application.persistentDataPath + "/save_file.txt";
         save_data = new Dictionary<string, string>();
         to_save_and_load = new List<string>();
 
         FromSaveToLikert();
-        
+
+        EraseSaveFile();
+
+        to_save_and_load.Clear();
     }
 
     public static void AddData(string key, string value)
@@ -60,11 +64,6 @@ public class SaveManagerScript : MonoBehaviour
 
     public void PassLikertToSaveFile()
     {
-        if (File.Exists(save_file_address))
-        {
-            File.Delete(save_file_address);
-        }
-
         StreamWriter writer = new StreamWriter(save_file_address, true);
         foreach(string key_value in to_save_and_load)
         {
@@ -87,9 +86,12 @@ public class SaveManagerScript : MonoBehaviour
             foreach(string key_value in to_save_and_load)
             {
                 string[] key_and_value_separated = key_value.Split(new char[] { '|' });
-                save_data.Add(key_and_value_separated[0], key_and_value_separated[1]);
+                if (!save_data.ContainsKey(key_and_value_separated[0]))
+                {
+                    save_data.Add(key_and_value_separated[0], key_and_value_separated[1]);
+                }
+                
             }
-            Debug.Log(GetAllData());
 
             return true;
         }
@@ -97,7 +99,12 @@ public class SaveManagerScript : MonoBehaviour
         {
             return false;
         }
-        
+    }
+
+    private static void EraseSaveFile()
+    {
+        File.Delete(save_file_address);
+        if (File.Exists(save_file_address)) Debug.Log("DAMN");
     }
 
     private static void CleanData()
