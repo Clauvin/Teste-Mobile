@@ -26,7 +26,7 @@ public class ToWrittenFeedbackFromLikertFeedbackButtonScript : ButtonScript
         }
 
         feedbackPanelManagerScript.hideLikertFeedbackPanel();
-        Debug.Log(feedbackPanelManagerScript.showWrittenFeedbackPanel());
+        feedbackPanelManagerScript.showWrittenFeedbackPanel();
     }
 
     // Update is called once per frame
