@@ -1554,6 +1554,11 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5528679990232351089, guid: 2b6a670ea1d17b64886503e7f03c6c13,
+        type: 3}
+      propertyPath: feedbackPanelManager
+      value: 
+      objectReference: {fileID: 1978377723464552666}
     - target: {fileID: 5684957799520448603, guid: 2b6a670ea1d17b64886503e7f03c6c13,
         type: 3}
       propertyPath: value

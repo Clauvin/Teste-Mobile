@@ -145,3 +145,8 @@ WrittenFeedbackPanelTestScript tests starting.
 Starting BackButtonWorks test.
 WrittenFeedbackPanelTestScript tests starting.
 Starting BackButtonWorks test.
+WrittenFeedbackPanelTestScript tests starting.
+Starting BackButtonWorks test.
+WrittenFeedbackPanelTestScript tests starting.
+Starting BackButtonWorks test.
+BackButtonWorks test passed.
