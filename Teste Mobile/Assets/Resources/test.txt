@@ -139,3 +139,5 @@ NewPanelHide test passed.
 Starting NewPanelShow test.
 NewPanelShow test passed.
 TestScript tests finishing.
+WrittenFeedbackPanelTestScript tests starting.
+Starting BackButtonWorks test.
