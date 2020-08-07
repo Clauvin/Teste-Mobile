@@ -141,3 +141,7 @@ NewPanelShow test passed.
 TestScript tests finishing.
 WrittenFeedbackPanelTestScript tests starting.
 Starting BackButtonWorks test.
+WrittenFeedbackPanelTestScript tests starting.
+Starting BackButtonWorks test.
+WrittenFeedbackPanelTestScript tests starting.
+Starting BackButtonWorks test.

@@ -22,7 +22,7 @@ public class ToWrittenFeedbackFromLikertFeedbackButtonScript : ButtonScript
         if ((feedbackPanelManagerScript == null) && (feedbackPanelManager != null)) loadFeedbackPanelManager();
         else if (feedbackPanelManager == null)
         {
-            throw new System.NullReferenceException("BackToMainFromLikertFeedbackButtonScript.feedbackPanelManager is null.");
+            throw new System.NullReferenceException("ToWrittenFeedbackFromLikertFeedbackButtonScript.feedbackPanelManager is null.");
         }
 
         feedbackPanelManagerScript.hideLikertFeedbackPanel();
