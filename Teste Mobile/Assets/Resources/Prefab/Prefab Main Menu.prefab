@@ -1804,6 +1804,16 @@ PrefabInstance:
       propertyPath: feedbackPanelManager
       value: 
       objectReference: {fileID: 1978377723464552666}
+    - target: {fileID: 5907851336427298888, guid: 7c17922acefacba47a9abfd4f5c51c6d,
+        type: 3}
+      propertyPath: m_Name
+      value: Considerations InputField
+      objectReference: {fileID: 0}
+    - target: {fileID: 6780706919856114053, guid: 7c17922acefacba47a9abfd4f5c51c6d,
+        type: 3}
+      propertyPath: m_Name
+      value: Name InputField
+      objectReference: {fileID: 0}
     - target: {fileID: 6893301659604731735, guid: 7c17922acefacba47a9abfd4f5c51c6d,
         type: 3}
       propertyPath: m_AnchorMin.y
