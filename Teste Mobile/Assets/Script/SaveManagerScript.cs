@@ -14,7 +14,7 @@ public class SaveManagerScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        save_file_address = Application.persistentDataPath + "/save_file.txt";
+        InitializingSaveFileAddress();
         save_data = new Dictionary<string, string>();
         to_save_and_load = new List<string>();
 
@@ -23,6 +23,11 @@ public class SaveManagerScript : MonoBehaviour
         EraseSaveFile();
 
         to_save_and_load.Clear();
+    }
+
+    public void InitializingSaveFileAddress()
+    {
+        save_file_address = Application.persistentDataPath + "/save_file.txt";
     }
 
     public static void AddData(string key, string value)
