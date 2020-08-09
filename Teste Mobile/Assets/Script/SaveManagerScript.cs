@@ -120,10 +120,12 @@ public class SaveManagerScript : MonoBehaviour
         }
         catch (ArgumentNullException ane)
         {
+            Debug.Log(ane.Message);
             return false;
         }
         catch (IOException ioe)
         {
+            Debug.Log(ioe.Message);
             return false;
         }
     }

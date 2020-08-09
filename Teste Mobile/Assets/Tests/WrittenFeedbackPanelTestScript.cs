@@ -90,9 +90,6 @@ namespace Tests
             FeedbackButtonScript fb_script = main_panel_manager.GetComponentInChildren<MainPanelManagerScript>().
                 mainFeedbackButton.GetComponent<FeedbackButtonScript>();
             fb_script.whenPressed();
-            ToWrittenFeedbackFromLikertFeedbackButtonScript wf_lf_script = likert_feedback_panel.transform.GetChild(1).GetChild(2).
-                GetComponent<ToWrittenFeedbackFromLikertFeedbackButtonScript>();
-            wf_lf_script.whenPressed();
 
             GameObject name_input_field = written_feedback_panel.transform.GetChild(1).GetChild(1).gameObject;
             GameObject considerations_input_field = written_feedback_panel.transform.GetChild(1).GetChild(3).gameObject;
@@ -101,13 +98,6 @@ namespace Tests
 
             try
             {
-                
-                string name = name_input_field.GetComponent<InputField>().text;
-                string considerations = considerations_input_field.GetComponent<InputField>().text;
-
-                string name_in_file;
-                Debug.Log("So");
-
                 if (SaveManagerScript.save_file_address == null) save_manager.InitializingSaveFileAddress();
                 Debug.Log("So1");
                 save_manager.FromSaveToLikert();
@@ -116,6 +106,22 @@ namespace Tests
                 Debug.Log("So3");
                 SaveManagerScript.to_save_and_load.Clear();
                 Debug.Log("So4");
+
+                ToWrittenFeedbackFromLikertFeedbackButtonScript wf_lf_script = likert_feedback_panel.transform.GetChild(1).GetChild(2).
+                GetComponent<ToWrittenFeedbackFromLikertFeedbackButtonScript>();
+                wf_lf_script.whenPressed();
+
+                name_input_field.GetComponent<TextSaveFieldScript>().JumpStart();
+                name_input_field.GetComponent<TextSaveFieldScript>().FromValueToText();
+                string name = name_input_field.GetComponent<InputField>().text;
+                considerations_input_field.GetComponent<TextSaveFieldScript>().JumpStart();
+                considerations_input_field.GetComponent<TextSaveFieldScript>().FromValueToText();
+                string considerations = considerations_input_field.GetComponent<InputField>().text;
+
+                string name_in_file;
+                Debug.Log("So");
+
+                
 
                 SaveManagerScript.save_data.TryGetValue(name_input_field.GetComponent<SaveFieldScript>().name, out name_in_file);
                 
@@ -126,6 +132,10 @@ namespace Tests
 
                 bool name_comparison = name_in_file.CompareTo(name) == 0;
                 bool considerations_comparison = considerations_in_file.CompareTo(considerations) == 0;
+                Debug.Log(name_in_file);
+                Debug.Log(name);
+                Debug.Log(considerations_in_file);
+                Debug.Log(considerations);
 
                 Assert.AreEqual(name_comparison && considerations_comparison, true);
             }

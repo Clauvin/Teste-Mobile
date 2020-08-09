@@ -256,3 +256,37 @@ Starting LoadingWrittenInfoWorks test.
 WrittenFeedbackPanelTestScript tests starting.
 Starting LoadingWrittenInfoWorks test.
 WARNING! LoadingWrittenInfoWorks test failed.
+WrittenFeedbackPanelTestScript tests starting.
+Starting LoadingWrittenInfoWorks test.
+WrittenFeedbackPanelTestScript tests starting.
+Starting LoadingWrittenInfoWorks test.
+WrittenFeedbackPanelTestScript tests starting.
+Starting LoadingWrittenInfoWorks test.
+WrittenFeedbackPanelTestScript tests starting.
+Starting LoadingWrittenInfoWorks test.
+WrittenFeedbackPanelTestScript tests starting.
+Starting LoadingWrittenInfoWorks test.
+WARNING! LoadingWrittenInfoWorks test failed.
+WrittenFeedbackPanelTestScript tests starting.
+Starting LoadingWrittenInfoWorks test.
+WARNING! LoadingWrittenInfoWorks test failed.
+WrittenFeedbackPanelTestScript tests starting.
+Starting LoadingWrittenInfoWorks test.
+WrittenFeedbackPanelTestScript tests starting.
+Starting LoadingWrittenInfoWorks test.
+WARNING! LoadingWrittenInfoWorks test failed.
+WrittenFeedbackPanelTestScript tests starting.
+Starting LoadingWrittenInfoWorks test.
+WARNING! LoadingWrittenInfoWorks test failed.
+WrittenFeedbackPanelTestScript tests starting.
+Starting LoadingWrittenInfoWorks test.
+WARNING! LoadingWrittenInfoWorks test failed.
+WrittenFeedbackPanelTestScript tests starting.
+Starting LoadingWrittenInfoWorks test.
+WARNING! LoadingWrittenInfoWorks test failed.
+WrittenFeedbackPanelTestScript tests starting.
+Starting LoadingWrittenInfoWorks test.
+WARNING! LoadingWrittenInfoWorks test failed.
+WrittenFeedbackPanelTestScript tests starting.
+Starting LoadingWrittenInfoWorks test.
+LoadingWrittenInfoWorks test passed.
