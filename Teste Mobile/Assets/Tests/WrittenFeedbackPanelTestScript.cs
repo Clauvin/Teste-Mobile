@@ -101,12 +101,24 @@ namespace Tests
 
             try
             {
+                
                 string name = name_input_field.GetComponent<InputField>().text;
                 string considerations = considerations_input_field.GetComponent<InputField>().text;
 
                 string name_in_file;
-                SaveManagerScript.save_data.TryGetValue(name_input_field.GetComponent<SaveFieldScript>().name, out name_in_file);
+                Debug.Log("So");
 
+                if (SaveManagerScript.save_file_address == null) save_manager.InitializingSaveFileAddress();
+                Debug.Log("So1");
+                save_manager.FromSaveToLikert();
+                Debug.Log("So2");
+                SaveManagerScript.EraseSaveFile();
+                Debug.Log("So3");
+                SaveManagerScript.to_save_and_load.Clear();
+                Debug.Log("So4");
+
+                SaveManagerScript.save_data.TryGetValue(name_input_field.GetComponent<SaveFieldScript>().name, out name_in_file);
+                
 
                 string considerations_in_file;
                 SaveManagerScript.save_data.TryGetValue(considerations_input_field.GetComponent<SaveFieldScript>().name,
@@ -126,13 +138,22 @@ namespace Tests
 
             WriteTestLogScript.TestPassed(ret);
 
-
         }
+
+        /* So, problems to fix here.
+         * Through testing, it seems that the Start() functions are working simultaneously together with the testing...
+         * ...which is BAD in terms of testing the input text load.
+         * Because of that, yeah. Solutions:
+         * 1 - Find a way to make Start() realize what's going on.
+         * 2 - Find a way to make the test realize what's going on.
+         * 3 - Make a way to make Start() NOT work while the test is going on <- Sounds promising.
 
         //Test 2: loading info.
         //Test 3: saving info.
         //Test 4: loading and saving info to Likert. (the other chat)
         //Test 5: Writing name and info works.
+
+        */
     }
 
 }

@@ -6,10 +6,12 @@ using UnityEngine;
 
 public class SaveManagerScript : MonoBehaviour
 {
-    private static string save_file_address;
+    public static string save_file_address { get; private set; }
 
     public static Dictionary<string, string> save_data;
-    private static List<string> to_save_and_load;
+    public static List<string> to_save_and_load;
+
+    public static int amount_of_accesses_to_from_save_to_likert = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -18,11 +20,14 @@ public class SaveManagerScript : MonoBehaviour
         save_data = new Dictionary<string, string>();
         to_save_and_load = new List<string>();
 
+        Debug.Log("1");
         FromSaveToLikert();
-
+        Debug.Log("2");
         EraseSaveFile();
-
+        Debug.Log("3");
         to_save_and_load.Clear();
+        Debug.Log("4");
+
     }
 
     public void InitializingSaveFileAddress()
@@ -69,24 +74,37 @@ public class SaveManagerScript : MonoBehaviour
 
     public void PassLikertToSaveFile()
     {
-        StreamWriter writer = new StreamWriter(save_file_address, true);
-        foreach(string key_value in to_save_and_load)
+        try
         {
-            writer.WriteLine(key_value);
+            StreamWriter writer = new StreamWriter(save_file_address, true);
+            foreach (string key_value in to_save_and_load)
+            {
+                writer.WriteLine(key_value);
+            }
+            writer.Close();
         }
-        writer.Close();
+        catch (IOException ioe)
+        {
+
+        }
+        
     }
 
     public bool FromSaveToLikert()
     {
         try
         {
+            Debug.Log("From");
+            //Como lidar com código paralelo ou como fazer reader esperar.
             StreamReader reader = new StreamReader(save_file_address, true);
             while (reader.Peek() >= 0)
             {
+                if (to_save_and_load == null) to_save_and_load = new List<string>();
                 to_save_and_load.Add(reader.ReadLine());
             }
             reader.Close();
+
+            if (save_data == null) save_data = new Dictionary<string, string>();
 
             foreach(string key_value in to_save_and_load)
             {
@@ -100,16 +118,28 @@ public class SaveManagerScript : MonoBehaviour
 
             return true;
         }
-        catch (ArgumentNullException e)
+        catch (ArgumentNullException ane)
+        {
+            return false;
+        }
+        catch (IOException ioe)
         {
             return false;
         }
     }
 
-    private static void EraseSaveFile()
+    public static void EraseSaveFile()
     {
-        File.Delete(save_file_address);
-        if (File.Exists(save_file_address)) Debug.Log("DAMN");
+        try
+        {
+            Debug.Log(save_file_address);
+            File.Delete(save_file_address);
+            if (File.Exists(save_file_address)) Debug.Log("DAMN");
+        }
+        catch (IOException ioe)
+        {
+
+        }
     }
 
     private static void CleanData()
