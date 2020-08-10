@@ -69,10 +69,10 @@ public class SaveManagerScript : MonoBehaviour
             to_save_and_load.Add(data_pair.Key + "|" + data_pair.Value);
         }
 
-        PassLikertToSaveFile();
+        PassDataToSaveFile();
     }
 
-    public void PassLikertToSaveFile()
+    public void PassDataToSaveFile()
     {
         try
         {
