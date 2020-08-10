@@ -21,7 +21,7 @@ public class SaveManagerScript : MonoBehaviour
         to_save_and_load = new List<string>();
 
         Debug.Log("1");
-        FromSaveToLikert();
+        FromSaveFileToData();
         Debug.Log("2");
         EraseSaveFile();
         Debug.Log("3");
@@ -90,7 +90,7 @@ public class SaveManagerScript : MonoBehaviour
         
     }
 
-    public bool FromSaveToLikert()
+    public bool FromSaveFileToData()
     {
         try
         {
