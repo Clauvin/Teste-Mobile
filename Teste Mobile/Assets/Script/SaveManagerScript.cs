@@ -37,6 +37,7 @@ public class SaveManagerScript : MonoBehaviour
 
     public static void AddData(string key, string value)
     {
+        if (save_data == null) save_data = new Dictionary<string, string>();
         if (save_data.ContainsKey(key)) save_data.Remove(key);
 
         save_data.Add(key, value);
@@ -77,6 +78,7 @@ public class SaveManagerScript : MonoBehaviour
         try
         {
             StreamWriter writer = new StreamWriter(save_file_address, true);
+
             foreach (string key_value in to_save_and_load)
             {
                 writer.WriteLine(key_value);
@@ -85,7 +87,7 @@ public class SaveManagerScript : MonoBehaviour
         }
         catch (IOException ioe)
         {
-
+            
         }
         
     }

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -84,7 +85,7 @@ namespace Tests
             main_panel = main_panel_manager.GetComponentInChildren<MainPanelManagerScript>().mainPanel;
             likert_feedback_panel = main_panel_manager.GetComponentInChildren<FeedbackPanelManagerScript>().likertFeedbackPanel;
             written_feedback_panel = main_panel_manager.GetComponentInChildren<FeedbackPanelManagerScript>().writtenFeedbackPanel;
-            
+
             WriteTestLogScript.WriteString("Starting " + ret + " test.");
 
             FeedbackButtonScript fb_script = main_panel_manager.GetComponentInChildren<MainPanelManagerScript>().
@@ -100,15 +101,16 @@ namespace Tests
             {
                 if (SaveManagerScript.save_file_address == null) save_manager.InitializingSaveFileAddress();
                 Debug.Log("So1");
-                save_manager.FromSaveToLikert();
+                save_manager.FromSaveFileToData();
                 Debug.Log("So2");
                 SaveManagerScript.EraseSaveFile();
                 Debug.Log("So3");
                 SaveManagerScript.to_save_and_load.Clear();
                 Debug.Log("So4");
 
-                ToWrittenFeedbackFromLikertFeedbackButtonScript wf_lf_script = likert_feedback_panel.transform.GetChild(1).GetChild(2).
-                GetComponent<ToWrittenFeedbackFromLikertFeedbackButtonScript>();
+                ToWrittenFeedbackFromLikertFeedbackButtonScript wf_lf_script = likert_feedback_panel.transform.
+                    GetChild(1).GetChild(2).
+                    GetComponent<ToWrittenFeedbackFromLikertFeedbackButtonScript>();
                 wf_lf_script.whenPressed();
 
                 name_input_field.GetComponent<TextSaveFieldScript>().JumpStart();
@@ -121,10 +123,7 @@ namespace Tests
                 string name_in_file;
                 Debug.Log("So");
 
-                
-
                 SaveManagerScript.save_data.TryGetValue(name_input_field.GetComponent<SaveFieldScript>().name, out name_in_file);
-                
 
                 string considerations_in_file;
                 SaveManagerScript.save_data.TryGetValue(considerations_input_field.GetComponent<SaveFieldScript>().name,
@@ -150,20 +149,116 @@ namespace Tests
 
         }
 
-        /* So, problems to fix here.
-         * Through testing, it seems that the Start() functions are working simultaneously together with the testing...
-         * ...which is BAD in terms of testing the input text load.
-         * Because of that, yeah. Solutions:
-         * 1 - Find a way to make Start() realize what's going on.
-         * 2 - Find a way to make the test realize what's going on.
-         * 3 - Make a way to make Start() NOT work while the test is going on <- Sounds promising.
-
-        //Test 2: loading info.
         //Test 3: saving info.
         //Test 4: loading and saving info to Likert. (the other chat)
         //Test 5: Writing name and info works.
 
-        */
-    }
+        [Test]
+        public void SavingWrittenTestWorks()
+        {
+            Action del = this.SavingWrittenTestWorks;
+            string ret = del.Method.Name;
 
+            UnityEngine.Object[] list = Resources.FindObjectsOfTypeAll(typeof(GameObject));
+
+            main_panel_manager = GameObject.Find("Prefab Main Menu");
+            main_panel = main_panel_manager.GetComponentInChildren<MainPanelManagerScript>().mainPanel;
+            likert_feedback_panel = main_panel_manager.GetComponentInChildren<FeedbackPanelManagerScript>().likertFeedbackPanel;
+            written_feedback_panel = main_panel_manager.GetComponentInChildren<FeedbackPanelManagerScript>().writtenFeedbackPanel;
+
+            WriteTestLogScript.WriteString("Starting " + ret + " test.");
+
+            FeedbackButtonScript fb_script = main_panel_manager.GetComponentInChildren<MainPanelManagerScript>().
+                mainFeedbackButton.GetComponent<FeedbackButtonScript>();
+            fb_script.whenPressed();
+
+            GameObject name_input_field = written_feedback_panel.transform.GetChild(1).GetChild(1).gameObject;
+            GameObject considerations_input_field = written_feedback_panel.transform.GetChild(1).GetChild(3).gameObject;
+
+            SaveManagerScript save_manager = GameObject.Find("Save Manager").GetComponent<SaveManagerScript>();
+
+            // Go to Written Feedback
+
+            ToWrittenFeedbackFromLikertFeedbackButtonScript wf_lf_script = likert_feedback_panel.transform.
+                    GetChild(1).GetChild(2).
+                    GetComponent<ToWrittenFeedbackFromLikertFeedbackButtonScript>();
+            wf_lf_script.whenPressed();
+
+            try
+            {
+                // Write into Written Feedback
+                if (SaveManagerScript.save_file_address == null) save_manager.InitializingSaveFileAddress();
+                SaveManagerScript.save_data = new Dictionary<string, string>();
+                SaveManagerScript.to_save_and_load = new List<string>();
+
+                string message_to_save_for_this_test = "Message for test of unit testing";
+
+                name_input_field.GetComponent<InputField>().text = message_to_save_for_this_test;
+                Debug.Log(name_input_field.GetComponent<InputField>().text);
+                considerations_input_field.GetComponent<InputField>().text = message_to_save_for_this_test;
+                Debug.Log(considerations_input_field.GetComponent<InputField>().text);
+
+                Debug.Log(SaveManagerScript.save_file_address);
+
+                save_manager.FromDictionaryToSave();
+
+                // Save what was written in Written Feedback
+                name_input_field.GetComponent<TextSaveFieldScript>().FromTextToValue();
+                name_input_field.GetComponent<TextSaveFieldScript>().SendDataToSaveManager();
+                considerations_input_field.GetComponent<TextSaveFieldScript>().FromTextToValue();
+                considerations_input_field.GetComponent<TextSaveFieldScript>().SendDataToSaveManager();
+                
+                save_manager.FromDictionaryToSave();
+
+                // Check if what was written was saved
+
+                StreamReader reader = new StreamReader(SaveManagerScript.save_file_address);
+                List<string> a_list = new List<string>();
+
+                bool name_was_correctly_saved = false;
+                bool considerations_was_correctly_saved = false;
+
+                while (reader.Peek() >= 0)
+                {
+                    string line = reader.ReadLine();
+                    a_list.Add(line);
+                    Debug.Log(line);
+                }
+                reader.Close();
+
+
+
+                foreach (string key_value in a_list)
+                {
+                    string[] key_and_value_separated = key_value.Split(new char[] { '|' });
+                    if (key_and_value_separated[0] == "Name")
+                    {
+                        if (key_and_value_separated[1] == message_to_save_for_this_test)
+                        {
+                            name_was_correctly_saved = true;
+                        }
+                    }
+
+                    if (key_and_value_separated[0] == "Considerations")
+                    {
+                        if (key_and_value_separated[1] == message_to_save_for_this_test)
+                        {
+                            considerations_was_correctly_saved = true;
+                        }
+                    }
+                }
+
+                Debug.Log(name_was_correctly_saved);
+                Debug.Log(considerations_was_correctly_saved);
+                Assert.IsTrue(name_was_correctly_saved && considerations_was_correctly_saved);
+
+            }
+            catch (AssertionException ae)
+            {
+                WriteTestLogScript.TestFailed(ret);
+                Assert.Fail();
+                return;
+            }
+        }
+    }
 }
