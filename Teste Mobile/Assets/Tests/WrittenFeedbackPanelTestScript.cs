@@ -100,13 +100,9 @@ namespace Tests
             try
             {
                 if (SaveManagerScript.save_file_address == null) save_manager.InitializingSaveFileAddress();
-                Debug.Log("So1");
                 save_manager.FromSaveFileToData();
-                Debug.Log("So2");
                 SaveManagerScript.EraseSaveFile();
-                Debug.Log("So3");
                 SaveManagerScript.to_save_and_load.Clear();
-                Debug.Log("So4");
 
                 ToWrittenFeedbackFromLikertFeedbackButtonScript wf_lf_script = likert_feedback_panel.transform.
                     GetChild(1).GetChild(2).
@@ -149,7 +145,6 @@ namespace Tests
 
         }
 
-        //Test 3: saving info.
         //Test 4: loading and saving info to Likert. (the other chat)
         //Test 5: Writing name and info works.
 
