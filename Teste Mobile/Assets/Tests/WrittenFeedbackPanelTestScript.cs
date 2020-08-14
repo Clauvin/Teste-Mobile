@@ -127,10 +127,6 @@ namespace Tests
 
                 bool name_comparison = name_in_file.CompareTo(name) == 0;
                 bool considerations_comparison = considerations_in_file.CompareTo(considerations) == 0;
-                Debug.Log(name_in_file);
-                Debug.Log(name);
-                Debug.Log(considerations_in_file);
-                Debug.Log(considerations);
 
                 Assert.AreEqual(name_comparison && considerations_comparison, true);
             }
