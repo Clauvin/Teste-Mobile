@@ -16,6 +16,8 @@ namespace Tests
         GameObject main_panel;
         GameObject feedback_panel;
 
+        GameObject likert_feedback_panel;
+
         [OneTimeSetUp]
         public void WriteStartOfLog()
         {
@@ -63,6 +65,47 @@ namespace Tests
             }
 
             WriteTestLogScript.TestPassed(ret);
+        }
+
+        [Test]
+        public void LoadingLikertInfoWorks()
+        {
+            Action del = this.LoadingLikertInfoWorks;
+            string ret = del.Method.Name;
+
+            UnityEngine.Object[] list = Resources.FindObjectsOfTypeAll(typeof(GameObject));
+
+            main_panel_manager = GameObject.Find("Prefab Main Menu");
+            main_panel = main_panel_manager.GetComponentInChildren<MainPanelManagerScript>().mainPanel;
+            likert_feedback_panel = main_panel_manager.GetComponentInChildren<FeedbackPanelManagerScript>().likertFeedbackPanel;
+
+            try
+            {
+                WriteTestLogScript.WriteString("Starting " + ret + " test.");
+                FeedbackButtonScript fb_script = main_panel_manager.GetComponentInChildren<MainPanelManagerScript>().
+                    mainFeedbackButton.GetComponent<FeedbackButtonScript>();
+                fb_script.whenPressed();
+
+
+
+
+                Assert.AreEqual(likert_feedback_panel.activeSelf, true);
+            }
+            catch (AssertionException ae)
+            {
+                WriteTestLogScript.TestFailed(ret);
+                Assert.Fail();
+                return;
+            }
+
+        }
+
+        [Test]
+        public void SavingLikertInfoWorks()
+        {
+
+
+
         }
     }
 }
