@@ -251,5 +251,13 @@ namespace Tests
                 return;
             }
         }
+
+        [OneTimeTearDown]
+        public void Avoiding()
+        {
+            TestContext.WriteLine("Erasing save file");
+            if (File.Exists(SaveManagerScript.save_file_address)) File.Delete(SaveManagerScript.save_file_address);
+            TestContext.WriteLine("Save file erased");
+        }
     }
 }

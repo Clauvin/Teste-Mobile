@@ -16,7 +16,7 @@ public class SaveManagerScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InitializingSaveFileAddress();
+        InitializingSaveFileAddress(); Debug.Log(save_file_address);
         save_data = new Dictionary<string, string>();
         to_save_and_load = new List<string>();
 
@@ -63,8 +63,6 @@ public class SaveManagerScript : MonoBehaviour
 
     public void FromDictionaryToSave()
     {
-        Debug.Log(save_data.Count);
-       
         foreach (KeyValuePair<string, string> data_pair in save_data)
         {
             to_save_and_load.Add(data_pair.Key + "|" + data_pair.Value);

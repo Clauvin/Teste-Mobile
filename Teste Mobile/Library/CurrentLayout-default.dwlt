@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 371}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -46,7 +46,7 @@ MonoBehaviour:
     y: 0
     width: 1366
     height: 644
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 371}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -112,10 +112,10 @@ MonoBehaviour:
     y: 30
     width: 1366
     height: 594
-  m_MinSize: {x: 579, y: 342}
-  m_MaxSize: {x: 12004, y: 8042}
+  m_MinSize: {x: 677, y: 321}
+  m_MaxSize: {x: 12002, y: 8021}
   vertical: 0
-  controlID: 99
+  controlID: 46
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -137,10 +137,10 @@ MonoBehaviour:
     y: 0
     width: 1008
     height: 594
-  m_MinSize: {x: 303, y: 342}
-  m_MaxSize: {x: 8003, y: 8042}
+  m_MinSize: {x: 402, y: 321}
+  m_MaxSize: {x: 8002, y: 8021}
   vertical: 1
-  controlID: 100
+  controlID: 47
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -162,10 +162,10 @@ MonoBehaviour:
     y: 0
     width: 1008
     height: 347
-  m_MinSize: {x: 303, y: 221}
-  m_MaxSize: {x: 8003, y: 4021}
+  m_MinSize: {x: 402, y: 221}
+  m_MaxSize: {x: 8002, y: 4021}
   vertical: 0
-  controlID: 101
+  controlID: 48
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -185,8 +185,8 @@ MonoBehaviour:
     y: 0
     width: 370
     height: 347
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -202,7 +202,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: TestRunnerWindow
+  m_Name: SceneView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -211,16 +211,16 @@ MonoBehaviour:
     y: 0
     width: 638
     height: 347
-  m_MinSize: {x: 102, y: 121}
+  m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 17}
+  m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
   - {fileID: 12}
   - {fileID: 15}
   - {fileID: 16}
   - {fileID: 17}
-  m_Selected: 4
+  m_Selected: 0
   m_LastSelected: 1
 --- !u!114 &10
 MonoBehaviour:
@@ -268,8 +268,8 @@ MonoBehaviour:
     y: 0
     width: 358
     height: 594
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -336,7 +336,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -398,7 +398,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 8e86feffa086feff3a8dfefff8a6feff36a7feffaca7feffdea7fefff0a7feff8aaefeff0cb4feff4ab4feffc0b4fefff2b4feff04b5feff9ebbfeff02c2feff14c2feffaec8feffc6cefeffd8cefeff72d5feffd8dbfeffeadbfeff84e2feffeae8fefffce8feff96effefffaf5feff0cf6feffa6fcfeff0a03ffff1c03ffffb609ffffce0fffffe00fffff7a16ffff901cffffa21cffff3c23ffffa229ffffb429ffff4e30ffffb436ffffc636ffff603dffffc643ffffd843ffff724affffd850ffffea50ffff8457ffffea5dfffffc5dffff9664fffffc6affff0e6bffffa871ffff0e78ffff2078ffffba7effff2285ffff3485ffffce8bffff3492ffff4692ffffe098ffff469fffff589ffffff2a5ffff56acffff68acffff02b3ffff68b9ffff7ab9ffff14c0ffff7ac6ffff8cc6ffff26cdffff8ad3ffff9cd3ffff36daffff4ee0ffff60e0fffffae6ffff60edffff72edffff10f4ffff84faffffc2faffff38fbffff6afbffff923900007c5000007e510000
+      m_ExpandedIDs: 4efbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -458,9 +458,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 320, y: 117.60533, z: 0}
+    m_Target: {x: 203.35829, y: 287.83273, z: -20.612217}
     speed: 2
-    m_Value: {x: 320, y: 117.60533, z: 0}
+    m_Value: {x: 203.35829, y: 287.83273, z: -20.612217}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -510,9 +510,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 483.45618
+    m_Target: 380.9365
     speed: 2
-    m_Value: 483.45618
+    m_Value: 380.9365
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -619,7 +619,7 @@ MonoBehaviour:
     height: 326
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
-    ID: 128
+    ID: 138
     splitterInitialOffset: 240
     currentActiveSplitter: -1
     realSizes: ab00000055000000
@@ -640,7 +640,7 @@ MonoBehaviour:
       name: Teste Mobile
       fullName: Teste Mobile
       resultStatus: 1
-      duration: 0.3410334
+      duration: 14.237098
       messages: 
       output: 
       stacktrace: 
@@ -656,7 +656,7 @@ MonoBehaviour:
       name: Tests.dll
       fullName: C:/GitHub/Teste-Mobile/Teste Mobile/Library/ScriptAssemblies/Tests.dll
       resultStatus: 1
-      duration: 0.3015746
+      duration: 14.20514
       messages: 
       output: 
       stacktrace: 
@@ -672,7 +672,7 @@ MonoBehaviour:
       name: Tests
       fullName: Tests
       resultStatus: 1
-      duration: 0.2893014
+      duration: 14.196762
       messages: 
       output: 
       stacktrace: 
@@ -737,8 +737,8 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/[Tests][Tests.LikertFeedbackPanelTestScript][suite]
       name: LikertFeedbackPanelTestScript
       fullName: Tests.LikertFeedbackPanelTestScript
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 14.19056
       messages: 
       output: 
       stacktrace: 
@@ -757,6 +757,44 @@ MonoBehaviour:
       duration: 0
       messages: 
       output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1004
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.LikertFeedbackPanelTestScript][suite]
+    - id: 1006
+      uniqueId: Tests.dll/Tests/LikertFeedbackPanelTestScript/[Tests][Tests.LikertFeedbackPanelTestScript.LoadingLikertInfoWorks]
+      name: LoadingLikertInfoWorks
+      fullName: Tests.LikertFeedbackPanelTestScript.LoadingLikertInfoWorks
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1004
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.LikertFeedbackPanelTestScript][suite]
+    - id: 1007
+      uniqueId: Tests.dll/Tests/LikertFeedbackPanelTestScript/[Tests][Tests.LikertFeedbackPanelTestScript.SavingLikertInfoWorks]
+      name: SavingLikertInfoWorks
+      fullName: Tests.LikertFeedbackPanelTestScript.SavingLikertInfoWorks
+      resultStatus: 1
+      duration: 14.157198
+      messages: 
+      output: 'Setup started
+
+        Setup finished
+
+'
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -1040,8 +1078,8 @@ MonoBehaviour:
 
         Setup finished
 
-        Message for test
-        of unit testing
+        Message for test of
+        unit testing
 
         Message for test of unit testing
 
@@ -1052,7 +1090,7 @@ MonoBehaviour:
 
         2
 
-        
+
 
         Name|Message
         For Test Of Unit Testing
@@ -1060,7 +1098,7 @@ MonoBehaviour:
         Considerations|Message for test of unit
         testing
 
-        
+
 
         Name|Message For Test Of Unit Testing
 
@@ -1072,20 +1110,14 @@ MonoBehaviour:
         Considerations|Message
         for test of unit testing
 
-        
 
-        Name|Message For Test Of Unit
-        Testing
 
-        Considerations|Message for test of unit testing
+        Name|Message For Test Of Unit Testing
 
-        
+        Considerations|Message
+        for test of unit testing
 
-        Name|Message
-        For Test Of Unit Testing
 
-        Considerations|Message for test of unit
-        testing
 
         Name|Message For Test Of Unit Testing
 
@@ -1097,40 +1129,43 @@ MonoBehaviour:
         Considerations|Message
         for test of unit testing
 
-        
+        Name|Message For Test Of Unit Testing
 
-        Name|Message For Test Of Unit
-        Testing
+        Considerations|Message
+        for test of unit testing
 
-        Considerations|Message for test of unit testing
 
-        
-
-        Name|Message
-        For Test Of Unit Testing
-
-        Considerations|Message for test of unit
-        testing
 
         Name|Message For Test Of Unit Testing
 
         Considerations|Message
         for test of unit testing
 
-        
 
-        Name|Message For Test Of Unit
-        Testing
 
-        Considerations|Message for test of unit testing
+        Name|Message For Test Of Unit Testing
 
-        
+        Considerations|Message
+        for test of unit testing
 
-        Name|Message
-        For Test Of Unit Testing
+        Name|Message For Test Of Unit Testing
 
-        Considerations|Message for test of unit
-        testing
+        Considerations|Message
+        for test of unit testing
+
+
+
+        Name|Message For Test Of Unit Testing
+
+        Considerations|Message
+        for test of unit testing
+
+
+
+        Name|Message For Test Of Unit Testing
+
+        Considerations|Message
+        for test of unit testing
 
         Name|Message For Test Of Unit Testing
 
@@ -1161,127 +1196,20 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1017
       parentUniqueId: Tests.dll/Tests/[Tests][Tests.WrittenFeedbackPanelTestScript][suite]
-    m_ResultText: 'SavingWrittenTestWorks (0,238s)
+    m_ResultText: 'SavingLikertInfoWorks (14,157s)
 
       ---
 
       Setup started
 
       Setup
-      finished
-
-      Message for test of unit testing
-
-      Message for test
-      of unit testing
-
-      C:/Users/Ascendant/AppData/LocalLow/Unforeseen Circunstances/Teste
-      Mobile/save_file.txt
-
-      0
-
-      2
-
-      
-
-      Name|Message For
-      Test Of Unit Testing
-
-      Considerations|Message for test of unit testing
-
-      
-
-      Name|Message
-      For Test Of Unit Testing
-
-      Considerations|Message for test of unit testing
-
-      Name|Message
-      For Test Of Unit Testing
-
-      Considerations|Message for test of unit testing
-
-      
-
-      Name|Message
-      For Test Of Unit Testing
-
-      Considerations|Message for test of unit testing
-
-      
-
-      Name|Message
-      For Test Of Unit Testing
-
-      Considerations|Message for test of unit testing
-
-      Name|Message
-      For Test Of Unit Testing
-
-      Considerations|Message for test of unit testing
-
-      Name|Message
-      For Test Of Unit Testing
-
-      Considerations|Message for test of unit testing
-
-      
-
-      Name|Message
-      For Test Of Unit Testing
-
-      Considerations|Message for test of unit testing
-
-      
-
-      Name|Message
-      For Test Of Unit Testing
-
-      Considerations|Message for test of unit testing
-
-      Name|Message
-      For Test Of Unit Testing
-
-      Considerations|Message for test of unit testing
-
-      
-
-      Name|Message
-      For Test Of Unit Testing
-
-      Considerations|Message for test of unit testing
-
-      
-
-      Name|Message
-      For Test Of Unit Testing
-
-      Considerations|Message for test of unit testing
-
-      Name|Message
-      For Test Of Unit Testing
-
-      Considerations|Message for test of unit testing
-
-      Name|Message
-      For Test Of Unit Testing
-
-      Considerations|Message for test of unit testing
-
-      Name|Message
-      for test of unit testing
-
-      Considerations|Message for test of unit testing
-
-      True
-
-      True'
+      finished'
     m_ResultStacktrace: 
     m_TestListState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: a2258d07
-      m_LastClickedID: 126690722
-      m_ExpandedIDs: 2d1852adb51413b7e9a5e2e48e3cc011537bbd2a8359db41ffffff7f
+      scrollPos: {x: 0, y: 41}
+      m_SelectedIDs: 667d5dc3
+      m_LastClickedID: -1017283226
+      m_ExpandedIDs: 2d1852adb51413b7674b3bd4e9a5e2e48e3cc011537bbd2a8359db41ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1408,9 +1336,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: ba460000
-    m_LastClickedID: 18106
-    m_ExpandedIDs: 00000000b8460000ba460000
+    m_SelectedIDs: c4460000
+    m_LastClickedID: 18116
+    m_ExpandedIDs: 00000000ca460000cc460000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1438,7 +1366,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000b8460000ba460000
+    m_ExpandedIDs: 00000000ca460000cc460000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
