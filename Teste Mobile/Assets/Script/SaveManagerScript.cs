@@ -2,6 +2,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using System.Net;
+using System.Net.Mail;
 using UnityEngine;
 
 public class SaveManagerScript : MonoBehaviour
@@ -16,17 +18,17 @@ public class SaveManagerScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InitializingSaveFileAddress(); Debug.Log(save_file_address);
+        InitializingSaveFileAddress();
         save_data = new Dictionary<string, string>();
         to_save_and_load = new List<string>();
 
-        Debug.Log("1");
+        //Debug.Log("1");
         FromSaveFileToData();
-        Debug.Log("2");
+        //Debug.Log("2");
         EraseSaveFile();
-        Debug.Log("3");
+        //Debug.Log("3");
         to_save_and_load.Clear();
-        Debug.Log("4");
+        //Debug.Log("4");
 
     }
 
@@ -43,10 +45,38 @@ public class SaveManagerScript : MonoBehaviour
         save_data.Add(key, value);
     }
 
-    public static void SendAllData()
+    public static bool SendAllData()
     {
         string data = GetAllData();
-        //send mail with data to server OR my e-mail.
+
+        MailMessage mail_message = new MailMessage("almeidaclauvin@gmail.com",
+            "almeidaclauvin@gmail.com");
+        mail_message.Subject = "Guidelines Comments";
+        mail_message.Body = data;
+
+        SmtpClient smtpServer = new SmtpClient("email-smtp.sa-east-1.amazonaws.com");
+        smtpServer.Port = 587;
+        smtpServer.Credentials = new NetworkCredential("AKIA4RGKW2JFOPB3HA3X",
+            "BEggZxh3/R2g6U9wyWBcv7cKowHXudnU0B/FhLwmpewB");
+        smtpServer.EnableSsl = true;
+
+        try
+        {
+            //Debug.Log("sending");
+            smtpServer.Send(mail_message);
+            //Debug.Log("sent!");
+            return true;
+        }
+        catch (SmtpException smtp_ex)
+        {
+            return false;
+        }
+
+    }
+
+    public bool SendMail()
+    {
+        return SendAllData();
     }
 
     public static string GetAllData()
@@ -94,8 +124,6 @@ public class SaveManagerScript : MonoBehaviour
     {
         try
         {
-            Debug.Log("From");
-            //Como lidar com código paralelo ou como fazer reader esperar.
             StreamReader reader = new StreamReader(save_file_address, true);
             while (reader.Peek() >= 0)
             {
@@ -105,6 +133,8 @@ public class SaveManagerScript : MonoBehaviour
             reader.Close();
 
             if (save_data == null) save_data = new Dictionary<string, string>();
+
+            if (to_save_and_load == null) to_save_and_load = new List<string>();
 
             foreach(string key_value in to_save_and_load)
             {
@@ -134,7 +164,6 @@ public class SaveManagerScript : MonoBehaviour
     {
         try
         {
-            Debug.Log(save_file_address);
             File.Delete(save_file_address);
             if (File.Exists(save_file_address)) Debug.Log("DAMN");
         }
