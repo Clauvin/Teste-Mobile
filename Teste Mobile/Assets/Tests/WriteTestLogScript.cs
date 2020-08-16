@@ -20,7 +20,16 @@ public class WriteTestLogScript : MonoBehaviour
 
     public static void WriteString(string text)
     {
-        string path = "Assets/Resources/test.txt";
+        string path;
+
+        if (Application.platform == RuntimePlatform.Android)
+        {
+            path = "test.txt";
+        }
+        else
+        {
+            path = "Assets/Resources/test.txt";
+        }
 
         //Write some text to the test.txt file
         StreamWriter writer = new StreamWriter(path, true);
