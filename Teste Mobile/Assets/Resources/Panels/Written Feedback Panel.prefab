@@ -256,8 +256,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcf49cb33087b344f82a45279d9a0a00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name_input_field: {fileID: 0}
-  considerations_input_field: {fileID: 0}
+  name_input_field: {fileID: 6780706919856114053}
+  considerations_input_field: {fileID: 5907851336427298888}
 --- !u!1 &4750318158616643503
 GameObject:
   m_ObjectHideFlags: 0
