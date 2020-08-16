@@ -257,6 +257,64 @@ namespace Tests
 
         }
 
+        [Test]
+        public void SendingMailWorks()
+        {
+            Action del = this.SendingMailWorks;
+            string ret = del.Method.Name;
+
+            main_panel_manager = GameObject.Find("Prefab Main Menu");
+            main_panel = main_panel_manager.GetComponentInChildren<MainPanelManagerScript>().mainPanel;
+            likert_feedback_panel = main_panel_manager.GetComponentInChildren<FeedbackPanelManagerScript>().likertFeedbackPanel;
+            written_feedback_panel = main_panel_manager.GetComponentInChildren<FeedbackPanelManagerScript>().writtenFeedbackPanel;
+
+            try
+            {
+                WriteTestLogScript.WriteString("Starting " + ret + " test.");
+                FeedbackButtonScript fb_script = main_panel_manager.GetComponentInChildren<MainPanelManagerScript>().
+                    mainFeedbackButton.GetComponent<FeedbackButtonScript>();
+                fb_script.whenPressed();
+                ToWrittenFeedbackFromLikertFeedbackButtonScript wf_lf_script = likert_feedback_panel.transform.GetChild(1).GetChild(2).
+                    GetComponent<ToWrittenFeedbackFromLikertFeedbackButtonScript>();
+                wf_lf_script.whenPressed();
+                GameObject send_button = written_feedback_panel.transform.GetChild(1).GetChild(4).gameObject;
+
+                SaveManagerScript.save_data = new Dictionary<string, string>();
+
+                SendingFeedbackScript sending_feedback_script = send_button.GetComponent<SendingFeedbackScript>();
+
+                sending_feedback_script.SendingFeedback();
+
+                bool good_message = false;
+
+                GameObject name_input_field = written_feedback_panel.transform.GetChild(1).GetChild(1).gameObject;
+                GameObject considerations_input_field = written_feedback_panel.transform.GetChild(1).GetChild(3).gameObject;
+
+                bool good_title_message_appeared = name_input_field.GetComponent<InputField>().text.
+                    CompareTo(SendingFeedbackScript.good_title_message) == 0;
+
+                bool good_body_message_appeared = considerations_input_field.GetComponent<InputField>().text.
+                    CompareTo(SendingFeedbackScript.good_body_message) == 0;
+
+                Debug.Log(good_title_message_appeared);
+                Debug.Log(good_body_message_appeared);
+
+                if ((good_title_message_appeared) && (good_body_message_appeared))
+                {
+                    good_message = true;
+                }
+
+                Assert.AreEqual(good_message, true);
+
+            }
+            catch (AssertionException ae)
+            {
+                WriteTestLogScript.TestFailed(ret);
+                Assert.Fail();
+                return;
+            }
+
+        }
 
         [OneTimeTearDown]
         public void Avoiding()
