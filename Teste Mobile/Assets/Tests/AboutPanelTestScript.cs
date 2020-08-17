@@ -8,6 +8,12 @@ using UnityEngine.TestTools;
 
 namespace Tests
 {
+    /// <summary>
+    /// AboutPanelTestScript v1.0.1
+    /// 
+    /// What it does: takes care of tests involving directly the AboutPanelTest class.
+    /// 
+    /// </summary>
     [TestFixture]
     [Author("Cláuvin", "")]
     public class AboutPanelTestScript
@@ -31,11 +37,10 @@ namespace Tests
             TestContext.WriteLine("Setup finished");
         }
 
-        // A Test behaves as an ordinary method
         [Test]
-        public void BackButtonWorks()
+        public void TheBackButtonFromTheAboutPanelWorks()
         {
-            Action del = this.BackButtonWorks;
+            Action del = this.TheBackButtonFromTheAboutPanelWorks;
             string ret = del.Method.Name;
 
             UnityEngine.Object[] list = Resources.FindObjectsOfTypeAll(typeof(GameObject));
@@ -63,16 +68,6 @@ namespace Tests
             }
 
             WriteTestLogScript.TestPassed(ret);
-        }
-
-        // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use
-        // `yield return null;` to skip a frame.
-        [UnityTest]
-        public IEnumerator AboutPanelTestScriptWithEnumeratorPasses()
-        {
-            // Use the Assert class to test conditions.
-            // Use yield to skip a frame.
-            yield return null;
         }
     }
 }
