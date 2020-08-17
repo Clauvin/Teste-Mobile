@@ -114,11 +114,8 @@ namespace Tests
                 string message_to_save_for_this_test = "Message for test of unit testing";
 
                 name_input_field.GetComponent<InputField>().text = message_to_save_for_this_test;
-                Debug.Log(name_input_field.GetComponent<InputField>().text);
-                considerations_input_field.GetComponent<InputField>().text = message_to_save_for_this_test;
-                Debug.Log(considerations_input_field.GetComponent<InputField>().text);
 
-                Debug.Log(SaveManagerScript.save_file_address);
+                considerations_input_field.GetComponent<InputField>().text = message_to_save_for_this_test;
 
                 save_manager.FromDictionaryToSave();
 
@@ -142,7 +139,6 @@ namespace Tests
                 {
                     string line = reader.ReadLine();
                     a_list.Add(line);
-                    Debug.Log(line);
                 }
                 reader.Close();
 
@@ -168,8 +164,6 @@ namespace Tests
                     }
                 }
 
-                Debug.Log(name_was_correctly_saved);
-                Debug.Log(considerations_was_correctly_saved);
                 Assert.IsTrue(name_was_correctly_saved && considerations_was_correctly_saved);
 
             }
@@ -295,9 +289,6 @@ namespace Tests
 
                 bool good_body_message_appeared = considerations_input_field.GetComponent<InputField>().text.
                     CompareTo(SendingFeedbackScript.good_body_message) == 0;
-
-                Debug.Log(good_title_message_appeared);
-                Debug.Log(good_body_message_appeared);
 
                 if ((good_title_message_appeared) && (good_body_message_appeared))
                 {

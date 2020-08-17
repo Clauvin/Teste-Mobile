@@ -179,13 +179,11 @@ namespace Tests
 
                 bool likert_values_were_correctly_saved = true;
 
-                Debug.Log(SaveManagerScript.save_file_address);
 
                 while (reader.Peek() >= 0)
                 {
                     string line = reader.ReadLine();
                     a_list.Add(line);
-                    Debug.Log(line);
                 }
                 reader.Close();
 

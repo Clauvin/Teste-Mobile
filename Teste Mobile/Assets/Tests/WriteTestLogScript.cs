@@ -27,7 +27,6 @@ public class WriteTestLogScript : MonoBehaviour
         {
             Directory.CreateDirectory(Application.persistentDataPath + "/testing/");
             path = Application.persistentDataPath + "/testing/test.txt";
-            Debug.Log(path);
         }
         else
         {
@@ -56,7 +55,6 @@ public class WriteTestLogScript : MonoBehaviour
 
         //Read the text from directly from the test.txt file
         StreamReader reader = new StreamReader(path);
-        Debug.Log(reader.ReadToEnd());
         reader.Close();
     }
 

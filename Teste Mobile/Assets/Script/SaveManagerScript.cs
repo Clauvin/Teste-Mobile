@@ -22,13 +22,9 @@ public class SaveManagerScript : MonoBehaviour
         save_data = new Dictionary<string, string>();
         to_save_and_load = new List<string>();
 
-        //Debug.Log("1");
         FromSaveFileToData();
-        //Debug.Log("2");
         EraseSaveFile();
-        //Debug.Log("3");
         to_save_and_load.Clear();
-        //Debug.Log("4");
 
     }
 
@@ -62,9 +58,7 @@ public class SaveManagerScript : MonoBehaviour
 
         try
         {
-            //Debug.Log("sending");
             smtpServer.Send(mail_message);
-            //Debug.Log("sent!");
             return true;
         }
         catch (SmtpException smtp_ex)
@@ -165,7 +159,7 @@ public class SaveManagerScript : MonoBehaviour
         try
         {
             File.Delete(save_file_address);
-            if (File.Exists(save_file_address)) Debug.Log("DAMN");
+            if (File.Exists(save_file_address)) Debug.LogError("DAMN");
         }
         catch (IOException ioe)
         {
