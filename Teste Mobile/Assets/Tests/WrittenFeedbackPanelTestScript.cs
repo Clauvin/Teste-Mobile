@@ -58,7 +58,7 @@ namespace Tests
                 ToWrittenFeedbackFromLikertFeedbackButtonScript wf_lf_script = likert_feedback_panel.transform.GetChild(1).GetChild(2).
                     GetComponent<ToWrittenFeedbackFromLikertFeedbackButtonScript>();
                 wf_lf_script.whenPressed();
-                BackToLikertFromWrittenFeedbackButtonScript bl_wf_script = written_feedback_panel.transform.GetChild(1).GetChild(4).
+                BackToLikertFromWrittenFeedbackButtonScript bl_wf_script = written_feedback_panel.transform.GetChild(1).GetChild(5).
                     GetComponent<BackToLikertFromWrittenFeedbackButtonScript>();
                 bl_wf_script.whenPressed();
                 Assert.AreEqual(likert_feedback_panel.activeSelf, true);

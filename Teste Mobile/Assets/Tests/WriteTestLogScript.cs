@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using UnityEditor;
@@ -24,7 +25,9 @@ public class WriteTestLogScript : MonoBehaviour
 
         if (Application.platform == RuntimePlatform.Android)
         {
-            path = "test.txt";
+            Directory.CreateDirectory(Application.persistentDataPath + "/testing/");
+            path = Application.persistentDataPath + "/testing/test.txt";
+            Debug.Log(path);
         }
         else
         {

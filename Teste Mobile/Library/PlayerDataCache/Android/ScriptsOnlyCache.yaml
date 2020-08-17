@@ -62,7 +62,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Text
     - UnityEngine.UI.VerticalLayoutGroup
   sceneClasses:
-    Assets/InitTestScene637331919252457706.unity:
+    Assets/InitTestScene637332009966663295.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -1037,6 +1037,6 @@ ScriptsOnlyBuild:
     className: SendingFeedbackScript
   platform: 13
   scenePathNames:
-  - Assets/InitTestScene637331919252457706.unity
+  - Assets/InitTestScene637332009966663295.unity
   - Assets/Resources/Scenes/MainMenuScene.unity
-  playerPath: C:/GitHub/Teste-Mobile/Teste Mobile/Temp/UnityTempFile-b6b9e38a08ad1184d9440bb1a38411f9/PlayerWithTests/PlayerWithTests.apk
+  playerPath: C:/GitHub/Teste-Mobile/Teste Mobile/Temp/UnityTempFile-71a2fb97ecd28eb4789463abd5c51ba7/PlayerWithTests/PlayerWithTests.apk
