@@ -11,8 +11,6 @@ namespace Tests
     /// 
     /// What it does: takes care of tests involving directly the MainPanelManager class.
     /// 
-    /// Also: 
-    /// 
     /// </summary>
     [TestFixture]
     [Author("Cláuvin", "almeidaclauvin@gmail.com")]
