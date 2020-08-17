@@ -933,6 +933,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2965606884731602042, guid: 38c0cd6475a4e1e4b8c14dffd08c3fd2,
+        type: 3}
+      propertyPath: m_Text
+      value: Survey for Gamification Guidelines
+      objectReference: {fileID: 0}
     - target: {fileID: 3011705102637651824, guid: 38c0cd6475a4e1e4b8c14dffd08c3fd2,
         type: 3}
       propertyPath: m_AnchorMin.y
