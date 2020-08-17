@@ -7,7 +7,7 @@ namespace Tests
 {
 
     /// <summary>
-    /// MainPanelManagerTestScript v1.0.1
+    /// MainPanelManagerTestScript v1.0.2
     /// 
     /// What it does: takes care of tests involving directly the MainPanelManager class.
     /// 
@@ -41,10 +41,10 @@ namespace Tests
         }
 
         [Test]
-        public void TheShowMainPanelFunctionWorks()
+        public void The_showMainPanelFunction_Works()
         {
 
-            Action del = this.TheShowMainPanelFunctionWorks;
+            Action del = this.The_showMainPanelFunction_Works;
             string ret = del.Method.Name;
 
             WriteTestLogScript.WriteString("Starting " + ret + " test.");
@@ -66,9 +66,9 @@ namespace Tests
         }
 
         [Test]
-        public void TheHideMainPanelFunctionWorks()
+        public void The_hideMainPanelFunction_Works()
         {
-            Action del = this.TheHideMainPanelFunctionWorks;
+            Action del = this.The_hideMainPanelFunction_Works;
             string ret = del.Method.Name;
 
             try
@@ -89,35 +89,35 @@ namespace Tests
         }
 
         [Test]
-        public void TheShowGuidelinesPanelFunctionWorks()
+        public void The_showGuidelinesPanelFunction_Works()
         {
             Assert.AreEqual(main_panel_manager_script.showGuidelinesPanel(),
                 (string)MainPanelManagerScript.result_message_show_guidelines_panel_true);
         }
 
         [Test]
-        public void TheHideGuidelinesPanelFunctionWorks()
+        public void The_hideGuidelinesPanelFunction_Works()
         {
             Assert.AreEqual(main_panel_manager_script.hideGuidelinesPanel(),
                 (string)MainPanelManagerScript.result_message_hide_guidelines_panel_true);
         }
 
         [Test]
-        public void TheShowFeedbackPanelFunctionWorks()
+        public void The_showFeedbackPanelFunction_Works()
         {
             Assert.AreEqual(main_panel_manager_script.showMainFeedbackPanel(),
                 (string)MainPanelManagerScript.result_message_show_feedback_panel_true);
         }
 
         [Test]
-        public void TheHideFeedbackPanelFunctionWorks()
+        public void The_hideFeedbackPanelFunction_Works()
         {
             Assert.AreEqual(main_panel_manager_script.hideMainFeedbackPanel(),
                 (string)MainPanelManagerScript.result_message_hide_feedback_panel_true);
         }
 
         [Test]
-        public void TheShowAboutPanelFunctionWorks()
+        public void The_showAboutPanelFunction_Works()
         {
             Assert.AreEqual(main_panel_manager_script.showAboutPanel(),
                 (string)MainPanelManagerScript.result_message_show_about_panel_true);
@@ -131,7 +131,7 @@ namespace Tests
         }
 
         [Test]
-        public void TheSetPanelFunctionWorks()
+        public void The_setPanelFunction_Works()
         {
             MethodInfo method = GetMethod(main_panel_manager_script, "setPanel");
             if (!main_panel_manager_script.mainPanel.activeSelf)
@@ -146,7 +146,7 @@ namespace Tests
         }
 
         [Test]
-        public void SendMessageAboutActive()
+        public void The_sendMessageAboutIfTheObjectIsActive_Works()
         {
             MethodInfo method = GetMethod(main_panel_manager_script, "sendMessageAboutIfTheObjectIsActive");
 
