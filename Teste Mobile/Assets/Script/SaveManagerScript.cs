@@ -6,6 +6,12 @@ using System.Net;
 using System.Net.Mail;
 using UnityEngine;
 
+/// <summary>
+/// SaveManagerScript v1.0.0
+/// 
+/// What it does: takes care of all things related to the save file where the feedback about the guidelines is.
+///     That includes saving, loading, erasing the file and also sending the info through the internet to be analyzed later.
+/// </summary>
 public class SaveManagerScript : MonoBehaviour
 {
     public static string save_file_address { get; private set; }
@@ -116,17 +122,11 @@ public class SaveManagerScript : MonoBehaviour
 
     public static bool SendAllData()
     {
-        string data = GetAllDictionaryData();
+        string message_body = GetAllDictionaryData();
 
-        MailMessage mail_message = new MailMessage("almeidaclauvin@gmail.com", "almeidaclauvin@gmail.com");
-        mail_message.Subject = "Guidelines Comments";
-        mail_message.Body = data;
+        MailMessage mail_message = CreatingMailMessage(message_body);
 
-        SmtpClient smtpClient = new SmtpClient("email-smtp.sa-east-1.amazonaws.com");
-        smtpClient.Port = 587;
-        smtpClient.Credentials = new NetworkCredential("AKIA4RGKW2JFOPB3HA3X",
-            "BEggZxh3/R2g6U9wyWBcv7cKowHXudnU0B/FhLwmpewB");
-        smtpClient.EnableSsl = true;
+        SmtpClient smtpClient = CreatingSmtpClient();
 
         try
         {
@@ -138,6 +138,26 @@ public class SaveManagerScript : MonoBehaviour
             return false;
         }
 
+    }
+
+    private static MailMessage CreatingMailMessage(string message_body)
+    {
+        MailMessage mail_message = new MailMessage("almeidaclauvin@gmail.com", "almeidaclauvin@gmail.com");
+        mail_message.Subject = "Guidelines Comments";
+        mail_message.Body = message_body;
+
+        return mail_message;
+    }
+
+    private static SmtpClient CreatingSmtpClient()
+    {
+        SmtpClient smtpClient = new SmtpClient("email-smtp.sa-east-1.amazonaws.com");
+        smtpClient.Port = 587;
+        smtpClient.Credentials = new NetworkCredential("AKIA4RGKW2JFOPB3HA3X",
+            "BEggZxh3/R2g6U9wyWBcv7cKowHXudnU0B/FhLwmpewB");
+        smtpClient.EnableSsl = true;
+
+        return smtpClient;
     }
 
     public static string GetAllDictionaryData()

@@ -2,6 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// BackToLikertFromWrittenFeedbackButtonScript v1.0.0
+/// 
+/// What it does: takes care of making the Back Button from the Written Feedback Panel, when clicked,
+///     hide the Written Feedback Panel and show the Likert Feedback Panel.
+///     
+/// Also: Since it needs to call functions from feedbackPanelManagerScript which is in the feedbackPanelManager object,
+///     it loads the manager at the start.
+/// </summary>
 public class BackToLikertFromWrittenFeedbackButtonScript : ButtonScript
 {
     public GameObject feedbackPanelManager;

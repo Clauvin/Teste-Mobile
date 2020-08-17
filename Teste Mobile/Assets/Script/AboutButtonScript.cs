@@ -2,12 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// AboutButtonScript v1.0.0
+/// 
+/// What it does: takes care of making the About Button, when clicked, hide the Main Panel and show the About Panel.
+///     
+/// Also: Since it needs to call functions from mainPanelManagerScript which is in the mainPanelManager object,
+///     it loads the manager at the start.
+/// </summary>
 public class AboutButtonScript : ButtonScript
 {
     public GameObject mainPanelManager;
     MainPanelManagerScript mainPanelManagerScript;
-
-    public AboutButtonScript() { }
 
     // Start is called before the first frame update
     void Start()

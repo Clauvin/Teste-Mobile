@@ -3,6 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// TextSaveFieldScript v1.0.0
+/// 
+/// What it does: takes care of getting data from the SaveManager data_dictionary and passing to the correct
+///     TextSaveField at the WrittenFeedbackPanel.
+/// 
+/// </summary>
 public class TextSaveFieldScript : SaveFieldScript
 {
     // Start is called before the first frame update

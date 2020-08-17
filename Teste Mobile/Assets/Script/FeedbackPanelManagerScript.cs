@@ -1,6 +1,14 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// FeedbackPanelManagerScript v1.0.0
+/// 
+/// What it does: takes care of the buttons and panels involving the feedback given through the app.
+///     Mainly responsible for the functions that activate and deactivate feedback panels.
+/// 
+/// Also: yes, the show...() and hide...() functions return strings for the sake of good testing, keep those returns as they are.
+/// </summary>
 public class FeedbackPanelManagerScript : PanelManagerScript
 {
     public GameObject likertFeedbackPanel;

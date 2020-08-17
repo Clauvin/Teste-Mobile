@@ -2,6 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// BackToMainFromLikertFeedbackButtonScript v1.0.0
+/// 
+/// What it does: takes care of making the Back Button from the LikertFeedback Panel, when clicked,
+///     hide the Likert Feedback Panel and show the Main Panel.
+///     
+/// Also: Since it needs to call functions from mainPanelManagerScript which is in the mainPanelManager object,
+///     AND the feedbackPanelManagerScript which is in the feedbackPanelManager
+///     it loads both managers at the start.
+/// </summary>
 public class BackToMainFromLikertFeedbackButtonScript : ButtonScript
 {
     public GameObject mainPanelManager;

@@ -2,6 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// FeedbackButtonScript v1.0.0
+/// 
+/// What it does: takes care of the code that makes the About Button, when clicked, hide the Main Panel and show the Feedback Panel.
+/// 
+/// Also: since it needs to call functions from mainPanelManagerScript which is in the mainPanelManager object,
+///     it loads the manager at the start.
+/// 
+/// </summary>
 public class FeedbackButtonScript : ButtonScript
 {
     public GameObject mainPanelManager;

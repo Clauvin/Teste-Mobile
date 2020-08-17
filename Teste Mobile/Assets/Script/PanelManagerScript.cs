@@ -2,6 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// PanelManagerScript v1.0.0
+/// 
+/// What it does: parent class of the other Panel Manager classes.
+///     Stores functions commonly used by those.
+/// </summary>
 public class PanelManagerScript : MonoBehaviour
 {
     protected void setPanel(GameObject panel, bool true_or_false)

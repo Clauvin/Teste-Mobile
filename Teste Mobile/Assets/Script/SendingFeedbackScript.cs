@@ -3,6 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// SendingFeedbackScript v1.0.0
+/// 
+/// What it does: deals with sending a mail with the feedback and giving feedback to the user.
+/// 
+/// Also: the name of this class was a happy serendipity and will stay as it is. :)
+/// </summary>
 public class SendingFeedbackScript : MonoBehaviour
 {
     public GameObject name_input_field;

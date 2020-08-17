@@ -2,6 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// BackToMainFromAboutButtonScript v1.0.0
+/// 
+/// What it does: takes care of making the Back Button from the About Panel, when clicked,
+///     hide the About Panel and show the Main Panel.
+///     
+/// Also: Since it needs to call functions from mainPanelManagerScript which is in the mainPanelManager object,
+///     it loads the manager at the start.
+/// </summary>
 public class BackToMainFromAboutButtonScript : ButtonScript
 {
     public GameObject mainPanelManager;
