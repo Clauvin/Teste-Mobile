@@ -141,7 +141,7 @@ namespace Tests
         [Test]
         public void SendMessageAboutActive()
         {
-            MethodInfo method = GetMethod(main_panel_manager_script, "sendMessageAboutActive");
+            MethodInfo method = GetMethod(main_panel_manager_script, "sendMessageAboutIfTheObjectIsActive");
 
             object passed = method.Invoke(main_panel_manager_script, new object[]
                 { main_panel_manager_script.mainPanel, true, "passed", "haven't passed" });
