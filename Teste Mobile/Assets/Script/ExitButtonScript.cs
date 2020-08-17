@@ -15,12 +15,6 @@ public class ExitButtonScript : ButtonScript
         mainPanelManagerScript = mainPanelManager.GetComponent<MainPanelManagerScript>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     override public void whenPressed()
     {
         mainPanelManagerScript.exitProgram();

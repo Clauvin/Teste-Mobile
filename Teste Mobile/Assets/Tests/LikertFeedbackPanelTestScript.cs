@@ -162,8 +162,8 @@ namespace Tests
 
                 SaveManagerScript save_manager = GameObject.Find("Save Manager").GetComponent<SaveManagerScript>();
                 if (SaveManagerScript.save_file_address == null) save_manager.InitializingSaveFileAddress();
-                SaveManagerScript.save_data = new Dictionary<string, string>();
-                SaveManagerScript.to_save_and_load = new List<string>();
+                SaveManagerScript.data_dictionary = new Dictionary<string, string>();
+                SaveManagerScript.list_used_to_save_and_load_stuff = new List<string>();
 
                 for (int i = 0; i < sliders.Count; i++)
                 {
@@ -172,7 +172,7 @@ namespace Tests
                     sliders[i].transform.GetChild(0).GetComponent<LikertSaveFieldScript>().SendDataToSaveManager();
                 }
 
-                save_manager.FromDictionaryToSave();
+                save_manager.FromDictionaryDataToSaveFile();
 
                 StreamReader reader = new StreamReader(SaveManagerScript.save_file_address);
                 List<string> a_list = new List<string>();

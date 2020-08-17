@@ -7,9 +7,9 @@ public class LikertSaveFieldScript : SaveFieldScript
 {
     void Start()
     {
-        if (SaveManagerScript.save_data.ContainsKey(name))
+        if (SaveManagerScript.data_dictionary.ContainsKey(name))
         {
-            SaveManagerScript.save_data.TryGetValue(name, out value);
+            SaveManagerScript.data_dictionary.TryGetValue(name, out value);
         }
         else
         {

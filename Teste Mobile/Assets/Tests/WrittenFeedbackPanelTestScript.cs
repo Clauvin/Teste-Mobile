@@ -108,8 +108,8 @@ namespace Tests
             {
                 // Write into Written Feedback
                 if (SaveManagerScript.save_file_address == null) save_manager.InitializingSaveFileAddress();
-                SaveManagerScript.save_data = new Dictionary<string, string>();
-                SaveManagerScript.to_save_and_load = new List<string>();
+                SaveManagerScript.data_dictionary = new Dictionary<string, string>();
+                SaveManagerScript.list_used_to_save_and_load_stuff = new List<string>();
 
                 string message_to_save_for_this_test = "Message for test of unit testing";
 
@@ -117,7 +117,7 @@ namespace Tests
 
                 considerations_input_field.GetComponent<InputField>().text = message_to_save_for_this_test;
 
-                save_manager.FromDictionaryToSave();
+                save_manager.FromDictionaryDataToSaveFile();
 
                 // Save what was written in Written Feedback
                 name_input_field.GetComponent<TextSaveFieldScript>().FromTextToValue();
@@ -125,7 +125,7 @@ namespace Tests
                 considerations_input_field.GetComponent<TextSaveFieldScript>().FromTextToValue();
                 considerations_input_field.GetComponent<TextSaveFieldScript>().SendDataToSaveManager();
 
-                save_manager.FromDictionaryToSave();
+                save_manager.FromDictionaryDataToSaveFile();
 
                 // Check if what was written was saved
 
@@ -211,9 +211,9 @@ namespace Tests
 
                 writer.Close();
 
-                save_manager.FromSaveFileToData();
+                save_manager.FromSaveFileToDataDictionary();
                 SaveManagerScript.EraseSaveFile();
-                SaveManagerScript.to_save_and_load.Clear();
+                SaveManagerScript.list_used_to_save_and_load_stuff.Clear();
 
                 ToWrittenFeedbackFromLikertFeedbackButtonScript wf_lf_script = likert_feedback_panel.transform.
                     GetChild(1).GetChild(2).
@@ -229,10 +229,10 @@ namespace Tests
                 string considerations = considerations_input_field.GetComponent<InputField>().text;
 
                 string name_in_file;
-                SaveManagerScript.save_data.TryGetValue(name_input_field.GetComponent<SaveFieldScript>().name, out name_in_file);
+                SaveManagerScript.data_dictionary.TryGetValue(name_input_field.GetComponent<SaveFieldScript>().name, out name_in_file);
 
                 string considerations_in_file;
-                SaveManagerScript.save_data.TryGetValue(considerations_input_field.GetComponent<SaveFieldScript>().name,
+                SaveManagerScript.data_dictionary.TryGetValue(considerations_input_field.GetComponent<SaveFieldScript>().name,
                     out considerations_in_file);
 
                 bool name_comparison = name_in_file.CompareTo(name) == 0;
@@ -273,7 +273,7 @@ namespace Tests
                 wf_lf_script.whenPressed();
                 GameObject send_button = written_feedback_panel.transform.GetChild(1).GetChild(4).gameObject;
 
-                SaveManagerScript.save_data = new Dictionary<string, string>();
+                SaveManagerScript.data_dictionary = new Dictionary<string, string>();
 
                 SendingFeedbackScript sending_feedback_script = send_button.GetComponent<SendingFeedbackScript>();
 

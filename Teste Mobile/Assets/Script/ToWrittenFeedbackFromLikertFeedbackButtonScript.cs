@@ -12,6 +12,7 @@ public class ToWrittenFeedbackFromLikertFeedbackButtonScript : ButtonScript
     {
         loadFeedbackPanelManager();
     }
+
     private void loadFeedbackPanelManager()
     {
         feedbackPanelManagerScript = feedbackPanelManager.GetComponent<FeedbackPanelManagerScript>();
@@ -29,9 +30,4 @@ public class ToWrittenFeedbackFromLikertFeedbackButtonScript : ButtonScript
         feedbackPanelManagerScript.showWrittenFeedbackPanel();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

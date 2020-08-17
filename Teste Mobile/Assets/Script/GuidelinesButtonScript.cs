@@ -12,17 +12,22 @@ public class GuidelinesButtonScript : ButtonScript
     // Start is called before the first frame update
     void Start()
     {
-        mainPanelManagerScript = mainPanelManager.GetComponent<MainPanelManagerScript>();
+        loadMainPanelManager();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void loadMainPanelManager()
     {
-        
+        mainPanelManagerScript = mainPanelManager.GetComponent<MainPanelManagerScript>();
     }
 
     override public void whenPressed()
     {
+        if ((mainPanelManagerScript == null) && (mainPanelManager != null)) loadMainPanelManager();
+        else if (mainPanelManager == null)
+        {
+            throw new System.NullReferenceException("GuidelinesButtonScript.mainPanelManager is null.");
+        }
+
         mainPanelManagerScript.hideMainPanel();
         mainPanelManagerScript.showGuidelinesPanel();
     }

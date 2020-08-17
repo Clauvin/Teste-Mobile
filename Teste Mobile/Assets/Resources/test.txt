@@ -496,3 +496,16 @@ Starting LoadingWrittenInfoWorks test.
 WrittenFeedbackPanelTestScript tests starting.
 Starting LoadingWrittenInfoWorks test.
 LoadingWrittenInfoWorks test passed.
+WrittenFeedbackPanelTestScript tests starting.
+Starting SendingMailWorks test.
+WrittenFeedbackPanelTestScript tests starting.
+Starting SendingMailWorks test.
+WrittenFeedbackPanelTestScript tests starting.
+Starting SendingMailWorks test.
+WARNING! SendingMailWorks test failed.
+WrittenFeedbackPanelTestScript tests starting.
+Starting SendingMailWorks test.
+WARNING! SendingMailWorks test failed.
+WrittenFeedbackPanelTestScript tests starting.
+Starting SendingMailWorks test.
+AboutPanelTestScript tests starting.

@@ -44,11 +44,5 @@ public class BackToMainFromLikertFeedbackButtonScript : ButtonScript
         mainPanelManagerScript.showMainPanel();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
 }
 

@@ -15,10 +15,9 @@ public class AboutButtonScript : ButtonScript
         loadMainPanelManager();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void loadMainPanelManager()
     {
-
+        mainPanelManagerScript = mainPanelManager.GetComponent<MainPanelManagerScript>();
     }
 
     override public void whenPressed()
@@ -33,8 +32,4 @@ public class AboutButtonScript : ButtonScript
         mainPanelManagerScript.showAboutPanel();
     }
 
-    private void loadMainPanelManager()
-    {
-        mainPanelManagerScript = mainPanelManager.GetComponent<MainPanelManagerScript>();
-    }
 }

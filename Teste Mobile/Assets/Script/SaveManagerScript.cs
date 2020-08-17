@@ -10,8 +10,8 @@ public class SaveManagerScript : MonoBehaviour
 {
     public static string save_file_address { get; private set; }
 
-    public static Dictionary<string, string> save_data;
-    public static List<string> to_save_and_load;
+    public static Dictionary<string, string> data_dictionary;
+    public static List<string> list_used_to_save_and_load_stuff;
 
     public static int amount_of_accesses_to_from_save_to_likert = 0;
 
@@ -19,13 +19,12 @@ public class SaveManagerScript : MonoBehaviour
     void Start()
     {
         InitializingSaveFileAddress();
-        save_data = new Dictionary<string, string>();
-        to_save_and_load = new List<string>();
+        data_dictionary = new Dictionary<string, string>();
+        list_used_to_save_and_load_stuff = new List<string>();
 
-        FromSaveFileToData();
+        FromSaveFileToDataDictionary();
         EraseSaveFile();
-        to_save_and_load.Clear();
-
+        list_used_to_save_and_load_stuff.Clear();
     }
 
     public void InitializingSaveFileAddress()
@@ -33,112 +32,15 @@ public class SaveManagerScript : MonoBehaviour
         save_file_address = Application.persistentDataPath + "/save_file.txt";
     }
 
-    public static void AddData(string key, string value)
-    {
-        if (save_data == null) save_data = new Dictionary<string, string>();
-        if (save_data.ContainsKey(key)) save_data.Remove(key);
-
-        save_data.Add(key, value);
-    }
-
-    public static bool SendAllData()
-    {
-        string data = GetAllData();
-
-        MailMessage mail_message = new MailMessage("almeidaclauvin@gmail.com",
-            "almeidaclauvin@gmail.com");
-        mail_message.Subject = "Guidelines Comments";
-        mail_message.Body = data;
-
-        SmtpClient smtpServer = new SmtpClient("email-smtp.sa-east-1.amazonaws.com");
-        smtpServer.Port = 587;
-        smtpServer.Credentials = new NetworkCredential("AKIA4RGKW2JFOPB3HA3X",
-            "BEggZxh3/R2g6U9wyWBcv7cKowHXudnU0B/FhLwmpewB");
-        smtpServer.EnableSsl = true;
-
-        try
-        {
-            smtpServer.Send(mail_message);
-            return true;
-        }
-        catch (SmtpException smtp_ex)
-        {
-            return false;
-        }
-
-    }
-
-    public bool SendMail()
-    {
-        return SendAllData();
-    }
-
-    public static string GetAllData()
-    {
-        string data = "";
-        foreach(KeyValuePair<string,string> data_pair in save_data)
-        {
-            data += data_pair.Key + "|" + data_pair.Value;
-            data += "\r\n";
-        }
-
-        return data;
-    }
-
-    public void FromDictionaryToSave()
-    {
-        foreach (KeyValuePair<string, string> data_pair in save_data)
-        {
-            to_save_and_load.Add(data_pair.Key + "|" + data_pair.Value);
-        }
-
-        PassDataToSaveFile();
-    }
-
-    public void PassDataToSaveFile()
+    public bool FromSaveFileToDataDictionary()
     {
         try
         {
-            StreamWriter writer = new StreamWriter(save_file_address, true);
+            PassDataFromSaveFileToListUsedToSaveAndLoadStuff();
 
-            foreach (string key_value in to_save_and_load)
-            {
-                writer.WriteLine(key_value);
-            }
-            writer.Close();
-        }
-        catch (IOException ioe)
-        {
-            
-        }
-        
-    }
+            AvoidingNullExceptionsWhileTesting();
 
-    public bool FromSaveFileToData()
-    {
-        try
-        {
-            StreamReader reader = new StreamReader(save_file_address, true);
-            while (reader.Peek() >= 0)
-            {
-                if (to_save_and_load == null) to_save_and_load = new List<string>();
-                to_save_and_load.Add(reader.ReadLine());
-            }
-            reader.Close();
-
-            if (save_data == null) save_data = new Dictionary<string, string>();
-
-            if (to_save_and_load == null) to_save_and_load = new List<string>();
-
-            foreach(string key_value in to_save_and_load)
-            {
-                string[] key_and_value_separated = key_value.Split(new char[] { '|' });
-                if (!save_data.ContainsKey(key_and_value_separated[0]))
-                {
-                    save_data.Add(key_and_value_separated[0], key_and_value_separated[1]);
-                }
-                
-            }
+            PassDataFromListUsedToSaveAndLoadStuffToDataDictionary();
 
             return true;
         }
@@ -154,6 +56,37 @@ public class SaveManagerScript : MonoBehaviour
         }
     }
 
+    private void PassDataFromSaveFileToListUsedToSaveAndLoadStuff()
+    {
+        StreamReader reader = new StreamReader(save_file_address, true);
+        while (reader.Peek() >= 0)
+        {
+            if (list_used_to_save_and_load_stuff == null) list_used_to_save_and_load_stuff = new List<string>();
+            list_used_to_save_and_load_stuff.Add(reader.ReadLine());
+        }
+        reader.Close();
+    }
+
+    private void AvoidingNullExceptionsWhileTesting()
+    {
+        if (data_dictionary == null) data_dictionary = new Dictionary<string, string>();
+
+        if (list_used_to_save_and_load_stuff == null) list_used_to_save_and_load_stuff = new List<string>();
+    }
+
+    private void PassDataFromListUsedToSaveAndLoadStuffToDataDictionary()
+    {
+        foreach (string key_value in list_used_to_save_and_load_stuff)
+        {
+            string[] key_and_value_separated = key_value.Split(new char[] { '|' });
+            if (!data_dictionary.ContainsKey(key_and_value_separated[0]))
+            {
+                data_dictionary.Add(key_and_value_separated[0], key_and_value_separated[1]);
+            }
+
+        }
+    }
+
     public static void EraseSaveFile()
     {
         try
@@ -163,18 +96,100 @@ public class SaveManagerScript : MonoBehaviour
         }
         catch (IOException ioe)
         {
-
+            Debug.Log("So, you really should take a look at why the save file is not being erased.");
         }
     }
 
-    private static void CleanData()
+    public static void AddDataToDictionary(string key, string value)
     {
-        save_data.Clear();
+        if (data_dictionary == null) data_dictionary = new Dictionary<string, string>();
+
+        if (data_dictionary.ContainsKey(key)) data_dictionary.Remove(key);
+
+        data_dictionary.Add(key, value);
+    }
+
+    public bool SendMail()
+    {
+        return SendAllData();
+    }
+
+    public static bool SendAllData()
+    {
+        string data = GetAllDictionaryData();
+
+        MailMessage mail_message = new MailMessage("almeidaclauvin@gmail.com", "almeidaclauvin@gmail.com");
+        mail_message.Subject = "Guidelines Comments";
+        mail_message.Body = data;
+
+        SmtpClient smtpClient = new SmtpClient("email-smtp.sa-east-1.amazonaws.com");
+        smtpClient.Port = 587;
+        smtpClient.Credentials = new NetworkCredential("AKIA4RGKW2JFOPB3HA3X",
+            "BEggZxh3/R2g6U9wyWBcv7cKowHXudnU0B/FhLwmpewB");
+        smtpClient.EnableSsl = true;
+
+        try
+        {
+            smtpClient.Send(mail_message);
+            return true;
+        }
+        catch (SmtpException smtp_ex)
+        {
+            return false;
+        }
+
+    }
+
+    public static string GetAllDictionaryData()
+    {
+        string data = "";
+        const string new_line = "\r\n";
+        foreach(KeyValuePair<string,string> data_pair in data_dictionary)
+        {
+            data += data_pair.Key + "|" + data_pair.Value;
+            data += new_line;
+        }
+
+        return data;
+    }
+
+    public void FromDictionaryDataToSaveFile()
+    {
+        foreach (KeyValuePair<string, string> data_pair in data_dictionary)
+        {
+            list_used_to_save_and_load_stuff.Add(data_pair.Key + "|" + data_pair.Value);
+        }
+
+        PassDictionaryDataToSaveFile();
+    }
+
+    public void PassDictionaryDataToSaveFile()
+    {
+        try
+        {
+            StreamWriter writer = new StreamWriter(save_file_address, true);
+
+            foreach (string key_value in list_used_to_save_and_load_stuff)
+            {
+                writer.WriteLine(key_value);
+            }
+            writer.Close();
+        }
+        catch (IOException ioe)
+        {
+            
+        }
+        
+    }
+
+    private static void CleanDictionaryData()
+    {
+        data_dictionary.Clear();
     }
 
     void OnApplicationQuit()
     {
-        FromDictionaryToSave();
+        FromDictionaryDataToSaveFile();
     }
 
 }

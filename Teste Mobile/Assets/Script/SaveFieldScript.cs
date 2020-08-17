@@ -16,6 +16,6 @@ public class SaveFieldScript : MonoBehaviour
 
     public void SendDataToSaveManager()
     {
-        SaveManagerScript.AddData(name, value);
+        SaveManagerScript.AddDataToDictionary(name, value);
     }
 }
