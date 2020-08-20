@@ -139,6 +139,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2754703885989591665}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1815560412 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8052320616023991412, guid: 38c0cd6475a4e1e4b8c14dffd08c3fd2,
+    type: 3}
+  m_PrefabInstance: {fileID: 2754703885989591665}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2037581501 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1978377723464552666, guid: 38c0cd6475a4e1e4b8c14dffd08c3fd2,
@@ -241,6 +247,18 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 833818454877524114, guid: 38c0cd6475a4e1e4b8c14dffd08c3fd2,
+        type: 3}
+      propertyPath: m_Text
+      value: 'This is an app for sending feedback about the guidelines regarding
+        how to deal with the negative effects of game design elements in the field
+        of education/learning.
+
+
+        It sends the feedback - after input from
+        the user for that - to gamification.feedback@gmail.com, if there''s an internet
+        connection for that.'
       objectReference: {fileID: 0}
     - target: {fileID: 893700158847573422, guid: 38c0cd6475a4e1e4b8c14dffd08c3fd2,
         type: 3}
@@ -356,7 +374,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 2754703885989591666}
+      objectReference: {fileID: 0}
     - target: {fileID: 1116525473073445340, guid: 38c0cd6475a4e1e4b8c14dffd08c3fd2,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -682,7 +700,7 @@ PrefabInstance:
         type: 3}
       propertyPath: writtenFeedbackPanel
       value: 
-      objectReference: {fileID: 2754703885989591667}
+      objectReference: {fileID: 1815560412}
     - target: {fileID: 2484103850463578384, guid: 38c0cd6475a4e1e4b8c14dffd08c3fd2,
         type: 3}
       propertyPath: sendFeedbackPanel
@@ -1905,21 +1923,3 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38c0cd6475a4e1e4b8c14dffd08c3fd2, type: 3}
---- !u!114 &2754703885989591666 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6186116454222670500, guid: 38c0cd6475a4e1e4b8c14dffd08c3fd2,
-    type: 3}
-  m_PrefabInstance: {fileID: 2754703885989591665}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 191d3ac6e80fe65478dd0b7575897005, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1 &2754703885989591667 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1116525474202597546, guid: 38c0cd6475a4e1e4b8c14dffd08c3fd2,
-    type: 3}
-  m_PrefabInstance: {fileID: 2754703885989591665}
-  m_PrefabAsset: {fileID: 0}
