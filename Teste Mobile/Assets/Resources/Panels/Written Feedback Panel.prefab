@@ -847,7 +847,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Guidelines Map for Gamification Risk Requirements
+  m_Text: Feedback for Gamification Guidelines
 --- !u!114 &6971894307066439488
 MonoBehaviour:
   m_ObjectHideFlags: 0
