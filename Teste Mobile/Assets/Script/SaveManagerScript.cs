@@ -142,7 +142,7 @@ public class SaveManagerScript : MonoBehaviour
 
     private static MailMessage CreatingMailMessage(string message_body)
     {
-        MailMessage mail_message = new MailMessage("almeidaclauvin@gmail.com", "almeidaclauvin@gmail.com");
+        MailMessage mail_message = new MailMessage("gamification.feedback@gmail.com", "gamification.feedback@gmail.com");
         mail_message.Subject = "Guidelines Comments";
         mail_message.Body = message_body;
 

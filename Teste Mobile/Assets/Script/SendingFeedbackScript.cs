@@ -20,7 +20,7 @@ public class SendingFeedbackScript : MonoBehaviour
 
     public const string bad_title_message = "Something went wrong";
     public const string bad_body_message = "Something went wrong, please enter in contact with" +
-        " almeidaclauvin@gmail.com about it.";
+        " gamification.feedback@gmail.com about it.";
 
     public void SendingFeedback()
     {
