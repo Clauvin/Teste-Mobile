@@ -18,7 +18,8 @@ namespace Tests
     [Author("Cláuvin", "")]
     public class AboutPanelTestScript
     {
-        GameObject main_panel_manager;
+        GameObject prefab_main_menu;
+        MainPanelManagerScript main_panel_manager;
         GameObject main_panel;
         GameObject about_panel;
 
@@ -40,24 +41,23 @@ namespace Tests
         [Test]
         public void TheBackButtonFromTheAboutPanelWorks()
         {
-            Action del = this.TheBackButtonFromTheAboutPanelWorks;
-            string ret = del.Method.Name;
+            Action this_test_function = this.TheBackButtonFromTheAboutPanelWorks;
+            string this_test_function_name = this_test_function.Method.Name;
 
-            main_panel_manager = GameObject.Find("Prefab Main Menu");
-            main_panel = main_panel_manager.GetComponentInChildren<MainPanelManagerScript>().mainPanel;
-            about_panel = main_panel_manager.GetComponentInChildren<MainPanelManagerScript>().aboutPanel;
+            prefab_main_menu = GameObject.Find("Prefab Main Menu");
+            main_panel_manager = prefab_main_menu.GetComponentInChildren<MainPanelManagerScript>();
+
+            main_panel = main_panel_manager.mainPanel;
+            about_panel = main_panel_manager.aboutPanel;
 
             try
             {
-                WriteTestLogScript.WriteString("Starting " + ret + " test.");
+                WriteTestLogScript.WriteOnLogThatTestStarted(this_test_function_name);
 
-                AboutButtonScript about_button_script = main_panel_manager.
-                    GetComponentInChildren<MainPanelManagerScript>().
-                    aboutButton.
-                    GetComponent<AboutButtonScript>();
-                about_button_script.whenPressed();
+                AboutButtonScript about_button_script = main_panel_manager.aboutButton.GetComponent<AboutButtonScript>();
+                    about_button_script.whenPressed();
 
-                BackToMainFromAboutButtonScript back_to_main_from_about_script = about_panel.transform.GetChild(2).
+                BackToMainFromAboutButtonScript back_to_main_from_about_script = about_panel.transform.Find("Back Button").
                     GetComponent<BackToMainFromAboutButtonScript>();
                 back_to_main_from_about_script.whenPressed();
 
@@ -65,12 +65,12 @@ namespace Tests
             }
             catch (AssertionException ae)
             {
-                WriteTestLogScript.TestFailed(ret);
+                WriteTestLogScript.WriteOnLogThatTestFailed(this_test_function_name);
                 Assert.Fail();
                 return;
             }
 
-            WriteTestLogScript.TestPassed(ret);
+            WriteTestLogScript.WriteOnLogThatTestPassed(this_test_function_name);
         }
     }
 }

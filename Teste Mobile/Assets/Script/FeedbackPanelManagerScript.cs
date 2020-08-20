@@ -17,7 +17,6 @@ public class FeedbackPanelManagerScript : PanelManagerScript
     public Button backToMainButton;
     public Button nextToWrittenFeedbackButton;
     public Button backToLikertFeedbackPanelButton;
-    public Button backToWrittenFeedbackButton;
     public Button sendButton;
 
     public const string result_message_show_likert_feedback_panel_true = "showLikertFeedbackPanel true";
@@ -75,12 +74,6 @@ public class FeedbackPanelManagerScript : PanelManagerScript
         return sendMessageAboutIfTheObjectIsActive(writtenFeedbackPanel, false, result_message_hide_written_feedback_panel_true,
             result_message_hide_written_feedback_panel_false);
     }
-    
-    private void setPanel(GameObject panel, bool true_or_false)
-    {
-        panel.SetActive(true_or_false);
-    }
-
 
     
 }

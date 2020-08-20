@@ -1,11 +1,8 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using NUnit.Framework;
 using UnityEngine;
-using UnityEngine.SceneManagement;
-using UnityEngine.TestTools;
 using UnityEngine.UI;
 
 namespace Tests
@@ -44,8 +41,8 @@ namespace Tests
         [Test]
         public void TheBackButtonFromTheWrittenFeedbackPanelWorks()
         {
-            Action del = this.TheBackButtonFromTheWrittenFeedbackPanelWorks;
-            string ret = del.Method.Name;
+            Action this_test_function = this.TheBackButtonFromTheWrittenFeedbackPanelWorks;
+            string this_test_function_name = this_test_function.Method.Name;
 
             UnityEngine.Object[] list = Resources.FindObjectsOfTypeAll(typeof(GameObject));
 
@@ -56,58 +53,74 @@ namespace Tests
 
             try
             {
-                WriteTestLogScript.WriteString("Starting " + ret + " test.");
+                WriteTestLogScript.WriteString("Starting " + this_test_function_name + " test.");
 
                 FeedbackButtonScript fb_script = main_panel_manager.GetComponentInChildren<MainPanelManagerScript>().
                     mainFeedbackButton.GetComponent<FeedbackButtonScript>();
                 fb_script.whenPressed();
-                ToWrittenFeedbackFromLikertFeedbackButtonScript wf_lf_script = likert_feedback_panel.transform.GetChild(1).GetChild(2).
+
+                ToWrittenFeedbackFromLikertFeedbackButtonScript to_written_feedback_panel_from_likert_feedback_panel_script =
+                    likert_feedback_panel.transform.
+                    Find("Likert Feedback Panel Layout Manager").
+                    Find("Next Button").
                     GetComponent<ToWrittenFeedbackFromLikertFeedbackButtonScript>();
-                wf_lf_script.whenPressed();
-                BackToLikertFromWrittenFeedbackButtonScript bl_wf_script = written_feedback_panel.transform.GetChild(1).GetChild(5).
+                to_written_feedback_panel_from_likert_feedback_panel_script.whenPressed();
+
+                BackToLikertFromWrittenFeedbackButtonScript to_likert_feedback_panel_from_written_feedback_panel_script =
+                    written_feedback_panel.transform.
+                    Find("Main Panel Buttons Layout Manager").
+                    Find("Back Button").
                     GetComponent<BackToLikertFromWrittenFeedbackButtonScript>();
-                bl_wf_script.whenPressed();
+                to_likert_feedback_panel_from_written_feedback_panel_script.whenPressed();
 
                 Assert.AreEqual(likert_feedback_panel.activeSelf, true);
             }
             catch (AssertionException ae)
             {
-                WriteTestLogScript.TestFailed(ret);
+                WriteTestLogScript.WriteOnLogThatTestFailed(this_test_function_name);
                 Assert.Fail();
                 return;
             }
 
-            WriteTestLogScript.TestPassed(ret);
+            WriteTestLogScript.WriteOnLogThatTestPassed(this_test_function_name);
         }
 
         [Test]
         public void SavingWrittenTestWorks()
         {
-            Action del = this.SavingWrittenTestWorks;
-            string ret = del.Method.Name;
-
-            UnityEngine.Object[] list = Resources.FindObjectsOfTypeAll(typeof(GameObject));
+            Action this_test_function = this.SavingWrittenTestWorks;
+            string this_test_function_name = this_test_function.Method.Name;
 
             main_panel_manager = GameObject.Find("Prefab Main Menu");
             main_panel = main_panel_manager.GetComponentInChildren<MainPanelManagerScript>().mainPanel;
             likert_feedback_panel = main_panel_manager.GetComponentInChildren<FeedbackPanelManagerScript>().likertFeedbackPanel;
             written_feedback_panel = main_panel_manager.GetComponentInChildren<FeedbackPanelManagerScript>().writtenFeedbackPanel;
 
-            WriteTestLogScript.WriteString("Starting " + ret + " test.");
+            WriteTestLogScript.WriteOnLogThatTestStarted(this_test_function_name);
 
-            FeedbackButtonScript fb_script = main_panel_manager.GetComponentInChildren<MainPanelManagerScript>().
-                mainFeedbackButton.GetComponent<FeedbackButtonScript>();
-            fb_script.whenPressed();
+            FeedbackButtonScript feedback_script = main_panel_manager.
+                GetComponentInChildren<MainPanelManagerScript>().
+                mainFeedbackButton.
+                GetComponent<FeedbackButtonScript>();
+            feedback_script.whenPressed();
 
-            GameObject name_input_field = written_feedback_panel.transform.GetChild(1).GetChild(1).gameObject;
-            GameObject considerations_input_field = written_feedback_panel.transform.GetChild(1).GetChild(3).gameObject;
+            GameObject name_input_field = written_feedback_panel.transform.
+                Find("Main Panel Buttons Layout Manager").
+                Find("Name InputField").
+                gameObject;
+
+            GameObject considerations_input_field = written_feedback_panel.transform.
+                Find("Main Panel Buttons Layout Manager").
+                Find("Considerations InputField").
+                gameObject;
 
             SaveManagerScript save_manager = GameObject.Find("Save Manager").GetComponent<SaveManagerScript>();
 
             // Go to Written Feedback
 
             ToWrittenFeedbackFromLikertFeedbackButtonScript wf_lf_script = likert_feedback_panel.transform.
-                    GetChild(1).GetChild(2).
+                    Find("Likert Feedback Panel Layout Manager").
+                    Find("Next Button").
                     GetComponent<ToWrittenFeedbackFromLikertFeedbackButtonScript>();
             wf_lf_script.whenPressed();
 
@@ -134,8 +147,7 @@ namespace Tests
 
                 save_manager.FromDictionaryDataToSaveFile();
 
-                // Check if what was written was saved
-
+                // Check if what was written was saved properly
                 StreamReader reader = new StreamReader(SaveManagerScript.save_file_address);
                 List<string> a_list = new List<string>();
 
@@ -148,8 +160,6 @@ namespace Tests
                     a_list.Add(line);
                 }
                 reader.Close();
-
-
 
                 foreach (string key_value in a_list)
                 {
@@ -176,7 +186,7 @@ namespace Tests
             }
             catch (AssertionException ae)
             {
-                WriteTestLogScript.TestFailed(ret);
+                WriteTestLogScript.WriteOnLogThatTestFailed(this_test_function_name);
                 Assert.Fail();
                 return;
             }
@@ -186,24 +196,30 @@ namespace Tests
         [Test]
         public void LoadingWrittenInfoWorks()
         {
-            Action del = this.LoadingWrittenInfoWorks;
-            string ret = del.Method.Name;
-
-            UnityEngine.Object[] list = Resources.FindObjectsOfTypeAll(typeof(GameObject));
+            Action this_test_function = this.LoadingWrittenInfoWorks;
+            string this_test_function_name = this_test_function.Method.Name;
 
             main_panel_manager = GameObject.Find("Prefab Main Menu");
             main_panel = main_panel_manager.GetComponentInChildren<MainPanelManagerScript>().mainPanel;
             likert_feedback_panel = main_panel_manager.GetComponentInChildren<FeedbackPanelManagerScript>().likertFeedbackPanel;
             written_feedback_panel = main_panel_manager.GetComponentInChildren<FeedbackPanelManagerScript>().writtenFeedbackPanel;
 
-            WriteTestLogScript.WriteString("Starting " + ret + " test.");
+            WriteTestLogScript.WriteOnLogThatTestStarted(this_test_function_name);
 
-            FeedbackButtonScript fb_script = main_panel_manager.GetComponentInChildren<MainPanelManagerScript>().
+            FeedbackButtonScript feedback_script = main_panel_manager.
+                GetComponentInChildren<MainPanelManagerScript>().
                 mainFeedbackButton.GetComponent<FeedbackButtonScript>();
-            fb_script.whenPressed();
+            feedback_script.whenPressed();
 
-            GameObject name_input_field = written_feedback_panel.transform.GetChild(1).GetChild(1).gameObject;
-            GameObject considerations_input_field = written_feedback_panel.transform.GetChild(1).GetChild(3).gameObject;
+            GameObject name_input_field = written_feedback_panel.transform.
+                Find("Main Panel Buttons Layout Manager").
+                Find("Name InputField").
+                gameObject;
+
+            GameObject considerations_input_field = written_feedback_panel.transform.
+                Find("Main Panel Buttons Layout Manager").
+                Find("Considerations InputField").
+                gameObject;
 
             SaveManagerScript save_manager = GameObject.Find("Save Manager").GetComponent<SaveManagerScript>();
 
@@ -211,21 +227,23 @@ namespace Tests
             {
                 if (SaveManagerScript.save_file_address == null) save_manager.InitializingSaveFileAddress();
 
+                //writing a save_file for testing
                 StreamWriter writer = new StreamWriter(SaveManagerScript.save_file_address, true);
-
                 writer.WriteLine("Name|A");
                 writer.WriteLine("Considerations|A");
-
                 writer.Close();
 
+                //loading that save_file
                 save_manager.FromSaveFileToDataDictionary();
                 SaveManagerScript.EraseSaveFile();
                 SaveManagerScript.list_used_to_save_and_load_stuff.Clear();
 
-                ToWrittenFeedbackFromLikertFeedbackButtonScript wf_lf_script = likert_feedback_panel.transform.
-                    GetChild(1).GetChild(2).
+                ToWrittenFeedbackFromLikertFeedbackButtonScript to_written_feedback_from_likert_feedback_script = 
+                    likert_feedback_panel.transform.
+                    Find("Likert Feedback Panel Layout Manager").
+                    Find("Next Button").
                     GetComponent<ToWrittenFeedbackFromLikertFeedbackButtonScript>();
-                wf_lf_script.whenPressed();
+                to_written_feedback_from_likert_feedback_script.whenPressed();
 
                 name_input_field.GetComponent<TextSaveFieldScript>().JumpStart();
                 name_input_field.GetComponent<TextSaveFieldScript>().FromValueToText();
@@ -249,20 +267,20 @@ namespace Tests
             }
             catch (AssertionException ae)
             {
-                WriteTestLogScript.TestFailed(ret);
+                WriteTestLogScript.WriteOnLogThatTestFailed(this_test_function_name);
                 Assert.Fail();
                 return;
             }
 
-            WriteTestLogScript.TestPassed(ret);
+            WriteTestLogScript.WriteOnLogThatTestPassed(this_test_function_name);
 
         }
 
         [Test]
         public void SendingMailWorks()
         {
-            Action del = this.SendingMailWorks;
-            string ret = del.Method.Name;
+            Action this_test_function = this.SendingMailWorks;
+            string this_test_function_name = this_test_function.Method.Name;
 
             main_panel_manager = GameObject.Find("Prefab Main Menu");
             main_panel = main_panel_manager.GetComponentInChildren<MainPanelManagerScript>().mainPanel;
@@ -271,14 +289,25 @@ namespace Tests
 
             try
             {
-                WriteTestLogScript.WriteString("Starting " + ret + " test.");
-                FeedbackButtonScript fb_script = main_panel_manager.GetComponentInChildren<MainPanelManagerScript>().
+                WriteTestLogScript.WriteOnLogThatTestStarted(this_test_function_name);
+
+                FeedbackButtonScript feedback_button_script = 
+                    main_panel_manager.GetComponentInChildren<MainPanelManagerScript>().
                     mainFeedbackButton.GetComponent<FeedbackButtonScript>();
-                fb_script.whenPressed();
-                ToWrittenFeedbackFromLikertFeedbackButtonScript wf_lf_script = likert_feedback_panel.transform.GetChild(1).GetChild(2).
-                    GetComponent<ToWrittenFeedbackFromLikertFeedbackButtonScript>();
-                wf_lf_script.whenPressed();
-                GameObject send_button = written_feedback_panel.transform.GetChild(1).GetChild(4).gameObject;
+                feedback_button_script.whenPressed();
+
+                ToWrittenFeedbackFromLikertFeedbackButtonScript to_written_feedback_panel_from_likert_feedback_panel_script =
+                    likert_feedback_panel.transform.
+                    Find("Likert Feedback Panel Layout Manager").
+                    Find("Next Button").
+                GetComponent<ToWrittenFeedbackFromLikertFeedbackButtonScript>();
+
+                to_written_feedback_panel_from_likert_feedback_panel_script.whenPressed();
+
+                GameObject send_button = written_feedback_panel.transform.
+                    Find("Main Panel Buttons Layout Manager").
+                    Find("Send Button").
+                    gameObject;
 
                 SaveManagerScript.data_dictionary = new Dictionary<string, string>();
 
@@ -288,13 +317,24 @@ namespace Tests
 
                 bool good_message = false;
 
-                GameObject name_input_field = written_feedback_panel.transform.GetChild(1).GetChild(1).gameObject;
-                GameObject considerations_input_field = written_feedback_panel.transform.GetChild(1).GetChild(3).gameObject;
+                GameObject name_input_field = written_feedback_panel.transform.
+                    Find("Main Panel Buttons Layout Manager").
+                    Find("Name InputField").
+                    gameObject;
 
-                bool good_title_message_appeared = name_input_field.GetComponent<InputField>().text.
+                GameObject considerations_input_field = written_feedback_panel.transform.
+                    Find("Main Panel Buttons Layout Manager").
+                    Find("Considerations InputField").
+                    gameObject;
+
+                string title_message = name_input_field.GetComponent<InputField>().text;
+
+                bool good_title_message_appeared = title_message.
                     CompareTo(SendingFeedbackScript.good_title_message) == 0;
 
-                bool good_body_message_appeared = considerations_input_field.GetComponent<InputField>().text.
+                string body_message = considerations_input_field.GetComponent<InputField>().text;
+
+                bool good_body_message_appeared = body_message.
                     CompareTo(SendingFeedbackScript.good_body_message) == 0;
 
                 if ((good_title_message_appeared) && (good_body_message_appeared))
@@ -307,7 +347,7 @@ namespace Tests
             }
             catch (AssertionException ae)
             {
-                WriteTestLogScript.TestFailed(ret);
+                WriteTestLogScript.WriteOnLogThatTestFailed(this_test_function_name);
                 Assert.Fail();
                 return;
             }

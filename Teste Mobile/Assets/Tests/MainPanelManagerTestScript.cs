@@ -17,7 +17,7 @@ namespace Tests
     public class MainPanelManagerTestScript
     {
         MainPanelManagerScript main_panel_manager_script;
-        GameObject obj;
+        GameObject object_to_hold_the_main_panel_manager_script;
 
         [OneTimeSetUp]
         public void WriteStartOfLog()
@@ -29,8 +29,8 @@ namespace Tests
         public void ResetScene()
         {
             TestContext.WriteLine("Setup started");
-            obj = new GameObject();
-            main_panel_manager_script = obj.AddComponent<MainPanelManagerScript>();
+            object_to_hold_the_main_panel_manager_script = new GameObject();
+            main_panel_manager_script = object_to_hold_the_main_panel_manager_script.AddComponent<MainPanelManagerScript>();
             main_panel_manager_script.aboutPanel = new GameObject();
             main_panel_manager_script.feedbackPanel = new GameObject();
             main_panel_manager_script.guidelinesPanel = new GameObject();
@@ -42,10 +42,10 @@ namespace Tests
         public void The_showMainPanelFunction_Works()
         {
 
-            Action del = this.The_showMainPanelFunction_Works;
-            string ret = del.Method.Name;
+            Action this_test_function = this.The_showMainPanelFunction_Works;
+            string this_test_function_name = this_test_function.Method.Name;
 
-            WriteTestLogScript.WriteString("Starting " + ret + " test.");
+            WriteTestLogScript.WriteString("Starting " + this_test_function_name + " test.");
 
             try
             {
@@ -54,35 +54,35 @@ namespace Tests
             }
             catch (AssertionException ae)
             {
-                WriteTestLogScript.TestFailed(ret);
+                WriteTestLogScript.WriteOnLogThatTestFailed(this_test_function_name);
                 Assert.Fail();
                 return;
             }
 
-            WriteTestLogScript.TestPassed(ret);
+            WriteTestLogScript.WriteOnLogThatTestPassed(this_test_function_name);
 
         }
 
         [Test]
         public void The_hideMainPanelFunction_Works()
         {
-            Action del = this.The_hideMainPanelFunction_Works;
-            string ret = del.Method.Name;
+            Action this_test_function = this.The_hideMainPanelFunction_Works;
+            string this_test_function_name = this_test_function.Method.Name;
 
             try
             {
-                WriteTestLogScript.WriteString("Starting " + ret + " test.");
+                WriteTestLogScript.WriteString("Starting " + this_test_function_name + " test.");
                 Assert.AreEqual(main_panel_manager_script.hideMainPanel(),
                     (string)MainPanelManagerScript.result_message_hide_main_panel_true);
             }
             catch (AssertionException ae)
             {
-                WriteTestLogScript.TestFailed(ret);
+                WriteTestLogScript.WriteOnLogThatTestFailed(this_test_function_name);
                 Assert.Fail();
                 return;
             }
 
-            WriteTestLogScript.TestPassed(ret);
+            WriteTestLogScript.WriteOnLogThatTestPassed(this_test_function_name);
 
         }
 
