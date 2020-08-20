@@ -682,7 +682,7 @@ PrefabInstance:
         type: 3}
       propertyPath: writtenFeedbackPanel
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2754703885989591667}
     - target: {fileID: 2484103850463578384, guid: 38c0cd6475a4e1e4b8c14dffd08c3fd2,
         type: 3}
       propertyPath: sendFeedbackPanel
@@ -1917,3 +1917,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 191d3ac6e80fe65478dd0b7575897005, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &2754703885989591667 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1116525474202597546, guid: 38c0cd6475a4e1e4b8c14dffd08c3fd2,
+    type: 3}
+  m_PrefabInstance: {fileID: 2754703885989591665}
+  m_PrefabAsset: {fileID: 0}
