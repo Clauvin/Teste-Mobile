@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 875, y: 392}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -46,7 +46,7 @@ MonoBehaviour:
     y: 0
     width: 1366
     height: 644
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -112,10 +112,10 @@ MonoBehaviour:
     y: 30
     width: 1366
     height: 594
-  m_MinSize: {x: 577, y: 321}
-  m_MaxSize: {x: 12002, y: 8042}
+  m_MinSize: {x: 677, y: 492}
+  m_MaxSize: {x: 14001, y: 14042}
   vertical: 0
-  controlID: 109
+  controlID: 36
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -137,10 +137,10 @@ MonoBehaviour:
     y: 0
     width: 1008
     height: 594
-  m_MinSize: {x: 302, y: 321}
-  m_MaxSize: {x: 8002, y: 8042}
+  m_MinSize: {x: 402, y: 492}
+  m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 110
+  controlID: 37
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -162,10 +162,10 @@ MonoBehaviour:
     y: 0
     width: 1008
     height: 323
-  m_MinSize: {x: 302, y: 200}
+  m_MinSize: {x: 402, y: 221}
   m_MaxSize: {x: 8002, y: 4021}
   vertical: 0
-  controlID: 111
+  controlID: 38
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -202,7 +202,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: TestRunnerWindow
+  m_Name: SceneView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -211,16 +211,16 @@ MonoBehaviour:
     y: 0
     width: 638
     height: 323
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 17}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
   - {fileID: 12}
   - {fileID: 15}
   - {fileID: 16}
   - {fileID: 17}
-  m_Selected: 4
+  m_Selected: 0
   m_LastSelected: 1
 --- !u!114 &10
 MonoBehaviour:
@@ -232,7 +232,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ConsoleWindow
+  m_Name: ProjectBrowser
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -241,14 +241,14 @@ MonoBehaviour:
     y: 323
     width: 1008
     height: 271
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 19}
+  m_MinSize: {x: 231, y: 271}
+  m_MaxSize: {x: 10001, y: 10021}
+  m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
   - {fileID: 19}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -336,7 +336,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -396,9 +396,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 3025fdff4225fdff6425fdff7625fdffb22cfdffb62cfdffde2cfdffb033fdffc233fdffe06dfdff6074fdff7274fdfffe74fdff7c7bfdff8e7bfdffacb5fdffc6bbfdffe0cdfdff72cefdfff0cefdff14cffdff20cffdff32cffdff54cffdff66cffdffa0d6fdffa4d6fdffccd6fdff14defdff34defdff58defdff60defdff64defdff76defdff98defdffaadefdffd8e4fdffdce4fdfffce4fdfff2eafdff12ebfdff36ebfdff3eebfdff44ebfdff56ebfdff78ebfdff8aebfdffbaf1fdffbef1fdffdef1fdff12f8fdff24f8fdff46f8fdff58f8fdff88fefdff8cfefdffacfefdfff28afeffa68bfeffd88bfeffea8bfeff0c8cfeff1e8cfeff4893feff4c93feff7493feffe299fefff499feff169afeff289afeff52a1feff56a1feff7ea1feffeca7fefffea7feff20a8feff32a8feff50aefeff54aefeff74aefeff96b4feffa8b4feffcab4feffdcb4feff06bcfeff0abcfeff32bcfeffa0c2feffb2c2feff58c9feff7acffeff8ccffeffaecffeffc0cffeffead6feffeed6feff16d7feff88ddfeff9addfeffbcddfeffceddfefff8e4fefffce4feff24e5feff92ebfeffa4ebfeffc6ebfeffd8ebfeff02f3feff06f3feff2ef3feffa2f9feffb4f9feffd6f9feffe8f9feff0600ffff0a00ffff2a00ffff4c06ffff5e06ffff8006ffff9206ffffbc0dffffc00dffffe80dffff5614ffff6814ffff8a14ffff9c14ffffba1affffbe1affffde1affff441bffff561bffff321cffffee22ffff0023ffff2823ffffa029ffffb229ffffd229fffff82fffff0a30ffff2a30ffff4e36ffff6036ffff8036ffffa43cffffb63cffffd63cfffffa42ffff0c43ffff2c43ffff5049ffff6249ffffa649ffffd04fffffe24fffff8e56ffff045dffff165dffffc263ffff366affff486afffff470ffff3485ffff7285ffffe885ffff1a86ffff2c86ffffd88cffff4c93ffff5e93ffff0a9affff64faffff6cfaffffaafaffff20fbffff52fbffffa0390000a639000034c6000044e40000
+      m_SelectedIDs: 442dffff
+      m_LastClickedID: -53948
+      m_ExpandedIDs: 442dffff7e2dffff902dffffb22dffffc42dfffffe34ffff0235ffff4635ffff7a3bffff8c3bffff3642ffffb248ffffc448ffff6e4ffffffe54ffffb655ffff3056ffff4456ffff6a56ffff7c56ffff2870ffff607affff907affff187bffff927bffffa67bffffcc7bffffde7bffff787dfffff483ffff0684ffffce8affff4a91ffff5c91ffff2498ffff109effff8a9effff9e9effffc49effffd69efffff8b1ffff6cc3ffff02ddffff32ddffff84ddffff0edeffff7edeffff86defffffcdeffff14dfffff1adfffff1edfffff30dfffffdae5ffff84edffffa8edffffbeedffffdaedfffff2edfffffcedffff0eeeffffc4f4ffff6afbffffee4f0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -460,7 +460,7 @@ MonoBehaviour:
   m_Position:
     m_Target: {x: 240.84464, y: 315.59537, z: -70.67222}
     speed: 2
-    m_Value: {x: 240.84464, y: 315.59537, z: -70.67222}
+    m_Value: {x: 199.15985, y: 309.64713, z: -19.890007}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -512,7 +512,7 @@ MonoBehaviour:
   m_Size:
     m_Target: 347.0115
     speed: 2
-    m_Value: 347.0115
+    m_Value: 335.19437
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -619,7 +619,7 @@ MonoBehaviour:
     height: 302
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
-    ID: 157
+    ID: 128
     splitterInitialOffset: 240
     currentActiveSplitter: -1
     realSizes: 9b0000004d000000
@@ -640,7 +640,7 @@ MonoBehaviour:
       name: UnityTestFramework
       fullName: UnityTestFramework
       resultStatus: 1
-      duration: 12.745867
+      duration: 12.3234415
       messages: 
       output: 
       stacktrace: 
@@ -656,7 +656,7 @@ MonoBehaviour:
       name: Tests.dll
       fullName: C:/GitHub/Teste-Mobile/Teste Mobile/Library/ScriptAssemblies/Tests.dll
       resultStatus: 1
-      duration: 1.8028489
+      duration: 1.9337513
       messages: 
       output: 
       stacktrace: 
@@ -672,7 +672,7 @@ MonoBehaviour:
       name: Tests
       fullName: Tests
       resultStatus: 1
-      duration: 12.114736
+      duration: 11.731644
       messages: 
       output: 
       stacktrace: 
@@ -688,7 +688,7 @@ MonoBehaviour:
       name: AboutPanelTestScript
       fullName: Tests.AboutPanelTestScript
       resultStatus: 1
-      duration: 3.8398228
+      duration: 3.6616805
       messages: 
       output: 
       stacktrace: 
@@ -704,7 +704,7 @@ MonoBehaviour:
       name: TheBackButtonFromTheAboutPanelWorks
       fullName: Tests.AboutPanelTestScript.TheBackButtonFromTheAboutPanelWorks
       resultStatus: 1
-      duration: 2.0610282
+      duration: 1.930861
       messages: 
       output: 'Setup started
 
@@ -725,7 +725,7 @@ MonoBehaviour:
       name: LikertFeedbackPanelTestScript
       fullName: Tests.LikertFeedbackPanelTestScript
       resultStatus: 1
-      duration: 2.2558348
+      duration: 2.493373
       messages: 
       output: 'Could not find file "/storage/emulated/0/Android/data/com.UnityTestRunner.UnityTestRunner/files/save_file.txt"
 
@@ -743,7 +743,7 @@ MonoBehaviour:
       name: LoadingTheLikertDataToTheLikertSlidersWorks
       fullName: Tests.LikertFeedbackPanelTestScript.LoadingTheLikertDataToTheLikertSlidersWorks
       resultStatus: 1
-      duration: 0.3329235
+      duration: 0.5665424
       messages: 
       output: 'Setup started
 
@@ -764,7 +764,7 @@ MonoBehaviour:
       name: SavingTheDataFromTheLikertSlidersToTheSaveFileWorks
       fullName: Tests.LikertFeedbackPanelTestScript.SavingTheDataFromTheLikertSlidersToTheSaveFileWorks
       resultStatus: 1
-      duration: 0.2049172
+      duration: 0.2388847
       messages: 
       output: 'Setup started
 
@@ -785,7 +785,7 @@ MonoBehaviour:
       name: TheBackButtonFromTheLikertFeedbackPanelWorks
       fullName: Tests.LikertFeedbackPanelTestScript.TheBackButtonFromTheLikertFeedbackPanelWorks
       resultStatus: 1
-      duration: 0.2151833
+      duration: 0.1272915
       messages: 
       output: 'Setup started
 
@@ -806,7 +806,7 @@ MonoBehaviour:
       name: MainPanelManagerTestScript
       fullName: Tests.MainPanelManagerTestScript
       resultStatus: 1
-      duration: 0.6661965
+      duration: 0.547871
       messages: 
       output: 'Could not find file "/storage/emulated/0/Android/data/com.UnityTestRunner.UnityTestRunner/files/save_file.txt"
 
@@ -827,7 +827,7 @@ MonoBehaviour:
       name: The_hideAboutPanelFunction_Works
       fullName: Tests.MainPanelManagerTestScript.The_hideAboutPanelFunction_Works
       resultStatus: 1
-      duration: 0.0425441
+      duration: 0.0187031
       messages: 
       output: 'Setup started
 
@@ -848,7 +848,7 @@ MonoBehaviour:
       name: The_hideFeedbackPanelFunction_Works
       fullName: Tests.MainPanelManagerTestScript.The_hideFeedbackPanelFunction_Works
       resultStatus: 1
-      duration: 0.0096874
+      duration: 0.0069869
       messages: 
       output: 'Setup started
 
@@ -869,7 +869,7 @@ MonoBehaviour:
       name: The_hideGuidelinesPanelFunction_Works
       fullName: Tests.MainPanelManagerTestScript.The_hideGuidelinesPanelFunction_Works
       resultStatus: 1
-      duration: 0.0056838
+      duration: 0.0063137
       messages: 
       output: 'Setup started
 
@@ -890,7 +890,7 @@ MonoBehaviour:
       name: The_hideMainPanelFunction_Works
       fullName: Tests.MainPanelManagerTestScript.The_hideMainPanelFunction_Works
       resultStatus: 1
-      duration: 0.0122109
+      duration: 0.0137192
       messages: 
       output: 'Setup started
 
@@ -911,7 +911,7 @@ MonoBehaviour:
       name: The_sendMessageAboutIfTheObjectIsActive_Works
       fullName: Tests.MainPanelManagerTestScript.The_sendMessageAboutIfTheObjectIsActive_Works
       resultStatus: 1
-      duration: 0.1947781
+      duration: 0.1932876
       messages: 
       output: 'Setup started
 
@@ -935,7 +935,7 @@ MonoBehaviour:
       name: The_setPanelFunction_Works
       fullName: Tests.MainPanelManagerTestScript.The_setPanelFunction_Works
       resultStatus: 1
-      duration: 0.0148849
+      duration: 0.0175654
       messages: 
       output: 'Setup started
 
@@ -959,7 +959,7 @@ MonoBehaviour:
       name: The_showAboutPanelFunction_Works
       fullName: Tests.MainPanelManagerTestScript.The_showAboutPanelFunction_Works
       resultStatus: 1
-      duration: 0.0052335
+      duration: 0.0060257
       messages: 
       output: 'Setup started
 
@@ -980,7 +980,7 @@ MonoBehaviour:
       name: The_showFeedbackPanelFunction_Works
       fullName: Tests.MainPanelManagerTestScript.The_showFeedbackPanelFunction_Works
       resultStatus: 1
-      duration: 0.0059103
+      duration: 0.0076373
       messages: 
       output: 'Setup started
 
@@ -1001,7 +1001,7 @@ MonoBehaviour:
       name: The_showGuidelinesPanelFunction_Works
       fullName: Tests.MainPanelManagerTestScript.The_showGuidelinesPanelFunction_Works
       resultStatus: 1
-      duration: 0.0077503
+      duration: 0.0088049
       messages: 
       output: 'Setup started
 
@@ -1022,7 +1022,7 @@ MonoBehaviour:
       name: The_showMainPanelFunction_Works
       fullName: Tests.MainPanelManagerTestScript.The_showMainPanelFunction_Works
       resultStatus: 1
-      duration: 0.0124714
+      duration: 0.0128446
       messages: 
       output: 'Setup started
 
@@ -1043,7 +1043,7 @@ MonoBehaviour:
       name: WrittenFeedbackPanelTestScript
       fullName: Tests.WrittenFeedbackPanelTestScript
       resultStatus: 1
-      duration: 5.1514735
+      duration: 4.8395195
       messages: 
       output: 
       stacktrace: 
@@ -1059,7 +1059,7 @@ MonoBehaviour:
       name: LoadingWrittenInfoWorks
       fullName: Tests.WrittenFeedbackPanelTestScript.LoadingWrittenInfoWorks
       resultStatus: 1
-      duration: 0.2470125
+      duration: 0.2101917
       messages: 
       output: 'Setup started
 
@@ -1080,7 +1080,7 @@ MonoBehaviour:
       name: SavingWrittenTestWorks
       fullName: Tests.WrittenFeedbackPanelTestScript.SavingWrittenTestWorks
       resultStatus: 1
-      duration: 0.1337298
+      duration: 0.1448871
       messages: 
       output: 'Setup started
 
@@ -1101,7 +1101,7 @@ MonoBehaviour:
       name: SendingMailWorks
       fullName: Tests.WrittenFeedbackPanelTestScript.SendingMailWorks
       resultStatus: 1
-      duration: 4.543857
+      duration: 4.249717
       messages: 
       output: 'Setup started
 
@@ -1122,7 +1122,7 @@ MonoBehaviour:
       name: TheBackButtonFromTheWrittenFeedbackPanelWorks
       fullName: Tests.WrittenFeedbackPanelTestScript.TheBackButtonFromTheWrittenFeedbackPanelWorks
       resultStatus: 1
-      duration: 0.1157459
+      duration: 0.1218515
       messages: 
       output: 'Setup started
 
@@ -1138,12 +1138,19 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1018
       parentUniqueId: Tests.dll/Tests/[Tests][Tests.WrittenFeedbackPanelTestScript][suite]
-    m_ResultText: Tests (12,115s)
+    m_ResultText: 'TheBackButtonFromTheWrittenFeedbackPanelWorks (0,122s)
+
+      ---
+
+      Setup
+      started
+
+      Setup finished'
     m_ResultStacktrace: 
     m_TestListState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 8359db41
-      m_LastClickedID: 1104894339
+      scrollPos: {x: 0, y: 249}
+      m_SelectedIDs: 3a0e8d24
+      m_LastClickedID: 613223994
       m_ExpandedIDs: 2d1852adb51413b7d35dceb9674b3bd4e9a5e2e4c69cc6e68e3cc011537bbd2a2f5d863d8359db41ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -1271,9 +1278,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: fa460000
-    m_LastClickedID: 18170
-    m_ExpandedIDs: 00000000e8460000ea460000
+    m_SelectedIDs: 286a0000
+    m_LastClickedID: 27176
+    m_ExpandedIDs: 000000008047000082470000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1301,7 +1308,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000e8460000ea460000
+    m_ExpandedIDs: 000000008047000082470000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1328,7 +1335,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c623000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1353,7 +1360,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 96.5}
+    m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 96
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 201
