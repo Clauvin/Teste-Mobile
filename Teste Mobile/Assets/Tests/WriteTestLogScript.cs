@@ -5,20 +5,14 @@ using System.IO;
 using UnityEditor;
 using UnityEngine;
 
+/// <summary>
+/// WriteTestLogScript v1.0.0
+/// 
+/// What it does: writes strings to the test log.
+/// 
+/// </summary>
 public class WriteTestLogScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public static void WriteString(string text)
     {
         string path;
@@ -41,21 +35,12 @@ public class WriteTestLogScript : MonoBehaviour
 
     public static void TestPassed(string name_of_the_test)
     {
-        WriteTestLogScript.WriteString(name_of_the_test + " test passed.");
+        WriteString(name_of_the_test + " test passed.");
     }
 
     public static void TestFailed(string name_of_the_test)
     {
-        WriteTestLogScript.WriteString("WARNING! " + name_of_the_test + " test failed.");
-    }
-
-    public static void ReadString()
-    {
-        string path = "Assets/Resources/test.txt";
-
-        //Read the text from directly from the test.txt file
-        StreamReader reader = new StreamReader(path);
-        reader.Close();
+        WriteString("WARNING! " + name_of_the_test + " test failed.");
     }
 
 }

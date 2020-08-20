@@ -62,7 +62,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Text
     - UnityEngine.UI.VerticalLayoutGroup
   sceneClasses:
-    Assets/InitTestScene637332009966663295.unity:
+    Assets/InitTestScene637332968539810779.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -653,7 +653,7 @@ ScriptsOnlyBuild:
     className: RawImage
   - hash:
       serializedVersion: 2
-      Hash: 5eab5ff342e6d3b0cf9126fe86313847
+      Hash: b3f84bb321db3f59eb28f5a8ed3aa64e
     assemblyName: MyScriptsAssembly.dll
     namespaceName: 
     className: FeedbackPanelManagerScript
@@ -1035,8 +1035,14 @@ ScriptsOnlyBuild:
     assemblyName: MyScriptsAssembly.dll
     namespaceName: 
     className: SendingFeedbackScript
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: MyScriptsAssembly.dll
+    namespaceName: 
+    className: PanelManagerScript
   platform: 13
   scenePathNames:
-  - Assets/InitTestScene637332009966663295.unity
+  - Assets/InitTestScene637332968539810779.unity
   - Assets/Resources/Scenes/MainMenuScene.unity
-  playerPath: C:/GitHub/Teste-Mobile/Teste Mobile/Temp/UnityTempFile-71a2fb97ecd28eb4789463abd5c51ba7/PlayerWithTests/PlayerWithTests.apk
+  playerPath: C:/GitHub/Teste-Mobile/Teste Mobile/Temp/UnityTempFile-424a21f36653a5f4c99816c54448ef4e/PlayerWithTests/PlayerWithTests.apk

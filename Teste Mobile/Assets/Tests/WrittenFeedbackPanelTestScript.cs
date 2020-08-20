@@ -10,6 +10,11 @@ using UnityEngine.UI;
 
 namespace Tests
 {
+    /// <summary>
+    /// WrittenFeedbackPanelTestScript v1.0.0
+    /// 
+    /// What it does: takes care of tests involving directly the WrittenFeedback Panel, and the buttons and sliders in it.
+    /// </summary>
     [TestFixture]
     [Author("Cláuvin", "")]
     public class WrittenFeedbackPanelTestScript
@@ -37,9 +42,9 @@ namespace Tests
         }
 
         [Test]
-        public void BackButtonWorks()
+        public void TheBackButtonFromTheWrittenFeedbackPanelWorks()
         {
-            Action del = this.BackButtonWorks;
+            Action del = this.TheBackButtonFromTheWrittenFeedbackPanelWorks;
             string ret = del.Method.Name;
 
             UnityEngine.Object[] list = Resources.FindObjectsOfTypeAll(typeof(GameObject));
@@ -52,6 +57,7 @@ namespace Tests
             try
             {
                 WriteTestLogScript.WriteString("Starting " + ret + " test.");
+
                 FeedbackButtonScript fb_script = main_panel_manager.GetComponentInChildren<MainPanelManagerScript>().
                     mainFeedbackButton.GetComponent<FeedbackButtonScript>();
                 fb_script.whenPressed();
@@ -61,6 +67,7 @@ namespace Tests
                 BackToLikertFromWrittenFeedbackButtonScript bl_wf_script = written_feedback_panel.transform.GetChild(1).GetChild(5).
                     GetComponent<BackToLikertFromWrittenFeedbackButtonScript>();
                 bl_wf_script.whenPressed();
+
                 Assert.AreEqual(likert_feedback_panel.activeSelf, true);
             }
             catch (AssertionException ae)

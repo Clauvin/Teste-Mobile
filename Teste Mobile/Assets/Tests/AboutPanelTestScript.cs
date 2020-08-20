@@ -11,7 +11,7 @@ namespace Tests
     /// <summary>
     /// AboutPanelTestScript v1.0.1
     /// 
-    /// What it does: takes care of tests involving directly the AboutPanelTest class.
+    /// What it does: takes care of tests involving directly the About Panel buttons, and the About Panel itself.
     /// 
     /// </summary>
     [TestFixture]
@@ -43,8 +43,6 @@ namespace Tests
             Action del = this.TheBackButtonFromTheAboutPanelWorks;
             string ret = del.Method.Name;
 
-            UnityEngine.Object[] list = Resources.FindObjectsOfTypeAll(typeof(GameObject));
-
             main_panel_manager = GameObject.Find("Prefab Main Menu");
             main_panel = main_panel_manager.GetComponentInChildren<MainPanelManagerScript>().mainPanel;
             about_panel = main_panel_manager.GetComponentInChildren<MainPanelManagerScript>().aboutPanel;
@@ -52,12 +50,17 @@ namespace Tests
             try
             {
                 WriteTestLogScript.WriteString("Starting " + ret + " test.");
-                AboutButtonScript ab_script = main_panel_manager.GetComponentInChildren<MainPanelManagerScript>().aboutButton.
+
+                AboutButtonScript about_button_script = main_panel_manager.
+                    GetComponentInChildren<MainPanelManagerScript>().
+                    aboutButton.
                     GetComponent<AboutButtonScript>();
-                ab_script.whenPressed();
-                BackToMainFromAboutButtonScript bm_script = about_panel.transform.GetChild(2).
+                about_button_script.whenPressed();
+
+                BackToMainFromAboutButtonScript back_to_main_from_about_script = about_panel.transform.GetChild(2).
                     GetComponent<BackToMainFromAboutButtonScript>();
-                bm_script.whenPressed();
+                back_to_main_from_about_script.whenPressed();
+
                 Assert.AreEqual(main_panel.activeSelf, true);
             }
             catch (AssertionException ae)

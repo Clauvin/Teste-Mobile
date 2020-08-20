@@ -9,6 +9,11 @@ using UnityEngine.TestTools;
 
 namespace Tests
 {
+    /// <summary>
+    /// LikertFeedbackPanelTestScript v1.0.0
+    /// 
+    /// What it does: takes care of tests involving directly the LikertFeedback Panel, and the buttons and sliders in it.
+    /// </summary>
     [TestFixture]
     [Author("Cláuvin", "")]
     public class LikertFeedbackPanelTestScript
@@ -35,11 +40,10 @@ namespace Tests
             TestContext.WriteLine("Setup finished");
         }
 
-        // A Test behaves as an ordinary method
         [Test]
-        public void BackButtonWorks()
+        public void TheBackButtonFromTheLikertFeedbackPanelWorks()
         {
-            Action del = this.BackButtonWorks;
+            Action del = this.TheBackButtonFromTheLikertFeedbackPanelWorks;
             string ret = del.Method.Name;
 
             UnityEngine.Object[] list = Resources.FindObjectsOfTypeAll(typeof(GameObject));
@@ -70,9 +74,9 @@ namespace Tests
         }
 
         [Test]
-        public void LoadingLikertInfoWorks()
+        public void LoadingTheLikertDataToTheLikertSlidersWorks()
         {
-            Action del = this.LoadingLikertInfoWorks;
+            Action del = this.LoadingTheLikertDataToTheLikertSlidersWorks;
             string ret = del.Method.Name;
 
             main_panel_manager = GameObject.Find("Prefab Main Menu");
@@ -131,10 +135,10 @@ namespace Tests
         }
 
         [Test]
-        public void SavingLikertInfoWorks()
+        public void SavingTheDataFromTheLikertSlidersToTheSaveFileWorks()
         {
             //Go to the likert panel
-            Action del = this.SavingLikertInfoWorks;
+            Action del = this.SavingTheDataFromTheLikertSlidersToTheSaveFileWorks;
             string ret = del.Method.Name;
 
             main_panel_manager = GameObject.Find("Prefab Main Menu");
