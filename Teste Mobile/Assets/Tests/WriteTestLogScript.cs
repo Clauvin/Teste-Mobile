@@ -33,12 +33,17 @@ public class WriteTestLogScript : MonoBehaviour
         writer.Close();
     }
 
-    public static void TestPassed(string name_of_the_test)
+    public static void WriteOnLogThatTestStarted(string name_of_the_test)
+    {
+        WriteString("Starting " + name_of_the_test + " test.");
+    }
+
+    public static void WriteOnLogThatTestPassed(string name_of_the_test)
     {
         WriteString(name_of_the_test + " test passed.");
     }
 
-    public static void TestFailed(string name_of_the_test)
+    public static void WriteOnLogThatTestFailed(string name_of_the_test)
     {
         WriteString("WARNING! " + name_of_the_test + " test failed.");
     }
