@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="AboutButtonScript">
+    <Position X="0.5" Y="2" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACACAAAAAAAAAAACAAAAAAAAAEAAAACAAAA=</HashCode>
+      <FileName>Assets\Script\AboutButtonScript.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackToLikertFromWrittenFeedbackButtonScript">
+    <Position X="5.25" Y="2" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAACAAAAAAAAAACAAAAAAAABAAAEAAAAAAAAA=</HashCode>
+      <FileName>Assets\Script\BackToLikertFromWrittenFeedbackButtonScript.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackToMainFromAboutButtonScript">
+    <Position X="5" Y="5.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACACAAAAAAAAAAACAAAAAAAAAEAAAACAAAA=</HashCode>
+      <FileName>Assets\Script\BackToMainFromAboutButtonScript.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackToMainFromLikertFeedbackButtonScript">
+    <Position X="7.25" Y="5.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAACACAAAAAAAACAACAAAAABAAAEAAAACAAAA=</HashCode>
+      <FileName>Assets\Script\BackToMainFromLikertFeedbackButtonScript.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ButtonScript">
+    <Position X="9" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Assets\Script\ButtonScript.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ExitButtonScript">
+    <Position X="3" Y="2" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAACAAAAAAAAAEAAAACAAAA=</HashCode>
+      <FileName>Assets\Script\ExitButtonScript.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FeedbackButtonScript">
+    <Position X="0.5" Y="5.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACACAAAAAAAAAAACAAAAAAAAAEAAAACAAAA=</HashCode>
+      <FileName>Assets\Script\FeedbackButtonScript.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FeedbackPanelManagerScript">
+    <Position X="19.5" Y="9.5" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQKCwAIAIAAAIAAQADAAAAIAAADQKERAEAAA=</HashCode>
+      <FileName>Assets\Script\FeedbackPanelManagerScript.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GuidelinesButtonScript">
+    <Position X="9.75" Y="5.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACACAAAAAAAAAAACAAAAAAAAAEAAAACAAAA=</HashCode>
+      <FileName>Assets\Script\GuidelinesButtonScript.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LikertSaveFieldScript">
+    <Position X="3.25" Y="11.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAIAAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Script\LikertSaveFieldScript.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MainPanelManagerScript">
+    <Position X="14" Y="9.5" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>gKEAOAAACDAAgAIAIAAQAAgBgIMQMAQEQIAACQAAQA4=</HashCode>
+      <FileName>Assets\Script\MainPanelManagerScript.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PanelManagerScript">
+    <Position X="16.5" Y="7.25" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Script\PanelManagerScript.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SaveFieldScript">
+    <Position X="1.75" Y="8.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAEgCAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Script\SaveFieldScript.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SaveManagerScript">
+    <Position X="14" Y="0.5" Width="4" />
+    <TypeIdentifier>
+      <HashCode>EAAECBEEAGAAAAABQAEgCAFAAgBAAAAABAAAAAAEAAI=</HashCode>
+      <FileName>Assets\Script\SaveManagerScript.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SendingFeedbackScript">
+    <Position X="18.5" Y="0.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAIAAAAAAAAAAABABAABAAABAAAAAAAEAAA=</HashCode>
+      <FileName>Assets\Script\SendingFeedbackScript.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TextSaveFieldScript">
+    <Position X="0.5" Y="11.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAACAAAAAAAAAAAAAAAAAAAAAAACAAAAQAAAA=</HashCode>
+      <FileName>Assets\Script\TextSaveFieldScript.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ToWrittenFeedbackFromLikertFeedbackButtonScript">
+    <Position X="2.75" Y="5.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAACAAAAAAAAAACAAAAAAAABAAAEAAAAAAAAA=</HashCode>
+      <FileName>Assets\Script\ToWrittenFeedbackFromLikertFeedbackButtonScript.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
