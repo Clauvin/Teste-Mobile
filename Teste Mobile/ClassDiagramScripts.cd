@@ -50,7 +50,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="FeedbackPanelManagerScript">
-    <Position X="19.5" Y="9.5" Width="3.5" />
+    <Position X="19.75" Y="9.25" Width="3.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAQKCwAIAIAAAIAAQADAAAAIAAADQKERAEAAA=</HashCode>
       <FileName>Assets\Script\FeedbackPanelManagerScript.cs</FileName>
@@ -71,7 +71,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="MainPanelManagerScript">
-    <Position X="14" Y="9.5" Width="3.5" />
+    <Position X="14.5" Y="9.25" Width="3.5" />
     <TypeIdentifier>
       <HashCode>gKEAOAAACDAAgAIAIAAQAAgBgIMQMAQEQIAACQAAQA4=</HashCode>
       <FileName>Assets\Script\MainPanelManagerScript.cs</FileName>
