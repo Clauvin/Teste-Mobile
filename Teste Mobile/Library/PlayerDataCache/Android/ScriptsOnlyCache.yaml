@@ -19,8 +19,6 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
-    - UnityEditor.Tilemaps.GridPaletteBrushes
-    - UnityEditor.Tilemaps.GridPalettes
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.TileDragAndDropManager
     Unity.Rider.Editor.dll:
@@ -33,18 +31,10 @@ ScriptsOnlyBuild:
     - TMPro.TMP_StyleSheet
     UnityEditor.TestRunner.dll:
     - TestRunner.Callbacks.WindowResultUpdaterDataHolder
-    - UnityEditor.TestRunner.TestLaunchers.RemotePlayerLogController
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
-    - UnityEditor.TestTools.TestRunner.CommandLineTest.RunData
-    - UnityEditor.TestTools.TestRunner.RerunCallbackData
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
     - UnityEditor.TestTools.TestRunner.TestRunnerWindow
-    UnityEngine.TestRunner.dll:
-    - UnityEngine.TestRunner.Utils.TestRunCallbackListener
-    - UnityEngine.TestTools.TestRunner.Callbacks.PlayModeRunnerCallback
-    - UnityEngine.TestTools.TestRunner.Callbacks.RemoteTestResultSender
-    - UnityEngine.TestTools.TestRunner.PlaymodeTestsController
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
@@ -62,7 +52,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Text
     - UnityEngine.UI.VerticalLayoutGroup
   sceneClasses:
-    Assets/InitTestScene637335209016462206.unity:
+    Assets/Resources/Scenes/MainMenuScene.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -118,8 +108,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12748}
     - Class: 114
-      Script: {instanceID: 12814}
-    - Class: 114
       Script: {instanceID: 12934}
     - Class: 114
       Script: {instanceID: 12986}
@@ -145,103 +133,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 14020}
     - Class: 114
       Script: {instanceID: 14196}
-    - Class: 114
-      Script: {instanceID: 14226}
-    - Class: 114
-      Script: {instanceID: 14266}
-    - Class: 114
-      Script: {instanceID: 14316}
-    - Class: 114
-      Script: {instanceID: 14320}
-    - Class: 114
-      Script: {instanceID: 14336}
-    - Class: 114
-      Script: {instanceID: 14370}
-    - Class: 114
-      Script: {instanceID: 14412}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 196
-      Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
-      Script: {instanceID: 0}
-    Assets/Resources/Scenes/MainMenuScene.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 11194}
-    - Class: 114
-      Script: {instanceID: 11378}
-    - Class: 114
-      Script: {instanceID: 11486}
-    - Class: 114
-      Script: {instanceID: 11490}
-    - Class: 114
-      Script: {instanceID: 11542}
-    - Class: 114
-      Script: {instanceID: 11948}
-    - Class: 114
-      Script: {instanceID: 12032}
-    - Class: 114
-      Script: {instanceID: 12040}
-    - Class: 114
-      Script: {instanceID: 12046}
-    - Class: 114
-      Script: {instanceID: 12088}
-    - Class: 114
-      Script: {instanceID: 12212}
-    - Class: 114
-      Script: {instanceID: 12392}
-    - Class: 114
-      Script: {instanceID: 12420}
-    - Class: 114
-      Script: {instanceID: 12574}
-    - Class: 114
-      Script: {instanceID: 12588}
-    - Class: 114
-      Script: {instanceID: 12748}
-    - Class: 114
-      Script: {instanceID: 12934}
-    - Class: 114
-      Script: {instanceID: 12986}
-    - Class: 114
-      Script: {instanceID: 13080}
-    - Class: 114
-      Script: {instanceID: 13144}
-    - Class: 114
-      Script: {instanceID: 13230}
-    - Class: 114
-      Script: {instanceID: 13478}
-    - Class: 114
-      Script: {instanceID: 13580}
-    - Class: 114
-      Script: {instanceID: 13724}
-    - Class: 114
-      Script: {instanceID: 13962}
     - Class: 114
       Script: {instanceID: 14266}
     - Class: 114
@@ -1043,6 +934,5 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   platform: 13
   scenePathNames:
-  - Assets/InitTestScene637335209016462206.unity
   - Assets/Resources/Scenes/MainMenuScene.unity
-  playerPath: C:/GitHub/Teste-Mobile/Teste Mobile/Temp/UnityTempFile-c4575bf01fc89bd43b16324f17568b12/PlayerWithTests/PlayerWithTests.apk
+  playerPath: C:/GitHub/Teste-Mobile/Apks/Teste 4.apk
