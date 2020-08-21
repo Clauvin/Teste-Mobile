@@ -21,179 +21,11 @@ MonoBehaviour:
     y: 30
     width: 1366
     height: 594
-  m_MinSize: {x: 579, y: 342}
+  m_MinSize: {x: 679, y: 342}
   m_MaxSize: {x: 12004, y: 8042}
   vertical: 0
-  controlID: 908
+  controlID: -1
 --- !u!114 &2
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12015, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Game
-    m_Image: {fileID: -2087823869225018852, guid: 0000000000000000d000000000000000,
-      type: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 370
-    y: 73
-    width: 636
-    height: 326
-  m_ViewDataDictionary: {fileID: 0}
-  m_SerializedViewNames: []
-  m_SerializedViewValues: []
-  m_SerializedCustomFieldsNames: []
-  m_SerializedCustomFieldsValues: []
-  m_PlayModeViewName: GameView
-  m_ShowGizmos: 0
-  m_TargetDisplay: 0
-  m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 360, y: 640}
-  m_TextureFilterMode: 0
-  m_TextureHideFlags: 61
-  m_RenderIMGUI: 1
-  m_MaximizeOnPlay: 1
-  m_UseMipMap: 0
-  m_VSyncEnabled: 0
-  m_Gizmos: 0
-  m_Stats: 0
-  m_SelectedSizes: 00000000000000000000000012000000000000000000000000000000000000000000000000000000
-  m_ZoomArea:
-    m_HRangeLocked: 0
-    m_VRangeLocked: 0
-    hZoomLockedByDefault: 0
-    vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -180
-    m_HBaseRangeMax: 180
-    m_VBaseRangeMin: -320
-    m_VBaseRangeMax: 320
-    m_HAllowExceedBaseRangeMin: 1
-    m_HAllowExceedBaseRangeMax: 1
-    m_VAllowExceedBaseRangeMin: 1
-    m_VAllowExceedBaseRangeMax: 1
-    m_ScaleWithWindow: 0
-    m_HSlider: 0
-    m_VSlider: 0
-    m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
-    m_EnableSliderZoomHorizontal: 0
-    m_EnableSliderZoomVertical: 0
-    m_UniformScale: 1
-    m_UpDirection: 1
-    m_DrawArea:
-      serializedVersion: 2
-      x: 0
-      y: 21
-      width: 636
-      height: 305
-    m_Scale: {x: 0.4765625, y: 0.4765625}
-    m_Translation: {x: 318, y: 152.5}
-    m_MarginLeft: 0
-    m_MarginRight: 0
-    m_MarginTop: 0
-    m_MarginBottom: 0
-    m_LastShownAreaInsideMargins:
-      serializedVersion: 2
-      x: -667.2787
-      y: -320
-      width: 1334.5574
-      height: 640
-    m_MinimalGUI: 1
-  m_defaultScale: 0.4765625
-  m_LastWindowPixelSize: {x: 636, y: 326}
-  m_ClearInEditMode: 1
-  m_NoCameraWarning: 1
-  m_LowResolutionForAspectRatios: 01000001000000000000
-  m_XRRenderMode: 0
-  m_RenderTexture: {fileID: 0}
---- !u!114 &3
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children:
-  - {fileID: 4}
-  - {fileID: 12}
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1008
-    height: 594
-  m_MinSize: {x: 303, y: 342}
-  m_MaxSize: {x: 8003, y: 8042}
-  vertical: 1
-  controlID: 909
---- !u!114 &4
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children:
-  - {fileID: 5}
-  - {fileID: 7}
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1008
-    height: 347
-  m_MinSize: {x: 303, y: 221}
-  m_MaxSize: {x: 8003, y: 4021}
-  vertical: 0
-  controlID: 910
---- !u!114 &5
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 370
-    height: 347
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 6}
-  m_Panes:
-  - {fileID: 6}
-  m_Selected: 0
-  m_LastSelected: 0
---- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -217,14 +49,14 @@ MonoBehaviour:
     x: 0
     y: 73
     width: 369
-    height: 326
+    height: 294
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 065effff7264ffff8464ffff546bffffbe71ffffd071ffffbe78ffff2c7fffff3e7ffffff885ffff148cffff268cffffe092ffff4a99ffff5c99fffff89fffff62a6ffff74a6ffff10adffff84b3ffffb6b3ffffc8b3ffff2ce7ffff48edffff5aedffff18f4ffff6afbffff
+      scrollPos: {x: 0, y: 11}
+      m_SelectedIDs: 4efbffff
+      m_LastClickedID: -1202
+      m_ExpandedIDs: 1afaffff56faffffc0faffffd0faffffd6faffffe0faffffe6fafffffcfaffff02fbffff14fbffff4efbffff64fbffff6afbffff98390000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -248,7 +80,57 @@ MonoBehaviour:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
   m_WindowGUID: 489535285481d4c4ea049c295e4859d7
---- !u!114 &7
+--- !u!114 &3
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 4}
+  - {fileID: 12}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1008
+    height: 594
+  m_MinSize: {x: 403, y: 342}
+  m_MaxSize: {x: 8003, y: 8042}
+  vertical: 1
+  controlID: -1
+--- !u!114 &4
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 5}
+  - {fileID: 6}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1008
+    height: 315
+  m_MinSize: {x: 403, y: 221}
+  m_MaxSize: {x: 8003, y: 4021}
+  vertical: 0
+  controlID: -1
+--- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -258,7 +140,33 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: GameView
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 370
+    height: 315
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 2}
+  m_Panes:
+  - {fileID: 2}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &6
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: SceneView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -266,19 +174,19 @@ MonoBehaviour:
     x: 370
     y: 0
     width: 638
-    height: 347
-  m_MinSize: {x: 102, y: 121}
+    height: 315
+  m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 2}
+  m_ActualView: {fileID: 7}
   m_Panes:
+  - {fileID: 7}
   - {fileID: 8}
-  - {fileID: 2}
   - {fileID: 9}
   - {fileID: 10}
   - {fileID: 11}
-  m_Selected: 1
-  m_LastSelected: 4
---- !u!114 &8
+  m_Selected: 0
+  m_LastSelected: 1
+--- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -302,7 +210,7 @@ MonoBehaviour:
     x: 370
     y: 73
     width: 636
-    height: 326
+    height: 294
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: 6e88c859191d24542ab55b115bdfd6cb
@@ -314,9 +222,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 203.35829, y: 287.83273, z: -20.612217}
+    m_Target: {x: 240.84464, y: 315.59537, z: -70.67222}
     speed: 2
-    m_Value: {x: 203.35829, y: 287.83273, z: -20.612217}
+    m_Value: {x: 240.84464, y: 315.59537, z: -70.67222}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -366,9 +274,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 380.9365
+    m_Target: 347.0115
     speed: 2
-    m_Value: 380.9365
+    m_Value: 347.0115
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -393,6 +301,98 @@ MonoBehaviour:
   m_SceneVisActive: 1
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
+--- !u!114 &8
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12015, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Game
+    m_Image: {fileID: -2087823869225018852, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 370
+    y: 73
+    width: 636
+    height: 302
+  m_ViewDataDictionary: {fileID: 0}
+  m_SerializedViewNames: []
+  m_SerializedViewValues: []
+  m_SerializedCustomFieldsNames: []
+  m_SerializedCustomFieldsValues: []
+  m_PlayModeViewName: GameView
+  m_ShowGizmos: 0
+  m_TargetDisplay: 0
+  m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
+  m_TargetSize: {x: 360, y: 640}
+  m_TextureFilterMode: 0
+  m_TextureHideFlags: 61
+  m_RenderIMGUI: 1
+  m_MaximizeOnPlay: 0
+  m_UseMipMap: 0
+  m_VSyncEnabled: 0
+  m_Gizmos: 0
+  m_Stats: 0
+  m_SelectedSizes: 00000000000000000000000012000000000000000000000000000000000000000000000000000000
+  m_ZoomArea:
+    m_HRangeLocked: 0
+    m_VRangeLocked: 0
+    hZoomLockedByDefault: 0
+    vZoomLockedByDefault: 0
+    m_HBaseRangeMin: -180
+    m_HBaseRangeMax: 180
+    m_VBaseRangeMin: -320
+    m_VBaseRangeMax: 320
+    m_HAllowExceedBaseRangeMin: 1
+    m_HAllowExceedBaseRangeMax: 1
+    m_VAllowExceedBaseRangeMin: 1
+    m_VAllowExceedBaseRangeMax: 1
+    m_ScaleWithWindow: 0
+    m_HSlider: 0
+    m_VSlider: 0
+    m_IgnoreScrollWheelUntilClicked: 0
+    m_EnableMouseInput: 0
+    m_EnableSliderZoomHorizontal: 0
+    m_EnableSliderZoomVertical: 0
+    m_UniformScale: 1
+    m_UpDirection: 1
+    m_DrawArea:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 636
+      height: 302
+    m_Scale: {x: 0.471875, y: 0.471875}
+    m_Translation: {x: 318, y: 151}
+    m_MarginLeft: 0
+    m_MarginRight: 0
+    m_MarginTop: 0
+    m_MarginBottom: 0
+    m_LastShownAreaInsideMargins:
+      serializedVersion: 2
+      x: -673.9073
+      y: -320
+      width: 1347.8146
+      height: 640
+    m_MinimalGUI: 1
+  m_defaultScale: 0.471875
+  m_LastWindowPixelSize: {x: 636, y: 302}
+  m_ClearInEditMode: 1
+  m_NoCameraWarning: 1
+  m_LowResolutionForAspectRatios: 01000001000000000000
+  m_XRRenderMode: 0
+  m_RenderTexture: {fileID: 0}
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -414,10 +414,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 309
+    x: 370
     y: 73
-    width: 631
-    height: 293
+    width: 636
+    height: 302
   m_ViewDataDictionary: {fileID: 0}
   m_PosLeft: {x: 0, y: 0}
   m_PosRight: {x: 0, y: 0}
@@ -447,7 +447,7 @@ MonoBehaviour:
     x: 370
     y: 73
     width: 636
-    height: 341
+    height: 302
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &11
 MonoBehaviour:
@@ -472,32 +472,32 @@ MonoBehaviour:
     x: 370
     y: 73
     width: 636
-    height: 326
+    height: 302
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
-    ID: 964
+    ID: 128
     splitterInitialOffset: 240
     currentActiveSplitter: -1
-    realSizes: ab00000055000000
+    realSizes: 9b0000004d000000
     relativeSizes:
     - 0.6693227
     - 0.33067727
     minSizes: 2000000020000000
     maxSizes: 0000000000000000
-    lastTotalSize: 256
+    lastTotalSize: 232
     splitSize: 6
     xOffset: 0
   m_TestTypeToolbarIndex: 0
   m_PlayModeTestListGUI:
     m_Window: {fileID: 11}
     newResultList:
-    - id: 1003
-      uniqueId: '[Teste Mobile][suite]'
-      name: Teste Mobile
-      fullName: Teste Mobile
-      resultStatus: 0
-      duration: 0.3098231
-      messages: One or more child tests had errors
+    - id: 1000
+      uniqueId: '[UnityTestFramework][suite]'
+      name: UnityTestFramework
+      fullName: UnityTestFramework
+      resultStatus: 1
+      duration: 12.3234415
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -511,9 +511,9 @@ MonoBehaviour:
       uniqueId: '[C:/GitHub/Teste-Mobile/Teste Mobile/Library/ScriptAssemblies/Tests.dll][suite]'
       name: Tests.dll
       fullName: C:/GitHub/Teste-Mobile/Teste Mobile/Library/ScriptAssemblies/Tests.dll
-      resultStatus: 0
-      duration: 0.2832454
-      messages: One or more child tests had errors
+      resultStatus: 1
+      duration: 1.9337513
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -527,9 +527,9 @@ MonoBehaviour:
       uniqueId: Tests.dll/[Tests][suite]
       name: Tests
       fullName: Tests
-      resultStatus: 0
-      duration: 0.2762658
-      messages: One or more child tests had errors
+      resultStatus: 1
+      duration: 11.731644
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -544,7 +544,7 @@ MonoBehaviour:
       name: AboutPanelTestScript
       fullName: Tests.AboutPanelTestScript
       resultStatus: 1
-      duration: 0.297816
+      duration: 3.6616805
       messages: 
       output: 
       stacktrace: 
@@ -555,49 +555,12 @@ MonoBehaviour:
       categories: []
       parentId: 1021
       parentUniqueId: Tests.dll/[Tests][suite]
-    - id: 1003
-      uniqueId: Tests.dll/Tests/AboutPanelTestScript/[Tests][Tests.AboutPanelTestScript.AboutPanelTestScriptWithEnumeratorPasses]
-      name: AboutPanelTestScriptWithEnumeratorPasses
-      fullName: Tests.AboutPanelTestScript.AboutPanelTestScriptWithEnumeratorPasses
-      resultStatus: 1
-      duration: 0.2173037
-      messages: 
-      output: 'Setup started
-
-        Setup finished
-
-        C:/Users/Ascendant/AppData/LocalLow/Unforeseen
-        Circunstances/Teste Mobile/save_file.txt
-
-        1
-
-        From
-
-        2
-
-        C:/Users/Ascendant/AppData/LocalLow/Unforeseen
-        Circunstances/Teste Mobile/save_file.txt
-
-        3
-
-        4
-
-'
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.AboutPanelTestScript][suite]
     - id: 1002
-      uniqueId: Tests.dll/Tests/AboutPanelTestScript/[Tests][Tests.AboutPanelTestScript.BackButtonWorks]
-      name: BackButtonWorks
-      fullName: Tests.AboutPanelTestScript.BackButtonWorks
+      uniqueId: Tests.dll/Tests/AboutPanelTestScript/[Tests][Tests.AboutPanelTestScript.TheBackButtonFromTheAboutPanelWorks]
+      name: TheBackButtonFromTheAboutPanelWorks
+      fullName: Tests.AboutPanelTestScript.TheBackButtonFromTheAboutPanelWorks
       resultStatus: 1
-      duration: 0.0414614
+      duration: 1.930861
       messages: 
       output: 'Setup started
 
@@ -618,9 +581,11 @@ MonoBehaviour:
       name: LikertFeedbackPanelTestScript
       fullName: Tests.LikertFeedbackPanelTestScript
       resultStatus: 1
-      duration: 0.2743808
+      duration: 2.493373
       messages: 
-      output: 
+      output: 'Could not find file "/storage/emulated/0/Android/data/com.UnityTestRunner.UnityTestRunner/files/save_file.txt"
+
+'
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -630,11 +595,11 @@ MonoBehaviour:
       parentId: 1021
       parentUniqueId: Tests.dll/[Tests][suite]
     - id: 1005
-      uniqueId: Tests.dll/Tests/LikertFeedbackPanelTestScript/[Tests][Tests.LikertFeedbackPanelTestScript.BackButtonWorks]
-      name: BackButtonWorks
-      fullName: Tests.LikertFeedbackPanelTestScript.BackButtonWorks
+      uniqueId: Tests.dll/Tests/LikertFeedbackPanelTestScript/[Tests][Tests.LikertFeedbackPanelTestScript.LoadingTheLikertDataToTheLikertSlidersWorks]
+      name: LoadingTheLikertDataToTheLikertSlidersWorks
+      fullName: Tests.LikertFeedbackPanelTestScript.LoadingTheLikertDataToTheLikertSlidersWorks
       resultStatus: 1
-      duration: 0.2318397
+      duration: 0.5665424
       messages: 
       output: 'Setup started
 
@@ -648,14 +613,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1004
+      parentId: 1003
       parentUniqueId: Tests.dll/Tests/[Tests][Tests.LikertFeedbackPanelTestScript][suite]
     - id: 1006
-      uniqueId: Tests.dll/Tests/LikertFeedbackPanelTestScript/[Tests][Tests.LikertFeedbackPanelTestScript.LoadingLikertInfoWorks]
-      name: LoadingLikertInfoWorks
-      fullName: Tests.LikertFeedbackPanelTestScript.LoadingLikertInfoWorks
+      uniqueId: Tests.dll/Tests/LikertFeedbackPanelTestScript/[Tests][Tests.LikertFeedbackPanelTestScript.SavingTheDataFromTheLikertSlidersToTheSaveFileWorks]
+      name: SavingTheDataFromTheLikertSlidersToTheSaveFileWorks
+      fullName: Tests.LikertFeedbackPanelTestScript.SavingTheDataFromTheLikertSlidersToTheSaveFileWorks
       resultStatus: 1
-      duration: 0.0426297
+      duration: 0.2388847
       messages: 
       output: 'Setup started
 
@@ -669,44 +634,18 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1004
+      parentId: 1003
       parentUniqueId: Tests.dll/Tests/[Tests][Tests.LikertFeedbackPanelTestScript][suite]
-    - id: 1007
-      uniqueId: Tests.dll/Tests/LikertFeedbackPanelTestScript/[Tests][Tests.LikertFeedbackPanelTestScript.SavingLikertInfoWorks]
-      name: SavingLikertInfoWorks
-      fullName: Tests.LikertFeedbackPanelTestScript.SavingLikertInfoWorks
+    - id: 1004
+      uniqueId: Tests.dll/Tests/LikertFeedbackPanelTestScript/[Tests][Tests.LikertFeedbackPanelTestScript.TheBackButtonFromTheLikertFeedbackPanelWorks]
+      name: TheBackButtonFromTheLikertFeedbackPanelWorks
+      fullName: Tests.LikertFeedbackPanelTestScript.TheBackButtonFromTheLikertFeedbackPanelWorks
       resultStatus: 1
-      duration: 0.0358168
+      duration: 0.1272915
       messages: 
       output: 'Setup started
 
         Setup finished
-
-        C:/Users/Ascendant/AppData/LocalLow/Unforeseen
-        Circunstances/Teste Mobile/save_file.txt
-
-        Question 1|1
-
-        Question
-        2|1
-
-        Question 3|1
-
-        Question 4|1
-
-        Question 5|1
-
-        Question
-        6|1
-
-        Question 7|1
-
-        Question 8|1
-
-        Question 9|1
-
-        Question
-        10|1
 
 '
       stacktrace: 
@@ -716,92 +655,19 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1004
+      parentId: 1003
       parentUniqueId: Tests.dll/Tests/[Tests][Tests.LikertFeedbackPanelTestScript][suite]
     - id: 1006
       uniqueId: Tests.dll/Tests/[Tests][Tests.MainPanelManagerTestScript][suite]
       name: MainPanelManagerTestScript
       fullName: Tests.MainPanelManagerTestScript
       resultStatus: 1
-      duration: 0.2307268
+      duration: 0.547871
       messages: 
-      output: 'C:/Users/Ascendant/AppData/LocalLow/Unforeseen Circunstances/Teste
-        Mobile/save_file.txt
-
-        1
-
-        From
-
-        2
-
-        C:/Users/Ascendant/AppData/LocalLow/Unforeseen
-        Circunstances/Teste Mobile/save_file.txt
-
-        3
-
-        4
-
-        C:/Users/Ascendant/AppData/LocalLow/Unforeseen
-        Circunstances/Teste Mobile/save_file.txt
-
-        1
-
-        From
+      output: 'Could not find file "/storage/emulated/0/Android/data/com.UnityTestRunner.UnityTestRunner/files/save_file.txt"
 
         Could
-        not find file "C:\Users\Ascendant\AppData\LocalLow\Unforeseen Circunstances\Teste
-        Mobile\save_file.txt"
-
-        2
-
-        C:/Users/Ascendant/AppData/LocalLow/Unforeseen
-        Circunstances/Teste Mobile/save_file.txt
-
-        3
-
-        4
-
-        C:/Users/Ascendant/AppData/LocalLow/Unforeseen
-        Circunstances/Teste Mobile/save_file.txt
-
-        1
-
-        From
-
-        Could
-        not find file "C:\Users\Ascendant\AppData\LocalLow\Unforeseen Circunstances\Teste
-        Mobile\save_file.txt"
-
-        2
-
-        C:/Users/Ascendant/AppData/LocalLow/Unforeseen
-        Circunstances/Teste Mobile/save_file.txt
-
-        3
-
-        4
-
-        There
-        are 5 audio listeners in the scene. Please ensure there is always exactly
-        one audio listener in the scene.
-
-        There are 5 audio listeners in
-        the scene. Please ensure there is always exactly one audio listener in the
-        scene.
-
-        There are 5 audio listeners in the scene. Please ensure there
-        is always exactly one audio listener in the scene.
-
-        There are 5 audio
-        listeners in the scene. Please ensure there is always exactly one audio listener
-        in the scene.
-
-        There are 5 audio listeners in the scene. Please ensure
-        there is always exactly one audio listener in the scene.
-
-        There are
-        5 audio listeners in the scene. Please ensure there is always exactly one
-        audio listener in the scene.
+        not find file "/storage/emulated/0/Android/data/com.UnityTestRunner.UnityTestRunner/files/save_file.txt"
 
 '
       stacktrace: 
@@ -812,12 +678,12 @@ MonoBehaviour:
       categories: []
       parentId: 1021
       parentUniqueId: Tests.dll/[Tests][suite]
-    - id: 1010
-      uniqueId: Tests.dll/Tests/MainPanelManagerTestScript/[Tests][Tests.MainPanelManagerTestScript.GuidelinesPanelHide]
-      name: GuidelinesPanelHide
-      fullName: Tests.MainPanelManagerTestScript.GuidelinesPanelHide
+    - id: 1015
+      uniqueId: Tests.dll/Tests/MainPanelManagerTestScript/[Tests][Tests.MainPanelManagerTestScript.The_hideAboutPanelFunction_Works]
+      name: The_hideAboutPanelFunction_Works
+      fullName: Tests.MainPanelManagerTestScript.The_hideAboutPanelFunction_Works
       resultStatus: 1
-      duration: 0.0445007
+      duration: 0.0187031
       messages: 
       output: 'Setup started
 
@@ -831,56 +697,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1006
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.MainPanelManagerTestScript][suite]
-    - id: 1009
-      uniqueId: Tests.dll/Tests/MainPanelManagerTestScript/[Tests][Tests.MainPanelManagerTestScript.GuidelinesPanelShow]
-      name: GuidelinesPanelShow
-      fullName: Tests.MainPanelManagerTestScript.GuidelinesPanelShow
-      resultStatus: 1
-      duration: 0.0008021
-      messages: 
-      output: 'Setup started
-
-        Setup finished
-
-'
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1006
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.MainPanelManagerTestScript][suite]
-    - id: 1014
-      uniqueId: Tests.dll/Tests/MainPanelManagerTestScript/[Tests][Tests.MainPanelManagerTestScript.MainAboutHide]
-      name: MainAboutHide
-      fullName: Tests.MainPanelManagerTestScript.MainAboutHide
-      resultStatus: 1
-      duration: 0.000795
-      messages: 
-      output: 'Setup started
-
-        Setup finished
-
-'
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1006
+      parentId: 1007
       parentUniqueId: Tests.dll/Tests/[Tests][Tests.MainPanelManagerTestScript][suite]
     - id: 1013
-      uniqueId: Tests.dll/Tests/MainPanelManagerTestScript/[Tests][Tests.MainPanelManagerTestScript.MainAboutShow]
-      name: MainAboutShow
-      fullName: Tests.MainPanelManagerTestScript.MainAboutShow
+      uniqueId: Tests.dll/Tests/MainPanelManagerTestScript/[Tests][Tests.MainPanelManagerTestScript.The_hideFeedbackPanelFunction_Works]
+      name: The_hideFeedbackPanelFunction_Works
+      fullName: Tests.MainPanelManagerTestScript.The_hideFeedbackPanelFunction_Works
       resultStatus: 1
-      duration: 0.0006689
+      duration: 0.0069869
       messages: 
       output: 'Setup started
 
@@ -894,35 +718,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1006
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.MainPanelManagerTestScript][suite]
-    - id: 1012
-      uniqueId: Tests.dll/Tests/MainPanelManagerTestScript/[Tests][Tests.MainPanelManagerTestScript.MainFeedbackHide]
-      name: MainFeedbackHide
-      fullName: Tests.MainPanelManagerTestScript.MainFeedbackHide
-      resultStatus: 1
-      duration: 0.0011055
-      messages: 
-      output: 'Setup started
-
-        Setup finished
-
-'
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1006
+      parentId: 1007
       parentUniqueId: Tests.dll/Tests/[Tests][Tests.MainPanelManagerTestScript][suite]
     - id: 1011
-      uniqueId: Tests.dll/Tests/MainPanelManagerTestScript/[Tests][Tests.MainPanelManagerTestScript.MainFeedbackShow]
-      name: MainFeedbackShow
-      fullName: Tests.MainPanelManagerTestScript.MainFeedbackShow
+      uniqueId: Tests.dll/Tests/MainPanelManagerTestScript/[Tests][Tests.MainPanelManagerTestScript.The_hideGuidelinesPanelFunction_Works]
+      name: The_hideGuidelinesPanelFunction_Works
+      fullName: Tests.MainPanelManagerTestScript.The_hideGuidelinesPanelFunction_Works
       resultStatus: 1
-      duration: 0.0008992
+      duration: 0.0063137
       messages: 
       output: 'Setup started
 
@@ -936,14 +739,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1006
+      parentId: 1007
       parentUniqueId: Tests.dll/Tests/[Tests][Tests.MainPanelManagerTestScript][suite]
-    - id: 1008
-      uniqueId: Tests.dll/Tests/MainPanelManagerTestScript/[Tests][Tests.MainPanelManagerTestScript.NewPanelHide]
-      name: NewPanelHide
-      fullName: Tests.MainPanelManagerTestScript.NewPanelHide
+    - id: 1009
+      uniqueId: Tests.dll/Tests/MainPanelManagerTestScript/[Tests][Tests.MainPanelManagerTestScript.The_hideMainPanelFunction_Works]
+      name: The_hideMainPanelFunction_Works
+      fullName: Tests.MainPanelManagerTestScript.The_hideMainPanelFunction_Works
       resultStatus: 1
-      duration: 0.0145579
+      duration: 0.0137192
       messages: 
       output: 'Setup started
 
@@ -957,43 +760,46 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1006
+      parentId: 1007
       parentUniqueId: Tests.dll/Tests/[Tests][Tests.MainPanelManagerTestScript][suite]
-    - id: 1007
-      uniqueId: Tests.dll/Tests/MainPanelManagerTestScript/[Tests][Tests.MainPanelManagerTestScript.NewPanelShow]
-      name: NewPanelShow
-      fullName: Tests.MainPanelManagerTestScript.NewPanelShow
+    - id: 1017
+      uniqueId: Tests.dll/Tests/MainPanelManagerTestScript/[Tests][Tests.MainPanelManagerTestScript.The_sendMessageAboutIfTheObjectIsActive_Works]
+      name: The_sendMessageAboutIfTheObjectIsActive_Works
+      fullName: Tests.MainPanelManagerTestScript.The_sendMessageAboutIfTheObjectIsActive_Works
       resultStatus: 1
-      duration: 0.0162227
+      duration: 0.1932876
       messages: 
       output: 'Setup started
 
         Setup finished
 
 '
-      stacktrace: 
+      stacktrace: 'at Tests.MainPanelManagerTestScript.The_sendMessageAboutIfTheObjectIsActive_Works
+        () [0x00061] in C:\GitHub\Teste-Mobile\Teste Mobile\Assets\Tests\MainPanelManagerTestScript.cs:154
+
+'
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1006
+      parentId: 1007
       parentUniqueId: Tests.dll/Tests/[Tests][Tests.MainPanelManagerTestScript][suite]
     - id: 1016
-      uniqueId: Tests.dll/Tests/MainPanelManagerTestScript/[Tests][Tests.MainPanelManagerTestScript.SendMessageAboutActive]
-      name: SendMessageAboutActive
-      fullName: Tests.MainPanelManagerTestScript.SendMessageAboutActive
+      uniqueId: Tests.dll/Tests/MainPanelManagerTestScript/[Tests][Tests.MainPanelManagerTestScript.The_setPanelFunction_Works]
+      name: The_setPanelFunction_Works
+      fullName: Tests.MainPanelManagerTestScript.The_setPanelFunction_Works
       resultStatus: 1
-      duration: 0.0029189
+      duration: 0.0175654
       messages: 
       output: 'Setup started
 
         Setup finished
 
 '
-      stacktrace: 'at Tests.MainPanelManagerTestScript.SendMessageAboutActive ()
-        [0x00061] in C:\GitHub\Teste-Mobile\Teste Mobile\Assets\Tests\MainPanelManagerTestScript.cs:149
+      stacktrace: 'at Tests.MainPanelManagerTestScript.The_setPanelFunction_Works
+        () [0x0007e] in C:\GitHub\Teste-Mobile\Teste Mobile\Assets\Tests\MainPanelManagerTestScript.cs:143
 
 '
       notRunnable: 0
@@ -1002,39 +808,99 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1006
+      parentId: 1007
       parentUniqueId: Tests.dll/Tests/[Tests][Tests.MainPanelManagerTestScript][suite]
-    - id: 1015
-      uniqueId: Tests.dll/Tests/MainPanelManagerTestScript/[Tests][Tests.MainPanelManagerTestScript.SetPanel]
-      name: SetPanel
-      fullName: Tests.MainPanelManagerTestScript.SetPanel
+    - id: 1014
+      uniqueId: Tests.dll/Tests/MainPanelManagerTestScript/[Tests][Tests.MainPanelManagerTestScript.The_showAboutPanelFunction_Works]
+      name: The_showAboutPanelFunction_Works
+      fullName: Tests.MainPanelManagerTestScript.The_showAboutPanelFunction_Works
       resultStatus: 1
-      duration: 0.0016197
+      duration: 0.0060257
       messages: 
       output: 'Setup started
 
         Setup finished
 
 '
-      stacktrace: 'at Tests.MainPanelManagerTestScript.SetPanel () [0x0007e] in C:\GitHub\Teste-Mobile\Teste
-        Mobile\Assets\Tests\MainPanelManagerTestScript.cs:138
-
-'
+      stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1006
+      parentId: 1007
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.MainPanelManagerTestScript][suite]
+    - id: 1012
+      uniqueId: Tests.dll/Tests/MainPanelManagerTestScript/[Tests][Tests.MainPanelManagerTestScript.The_showFeedbackPanelFunction_Works]
+      name: The_showFeedbackPanelFunction_Works
+      fullName: Tests.MainPanelManagerTestScript.The_showFeedbackPanelFunction_Works
+      resultStatus: 1
+      duration: 0.0076373
+      messages: 
+      output: 'Setup started
+
+        Setup finished
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1007
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.MainPanelManagerTestScript][suite]
+    - id: 1010
+      uniqueId: Tests.dll/Tests/MainPanelManagerTestScript/[Tests][Tests.MainPanelManagerTestScript.The_showGuidelinesPanelFunction_Works]
+      name: The_showGuidelinesPanelFunction_Works
+      fullName: Tests.MainPanelManagerTestScript.The_showGuidelinesPanelFunction_Works
+      resultStatus: 1
+      duration: 0.0088049
+      messages: 
+      output: 'Setup started
+
+        Setup finished
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1007
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.MainPanelManagerTestScript][suite]
+    - id: 1008
+      uniqueId: Tests.dll/Tests/MainPanelManagerTestScript/[Tests][Tests.MainPanelManagerTestScript.The_showMainPanelFunction_Works]
+      name: The_showMainPanelFunction_Works
+      fullName: Tests.MainPanelManagerTestScript.The_showMainPanelFunction_Works
+      resultStatus: 1
+      duration: 0.0128446
+      messages: 
+      output: 'Setup started
+
+        Setup finished
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1007
       parentUniqueId: Tests.dll/Tests/[Tests][Tests.MainPanelManagerTestScript][suite]
     - id: 1017
       uniqueId: Tests.dll/Tests/[Tests][Tests.WrittenFeedbackPanelTestScript][suite]
       name: WrittenFeedbackPanelTestScript
       fullName: Tests.WrittenFeedbackPanelTestScript
-      resultStatus: 0
-      duration: 0.2648828
-      messages: One or more child tests had errors
+      resultStatus: 1
+      duration: 4.8395195
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -1044,12 +910,12 @@ MonoBehaviour:
       categories: []
       parentId: 1021
       parentUniqueId: Tests.dll/[Tests][suite]
-    - id: 1018
-      uniqueId: Tests.dll/Tests/WrittenFeedbackPanelTestScript/[Tests][Tests.WrittenFeedbackPanelTestScript.BackButtonWorks]
-      name: BackButtonWorks
-      fullName: Tests.WrittenFeedbackPanelTestScript.BackButtonWorks
+    - id: 1019
+      uniqueId: Tests.dll/Tests/WrittenFeedbackPanelTestScript/[Tests][Tests.WrittenFeedbackPanelTestScript.LoadingWrittenInfoWorks]
+      name: LoadingWrittenInfoWorks
+      fullName: Tests.WrittenFeedbackPanelTestScript.LoadingWrittenInfoWorks
       resultStatus: 1
-      duration: 0.0341414
+      duration: 0.2101917
       messages: 
       output: 'Setup started
 
@@ -1057,43 +923,6 @@ MonoBehaviour:
 
 '
       stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1017
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.WrittenFeedbackPanelTestScript][suite]
-    - id: 1019
-      uniqueId: Tests.dll/Tests/WrittenFeedbackPanelTestScript/[Tests][Tests.WrittenFeedbackPanelTestScript.LoadingWrittenInfoWorks]
-      name: LoadingWrittenInfoWorks
-      fullName: Tests.WrittenFeedbackPanelTestScript.LoadingWrittenInfoWorks
-      resultStatus: 0
-      duration: 0.2200934
-      messages: 'System.NullReferenceException : Object reference not set to an instance
-        of an object'
-      output: 'Setup started
-
-        Setup finished
-
-        From
-
-        0
-        HERE
-
-        C:/Users/Ascendant/AppData/LocalLow/Unforeseen Circunstances/Teste
-        Mobile/save_file.txt
-
-        So
-
-'
-      stacktrace: "  at Tests.WrittenFeedbackPanelTestScript.LoadingWrittenInfoWorks
-        () [0x001df] in C:\\GitHub\\Teste-Mobile\\Teste Mobile\\Assets\\Tests\\WrittenFeedbackPanelTestScript.cs:128
-        \r\n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\r\n 
-        at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
-        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
-        System.Globalization.CultureInfo culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 "
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -1107,28 +936,11 @@ MonoBehaviour:
       name: SavingWrittenTestWorks
       fullName: Tests.WrittenFeedbackPanelTestScript.SavingWrittenTestWorks
       resultStatus: 1
-      duration: 0.0441195
+      duration: 0.1448871
       messages: 
       output: 'Setup started
 
         Setup finished
-
-        Message for test of
-        unit testing
-
-        Message for test of unit testing
-
-        C:/Users/Ascendant/AppData/LocalLow/Unforeseen
-        Circunstances/Teste Mobile/save_file.txt
-
-        Name|Message for test of
-        unit testing
-
-        Considerations|Message for test of unit testing
-
-        True
-
-        True
 
 '
       stacktrace: 
@@ -1140,26 +952,62 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1017
       parentUniqueId: Tests.dll/Tests/[Tests][Tests.WrittenFeedbackPanelTestScript][suite]
-    m_ResultText: "LoadingWrittenInfoWorks (0,220s)\n---\nSystem.NullReferenceException
-      : Object reference not set to an instance of an object\n---\nat Tests.WrittenFeedbackPanelTestScript.LoadingWrittenInfoWorks
-      () [0x001df] in C:\\GitHub\\Teste-Mobile\\Teste Mobile\\Assets\\Tests\\WrittenFeedbackPanelTestScript.cs:128
-      \r\n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\r\n 
-      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
-      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
-      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0\n---\nSetup started\r\nSetup
-      finished\r\nFrom\r\n0 HERE\r\nC:/Users/Ascendant/AppData/LocalLow/Unforeseen
-      Circunstances/Teste Mobile/save_file.txt\r\nSo"
-    m_ResultStacktrace: "  at Tests.WrittenFeedbackPanelTestScript.LoadingWrittenInfoWorks
-      () [0x001df] in C:\\GitHub\\Teste-Mobile\\Teste Mobile\\Assets\\Tests\\WrittenFeedbackPanelTestScript.cs:128
-      \r\n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\r\n 
-      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
-      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
-      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 "
+    - id: 1023
+      uniqueId: Tests.dll/Tests/WrittenFeedbackPanelTestScript/[Tests][Tests.WrittenFeedbackPanelTestScript.SendingMailWorks]
+      name: SendingMailWorks
+      fullName: Tests.WrittenFeedbackPanelTestScript.SendingMailWorks
+      resultStatus: 1
+      duration: 4.249717
+      messages: 
+      output: 'Setup started
+
+        Setup finished
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1019
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.WrittenFeedbackPanelTestScript][suite]
+    - id: 1019
+      uniqueId: Tests.dll/Tests/WrittenFeedbackPanelTestScript/[Tests][Tests.WrittenFeedbackPanelTestScript.TheBackButtonFromTheWrittenFeedbackPanelWorks]
+      name: TheBackButtonFromTheWrittenFeedbackPanelWorks
+      fullName: Tests.WrittenFeedbackPanelTestScript.TheBackButtonFromTheWrittenFeedbackPanelWorks
+      resultStatus: 1
+      duration: 0.1218515
+      messages: 
+      output: 'Setup started
+
+        Setup finished
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1018
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.WrittenFeedbackPanelTestScript][suite]
+    m_ResultText: 'TheBackButtonFromTheWrittenFeedbackPanelWorks (0,122s)
+
+      ---
+
+      Setup
+      started
+
+      Setup finished'
+    m_ResultStacktrace: 
     m_TestListState:
-      scrollPos: {x: 0, y: 201}
-      m_SelectedIDs: c482e729
-      m_LastClickedID: 703038148
-      m_ExpandedIDs: 2d1852adb51413b7d35dceb9674b3bd4e9a5e2e48e3cc011537bbd2a8359db41ffffff7f
+      scrollPos: {x: 0, y: 249}
+      m_SelectedIDs: 3a0e8d24
+      m_LastClickedID: 613223994
+      m_ExpandedIDs: 2d1852adb51413b7d35dceb9674b3bd4e9a5e2e4c69cc6e68e3cc011537bbd2a2f5d863d8359db41ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1252,11 +1100,11 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 347
+    y: 315
     width: 1008
-    height: 247
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+    height: 279
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 13}
@@ -1285,9 +1133,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 420
+    y: 388
     width: 1007
-    height: 226
+    height: 258
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -1302,20 +1150,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Resources
+    - Assets/Script
   m_ViewMode: 1
   m_StartGridSize: 96
   m_LastFolders:
-  - Assets/Resources
+  - Assets/Script
   m_LastFoldersGridSize: 96
   m_LastProjectPath: C:\GitHub\Teste-Mobile\Teste Mobile
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: bc460000
-    m_LastClickedID: 18108
-    m_ExpandedIDs: 00000000ba460000bc460000
+    m_SelectedIDs: 60470000
+    m_LastClickedID: 18272
+    m_ExpandedIDs: 0000000050470000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1343,7 +1191,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000ba460000bc460000
+    m_ExpandedIDs: 000000005047000052470000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1368,9 +1216,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_SelectedInstanceIDs: 58330000
+    m_LastClickedInstanceID: 13144
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c623000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1421,9 +1269,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 420
+    y: 388
     width: 1007
-    height: 226
+    height: 258
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &15
 MonoBehaviour:
