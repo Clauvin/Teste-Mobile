@@ -89,48 +89,135 @@ namespace Tests
         [Test]
         public void The_showGuidelinesPanelFunction_Works()
         {
-            Assert.AreEqual(main_panel_manager_script.showGuidelinesPanel(),
+            Action this_test_function = this.The_showGuidelinesPanelFunction_Works;
+            string this_test_function_name = this_test_function.Method.Name;
+
+            try
+            {
+                Assert.AreEqual(main_panel_manager_script.showGuidelinesPanel(),
                 (string)MainPanelManagerScript.result_message_show_guidelines_panel_true);
+            }
+            catch (AssertionException ae)
+            {
+                WriteTestLogScript.WriteOnLogThatTestFailed(this_test_function_name);
+                Assert.Fail();
+                return;
+            }
+
+            WriteTestLogScript.WriteOnLogThatTestPassed(this_test_function_name);
         }
 
         [Test]
         public void The_hideGuidelinesPanelFunction_Works()
         {
-            Assert.AreEqual(main_panel_manager_script.hideGuidelinesPanel(),
-                (string)MainPanelManagerScript.result_message_hide_guidelines_panel_true);
+            Action this_test_function = this.The_hideGuidelinesPanelFunction_Works;
+            string this_test_function_name = this_test_function.Method.Name;
+
+            try
+            {
+                Assert.AreEqual(main_panel_manager_script.hideGuidelinesPanel(),
+                    (string)MainPanelManagerScript.result_message_hide_guidelines_panel_true);
+            }
+            catch (AssertionException ae)
+            {
+                WriteTestLogScript.WriteOnLogThatTestFailed(this_test_function_name);
+                Assert.Fail();
+                return;
+            }
+
+            WriteTestLogScript.WriteOnLogThatTestPassed(this_test_function_name);
         }
 
         [Test]
         public void The_showFeedbackPanelFunction_Works()
         {
-            Assert.AreEqual(main_panel_manager_script.showMainFeedbackPanel(),
-                (string)MainPanelManagerScript.result_message_show_feedback_panel_true);
+            Action this_test_function = this.The_showFeedbackPanelFunction_Works;
+            string this_test_function_name = this_test_function.Method.Name;
+
+            try
+            {
+                Assert.AreEqual(main_panel_manager_script.showMainFeedbackPanel(),
+                    (string)MainPanelManagerScript.result_message_show_feedback_panel_true);
+            }
+            catch (AssertionException ae)
+            {
+                WriteTestLogScript.WriteOnLogThatTestFailed(this_test_function_name);
+                Assert.Fail();
+                return;
+            }
+
+            WriteTestLogScript.WriteOnLogThatTestPassed(this_test_function_name);
         }
 
         [Test]
         public void The_hideFeedbackPanelFunction_Works()
         {
-            Assert.AreEqual(main_panel_manager_script.hideMainFeedbackPanel(),
-                (string)MainPanelManagerScript.result_message_hide_feedback_panel_true);
+            Action this_test_function = this.The_hideFeedbackPanelFunction_Works;
+            string this_test_function_name = this_test_function.Method.Name;
+
+            try
+            {
+                Assert.AreEqual(main_panel_manager_script.hideMainFeedbackPanel(),
+                   (string)MainPanelManagerScript.result_message_hide_feedback_panel_true);
+            }
+            catch (AssertionException ae)
+            {
+                WriteTestLogScript.WriteOnLogThatTestFailed(this_test_function_name);
+                Assert.Fail();
+                return;
+            }
+
+            WriteTestLogScript.WriteOnLogThatTestPassed(this_test_function_name);
         }
 
         [Test]
         public void The_showAboutPanelFunction_Works()
         {
-            Assert.AreEqual(main_panel_manager_script.showAboutPanel(),
-                (string)MainPanelManagerScript.result_message_show_about_panel_true);
+            Action this_test_function = this.The_showAboutPanelFunction_Works;
+            string this_test_function_name = this_test_function.Method.Name;
+
+            try
+            {
+                Assert.AreEqual(main_panel_manager_script.showAboutPanel(),
+                    (string)MainPanelManagerScript.result_message_show_about_panel_true);
+            }
+            catch (AssertionException ae)
+            {
+                WriteTestLogScript.WriteOnLogThatTestFailed(this_test_function_name);
+                Assert.Fail();
+                return;
+            }
+
+            WriteTestLogScript.WriteOnLogThatTestPassed(this_test_function_name);
         }
 
         [Test]
         public void The_hideAboutPanelFunction_Works()
         {
-            Assert.AreEqual(main_panel_manager_script.hideAboutPanel(),
-                (string)MainPanelManagerScript.result_message_hide_about_panel_true);
+            Action this_test_function = this.The_hideAboutPanelFunction_Works;
+            string this_test_function_name = this_test_function.Method.Name;
+
+            try
+            {
+                Assert.AreEqual(main_panel_manager_script.hideAboutPanel(),
+                   (string)MainPanelManagerScript.result_message_hide_about_panel_true);
+            }
+            catch (AssertionException ae)
+            {
+                WriteTestLogScript.WriteOnLogThatTestFailed(this_test_function_name);
+                Assert.Fail();
+                return;
+            }
+
+            WriteTestLogScript.WriteOnLogThatTestPassed(this_test_function_name);
         }
 
         [Test]
         public void The_setPanelFunction_Works()
         {
+            Action this_test_function = this.The_setPanelFunction_Works;
+            string this_test_function_name = this_test_function.Method.Name;
+
             MethodInfo method = GetMethod(main_panel_manager_script, "setPanel");
             if (!main_panel_manager_script.mainPanel.activeSelf)
                 Assert.Fail("The main panel should be active at start.");
@@ -138,21 +225,36 @@ namespace Tests
             method.Invoke(main_panel_manager_script, new object[] { main_panel_manager_script.mainPanel, false });
 
             if (main_panel_manager_script.mainPanel.activeSelf)
+            {
+                WriteTestLogScript.WriteOnLogThatTestFailed(this_test_function_name);
                 Assert.Fail("SetPanel did not make main_panel_manager_script inactive");
+            }
 
+            WriteTestLogScript.WriteOnLogThatTestPassed(this_test_function_name);
             Assert.Pass();
         }
 
         [Test]
         public void The_sendMessageAboutIfTheObjectIsActive_Works()
         {
+            Action this_test_function = this.The_sendMessageAboutIfTheObjectIsActive_Works;
+            string this_test_function_name = this_test_function.Method.Name;
+
             MethodInfo method = GetMethod(main_panel_manager_script, "sendMessageAboutIfTheObjectIsActive");
 
             object passed = method.Invoke(main_panel_manager_script, new object[]
                 { main_panel_manager_script.mainPanel, true, "passed", "haven't passed" });
 
-            if (passed.ToString().Equals("passed")) Assert.Pass();
-            else Assert.Fail();
+            if (passed.ToString().Equals("passed"))
+            {
+                WriteTestLogScript.WriteOnLogThatTestPassed(this_test_function_name);
+                Assert.Pass();
+            }
+            else
+            {
+                WriteTestLogScript.WriteOnLogThatTestFailed(this_test_function_name);
+                Assert.Fail();
+            }
         }
 
         [OneTimeTearDown]

@@ -157,6 +157,8 @@ namespace Tests
                 return;
             }
 
+            WriteTestLogScript.WriteOnLogThatTestPassed(this_test_function_name);
+
         }
 
         [Test]
@@ -254,6 +256,14 @@ namespace Tests
                 Assert.Fail();
                 return;
             }
+
+            WriteTestLogScript.WriteOnLogThatTestPassed(this_test_function_name);
+        }
+
+        [OneTimeTearDown]
+        public void WriteEndOfLog()
+        {
+            WriteTestLogScript.WriteString("LikertFeedbackPanelTestScript tests ended.");
         }
     }
 }

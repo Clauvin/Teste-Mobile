@@ -44,8 +44,6 @@ namespace Tests
             Action this_test_function = this.TheBackButtonFromTheWrittenFeedbackPanelWorks;
             string this_test_function_name = this_test_function.Method.Name;
 
-            UnityEngine.Object[] list = Resources.FindObjectsOfTypeAll(typeof(GameObject));
-
             main_panel_manager = GameObject.Find("Prefab Main Menu");
             main_panel = main_panel_manager.GetComponentInChildren<MainPanelManagerScript>().mainPanel;
             likert_feedback_panel = main_panel_manager.GetComponentInChildren<FeedbackPanelManagerScript>().likertFeedbackPanel;
@@ -190,6 +188,8 @@ namespace Tests
                 Assert.Fail();
                 return;
             }
+
+            WriteTestLogScript.WriteOnLogThatTestPassed(this_test_function_name);
         }
 
 
@@ -352,6 +352,8 @@ namespace Tests
                 return;
             }
 
+            WriteTestLogScript.WriteOnLogThatTestPassed(this_test_function_name);
+
         }
 
         [OneTimeTearDown]
@@ -360,6 +362,8 @@ namespace Tests
             TestContext.WriteLine("Erasing save file");
             if (File.Exists(SaveManagerScript.save_file_address)) File.Delete(SaveManagerScript.save_file_address);
             TestContext.WriteLine("Save file erased");
+
+            WriteTestLogScript.WriteString("WrittenFeedbackPanelTestScript tests ended.");
         }
     }
 }
