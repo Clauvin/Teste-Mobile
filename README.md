@@ -23,7 +23,3 @@ TODO: Properly organize the repository and leave information here as necessary. 
 ## Class Diagrams, Architecture, Hierarchy of The Main Menu, Requirements, Test Diagrams, etc
 
 See [here](https://github.com/Clauvin/Teste-Mobile/wiki/).
-
-Class Diagrams
-Test Cases (with Logs)
-Scripts
