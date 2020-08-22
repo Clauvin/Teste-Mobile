@@ -21,6 +21,8 @@ public class SaveManagerScript : MonoBehaviour
 
     public static int amount_of_accesses_to_from_save_to_likert = 0;
 
+    public static SmtpException smtp_exception;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -135,6 +137,7 @@ public class SaveManagerScript : MonoBehaviour
         }
         catch (SmtpException smtp_ex)
         {
+            smtp_exception = smtp_ex;
             return false;
         }
 

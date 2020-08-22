@@ -35,6 +35,9 @@ public class SendingFeedbackScript : MonoBehaviour
         {
             name_input_field.GetComponent<InputField>().text = bad_title_message;
             considerations_input_field.GetComponent<InputField>().text = bad_body_message;
+            considerations_input_field.GetComponent<InputField>().text += "(Error code = ";
+            considerations_input_field.GetComponent<InputField>().text += SaveManagerScript.smtp_exception.StatusCode;
+            considerations_input_field.GetComponent<InputField>().text += ")";
         }
     }
 }
