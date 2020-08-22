@@ -69,6 +69,8 @@ namespace Tests
             Action this_test_function = this.The_hideMainPanelFunction_Works;
             string this_test_function_name = this_test_function.Method.Name;
 
+            WriteTestLogScript.WriteString("Starting " + this_test_function_name + " test.");
+
             try
             {
                 WriteTestLogScript.WriteString("Starting " + this_test_function_name + " test.");
@@ -92,6 +94,8 @@ namespace Tests
             Action this_test_function = this.The_showGuidelinesPanelFunction_Works;
             string this_test_function_name = this_test_function.Method.Name;
 
+            WriteTestLogScript.WriteString("Starting " + this_test_function_name + " test.");
+
             try
             {
                 Assert.AreEqual(main_panel_manager_script.showGuidelinesPanel(),
@@ -112,6 +116,8 @@ namespace Tests
         {
             Action this_test_function = this.The_hideGuidelinesPanelFunction_Works;
             string this_test_function_name = this_test_function.Method.Name;
+
+            WriteTestLogScript.WriteString("Starting " + this_test_function_name + " test.");
 
             try
             {
@@ -134,6 +140,8 @@ namespace Tests
             Action this_test_function = this.The_showFeedbackPanelFunction_Works;
             string this_test_function_name = this_test_function.Method.Name;
 
+            WriteTestLogScript.WriteString("Starting " + this_test_function_name + " test.");
+
             try
             {
                 Assert.AreEqual(main_panel_manager_script.showMainFeedbackPanel(),
@@ -154,6 +162,8 @@ namespace Tests
         {
             Action this_test_function = this.The_hideFeedbackPanelFunction_Works;
             string this_test_function_name = this_test_function.Method.Name;
+
+            WriteTestLogScript.WriteString("Starting " + this_test_function_name + " test.");
 
             try
             {
@@ -176,6 +186,8 @@ namespace Tests
             Action this_test_function = this.The_showAboutPanelFunction_Works;
             string this_test_function_name = this_test_function.Method.Name;
 
+            WriteTestLogScript.WriteString("Starting " + this_test_function_name + " test.");
+
             try
             {
                 Assert.AreEqual(main_panel_manager_script.showAboutPanel(),
@@ -196,6 +208,8 @@ namespace Tests
         {
             Action this_test_function = this.The_hideAboutPanelFunction_Works;
             string this_test_function_name = this_test_function.Method.Name;
+
+            WriteTestLogScript.WriteString("Starting " + this_test_function_name + " test.");
 
             try
             {
@@ -218,6 +232,8 @@ namespace Tests
             Action this_test_function = this.The_setPanelFunction_Works;
             string this_test_function_name = this_test_function.Method.Name;
 
+            WriteTestLogScript.WriteString("Starting " + this_test_function_name + " test.");
+
             MethodInfo method = GetMethod(main_panel_manager_script, "setPanel");
             if (!main_panel_manager_script.mainPanel.activeSelf)
                 Assert.Fail("The main panel should be active at start.");
@@ -239,6 +255,8 @@ namespace Tests
         {
             Action this_test_function = this.The_sendMessageAboutIfTheObjectIsActive_Works;
             string this_test_function_name = this_test_function.Method.Name;
+
+            WriteTestLogScript.WriteString("Starting " + this_test_function_name + " test.");
 
             MethodInfo method = GetMethod(main_panel_manager_script, "sendMessageAboutIfTheObjectIsActive");
 

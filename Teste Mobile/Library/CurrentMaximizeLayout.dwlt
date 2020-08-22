@@ -21,8 +21,8 @@ MonoBehaviour:
     y: 30
     width: 1366
     height: 594
-  m_MinSize: {x: 577, y: 471}
-  m_MaxSize: {x: 14001, y: 14042}
+  m_MinSize: {x: 579, y: 342}
+  m_MaxSize: {x: 12004, y: 8042}
   vertical: 0
   controlID: -1
 --- !u!114 &2
@@ -68,7 +68,7 @@ MonoBehaviour:
   m_VSyncEnabled: 0
   m_Gizmos: 0
   m_Stats: 0
-  m_SelectedSizes: 00000000000000000000000012000000000000000000000000000000000000000000000000000000
+  m_SelectedSizes: 07000000000000000000000012000000000000000000000000000000000000000000000000000000
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
@@ -97,7 +97,7 @@ MonoBehaviour:
       y: 21
       width: 636
       height: 273
-    m_Scale: {x: 0.4265625, y: 0.4265625}
+    m_Scale: {x: 0.45937496, y: 0.459375}
     m_Translation: {x: 318, y: 136.5}
     m_MarginLeft: 0
     m_MarginRight: 0
@@ -105,12 +105,12 @@ MonoBehaviour:
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -745.4945
-      y: -320
-      width: 1490.989
-      height: 640
+      x: -692.24493
+      y: -297.14285
+      width: 1384.4899
+      height: 594.2857
     m_MinimalGUI: 1
-  m_defaultScale: 0.4265625
+  m_defaultScale: 0.459375
   m_LastWindowPixelSize: {x: 636, y: 294}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
@@ -138,8 +138,8 @@ MonoBehaviour:
     y: 0
     width: 1008
     height: 594
-  m_MinSize: {x: 302, y: 471}
-  m_MaxSize: {x: 10001, y: 14042}
+  m_MinSize: {x: 303, y: 342}
+  m_MaxSize: {x: 8003, y: 8042}
   vertical: 1
   controlID: -1
 --- !u!114 &4
@@ -163,8 +163,8 @@ MonoBehaviour:
     y: 0
     width: 1008
     height: 315
-  m_MinSize: {x: 302, y: 200}
-  m_MaxSize: {x: 8002, y: 4021}
+  m_MinSize: {x: 303, y: 221}
+  m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
   controlID: -1
 --- !u!114 &5
@@ -186,8 +186,8 @@ MonoBehaviour:
     y: 0
     width: 370
     height: 315
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 6}
   m_Panes:
   - {fileID: 6}
@@ -221,10 +221,10 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 16}
-      m_SelectedIDs: 82c5ffff
-      m_LastClickedID: -14974
-      m_ExpandedIDs: 8cc3ffff92c3ffff98c3ffff9ec3ffff02c4ffff66c4ffff6cc4ffff72c4ffffd6c4ffffdcc4ffff40c5ffff46c5ffffaac5ffff0ec6ffff14c6ffff78c6ffffdcc6ffffe2c6ffff46c7ffff4cc7ffffb0c7ffffbcc7ffff6a56000088560000c2560000d6560000ee560000
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 4e28fdff6028fdffea5bfdff1462fdff2662fdffb095fdff2e9cfdff409cfdffc2cffdff4cd6fdff5ed6fdffdc09feff1810feff2a10feff4c10feff5e10feff9417feff9817feffc017feff9018feffa418feff8219feff721afeff861afeff641bfeff421cfeff561cfeff341dfeff441efeff5a1efeff381ffeffb6c9feffeafffefffefffeffdc00ffffca02ffffde02ffffbc03ffffd006ffffea06ffffd007ffff14fbffff4efbffff6afbffffc8990000d2990000b89a0000649b0000dcb20000ccb30000f0b300003cb4000078b4000000320100c4330100
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -307,16 +307,16 @@ MonoBehaviour:
   m_ShowContextualTools: 0
   m_WindowGUID: 6e88c859191d24542ab55b115bdfd6cb
   m_Gizmos: 1
-  m_SceneIsLit: 0
+  m_SceneIsLit: 1
   m_SceneLighting: 1
   m_2DMode: 1
   m_isRotationLocked: 0
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 217.84026, y: 325.76767, z: -43.541157}
+    m_Target: {x: 240.84464, y: 315.59537, z: -70.67222}
     speed: 2
-    m_Value: {x: 217.84026, y: 325.76767, z: -43.541157}
+    m_Value: {x: 240.84464, y: 315.59537, z: -70.67222}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -329,7 +329,7 @@ MonoBehaviour:
   m_SceneViewState:
     showFog: 1
     showMaterialUpdate: 0
-    showSkybox: 0
+    showSkybox: 1
     showFlares: 1
     showImageEffects: 1
     showParticleSystems: 1
@@ -366,9 +366,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 163.8986
+    m_Target: 347.0115
     speed: 2
-    m_Value: 163.8986
+    m_Value: 347.0115
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -417,7 +417,7 @@ MonoBehaviour:
     x: 370
     y: 73
     width: 636
-    height: 302
+    height: 294
   m_ViewDataDictionary: {fileID: 0}
   m_PosLeft: {x: 0, y: 0}
   m_PosRight: {x: 0, y: 0}
@@ -475,7 +475,7 @@ MonoBehaviour:
     height: 294
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
-    ID: 137
+    ID: 13094
     splitterInitialOffset: 240
     currentActiveSplitter: -1
     realSizes: 960000004a000000
@@ -496,7 +496,7 @@ MonoBehaviour:
       name: UnityTestFramework
       fullName: UnityTestFramework
       resultStatus: 1
-      duration: 12.3234415
+      duration: 1.9546648
       messages: 
       output: 
       stacktrace: 
@@ -512,7 +512,7 @@ MonoBehaviour:
       name: Tests.dll
       fullName: C:/GitHub/Teste-Mobile/Teste Mobile/Library/ScriptAssemblies/Tests.dll
       resultStatus: 1
-      duration: 1.9337513
+      duration: 1.9036405
       messages: 
       output: 
       stacktrace: 
@@ -528,7 +528,7 @@ MonoBehaviour:
       name: Tests
       fullName: Tests
       resultStatus: 1
-      duration: 11.731644
+      duration: 1.8780499
       messages: 
       output: 
       stacktrace: 
@@ -544,7 +544,7 @@ MonoBehaviour:
       name: AboutPanelTestScript
       fullName: Tests.AboutPanelTestScript
       resultStatus: 1
-      duration: 3.6616805
+      duration: 0.1633543
       messages: 
       output: 
       stacktrace: 
@@ -560,7 +560,7 @@ MonoBehaviour:
       name: TheBackButtonFromTheAboutPanelWorks
       fullName: Tests.AboutPanelTestScript.TheBackButtonFromTheAboutPanelWorks
       resultStatus: 1
-      duration: 1.930861
+      duration: 0.132576
       messages: 
       output: 'Setup started
 
@@ -581,11 +581,9 @@ MonoBehaviour:
       name: LikertFeedbackPanelTestScript
       fullName: Tests.LikertFeedbackPanelTestScript
       resultStatus: 1
-      duration: 2.493373
+      duration: 0.2087323
       messages: 
-      output: 'Could not find file "/storage/emulated/0/Android/data/com.UnityTestRunner.UnityTestRunner/files/save_file.txt"
-
-'
+      output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -599,7 +597,7 @@ MonoBehaviour:
       name: LoadingTheLikertDataToTheLikertSlidersWorks
       fullName: Tests.LikertFeedbackPanelTestScript.LoadingTheLikertDataToTheLikertSlidersWorks
       resultStatus: 1
-      duration: 0.5665424
+      duration: 0.0397835
       messages: 
       output: 'Setup started
 
@@ -620,7 +618,7 @@ MonoBehaviour:
       name: SavingTheDataFromTheLikertSlidersToTheSaveFileWorks
       fullName: Tests.LikertFeedbackPanelTestScript.SavingTheDataFromTheLikertSlidersToTheSaveFileWorks
       resultStatus: 1
-      duration: 0.2388847
+      duration: 0.0650317
       messages: 
       output: 'Setup started
 
@@ -641,7 +639,7 @@ MonoBehaviour:
       name: TheBackButtonFromTheLikertFeedbackPanelWorks
       fullName: Tests.LikertFeedbackPanelTestScript.TheBackButtonFromTheLikertFeedbackPanelWorks
       resultStatus: 1
-      duration: 0.1272915
+      duration: 0.0244126
       messages: 
       output: 'Setup started
 
@@ -662,12 +660,35 @@ MonoBehaviour:
       name: MainPanelManagerTestScript
       fullName: Tests.MainPanelManagerTestScript
       resultStatus: 1
-      duration: 0.547871
+      duration: 0.2663379
       messages: 
-      output: 'Could not find file "/storage/emulated/0/Android/data/com.UnityTestRunner.UnityTestRunner/files/save_file.txt"
+      output: 'Could not find file "C:\Users\Ascendant\AppData\LocalLow\Unforeseen
+        Circunstances\UnityTestFramework\save_file.txt"
 
-        Could
-        not find file "/storage/emulated/0/Android/data/com.UnityTestRunner.UnityTestRunner/files/save_file.txt"
+        Could not find file
+        "C:\Users\Ascendant\AppData\LocalLow\Unforeseen Circunstances\UnityTestFramework\save_file.txt"
+
+        There
+        are 4 audio listeners in the scene. Please ensure there is always exactly
+        one audio listener in the scene.
+
+        There are 4 audio listeners in
+        the scene. Please ensure there is always exactly one audio listener in the
+        scene.
+
+        There are 4 audio listeners in the scene. Please ensure there
+        is always exactly one audio listener in the scene.
+
+        There are 4 audio
+        listeners in the scene. Please ensure there is always exactly one audio listener
+        in the scene.
+
+        There are 4 audio listeners in the scene. Please ensure
+        there is always exactly one audio listener in the scene.
+
+        There are
+        4 audio listeners in the scene. Please ensure there is always exactly one
+        audio listener in the scene.
 
 '
       stacktrace: 
@@ -683,7 +704,7 @@ MonoBehaviour:
       name: The_hideAboutPanelFunction_Works
       fullName: Tests.MainPanelManagerTestScript.The_hideAboutPanelFunction_Works
       resultStatus: 1
-      duration: 0.0187031
+      duration: 0.0127806
       messages: 
       output: 'Setup started
 
@@ -704,7 +725,7 @@ MonoBehaviour:
       name: The_hideFeedbackPanelFunction_Works
       fullName: Tests.MainPanelManagerTestScript.The_hideFeedbackPanelFunction_Works
       resultStatus: 1
-      duration: 0.0069869
+      duration: 0.0129827
       messages: 
       output: 'Setup started
 
@@ -725,7 +746,7 @@ MonoBehaviour:
       name: The_hideGuidelinesPanelFunction_Works
       fullName: Tests.MainPanelManagerTestScript.The_hideGuidelinesPanelFunction_Works
       resultStatus: 1
-      duration: 0.0063137
+      duration: 0.0126735
       messages: 
       output: 'Setup started
 
@@ -746,7 +767,7 @@ MonoBehaviour:
       name: The_hideMainPanelFunction_Works
       fullName: Tests.MainPanelManagerTestScript.The_hideMainPanelFunction_Works
       resultStatus: 1
-      duration: 0.0137192
+      duration: 0.0224319
       messages: 
       output: 'Setup started
 
@@ -767,7 +788,7 @@ MonoBehaviour:
       name: The_sendMessageAboutIfTheObjectIsActive_Works
       fullName: Tests.MainPanelManagerTestScript.The_sendMessageAboutIfTheObjectIsActive_Works
       resultStatus: 1
-      duration: 0.1932876
+      duration: 0.0227366
       messages: 
       output: 'Setup started
 
@@ -775,7 +796,7 @@ MonoBehaviour:
 
 '
       stacktrace: 'at Tests.MainPanelManagerTestScript.The_sendMessageAboutIfTheObjectIsActive_Works
-        () [0x00061] in C:\GitHub\Teste-Mobile\Teste Mobile\Assets\Tests\MainPanelManagerTestScript.cs:154
+        () [0x0009a] in C:\GitHub\Teste-Mobile\Teste Mobile\Assets\Tests\MainPanelManagerTestScript.cs:269
 
 '
       notRunnable: 0
@@ -791,7 +812,7 @@ MonoBehaviour:
       name: The_setPanelFunction_Works
       fullName: Tests.MainPanelManagerTestScript.The_setPanelFunction_Works
       resultStatus: 1
-      duration: 0.0175654
+      duration: 0.014818
       messages: 
       output: 'Setup started
 
@@ -799,7 +820,7 @@ MonoBehaviour:
 
 '
       stacktrace: 'at Tests.MainPanelManagerTestScript.The_setPanelFunction_Works
-        () [0x0007e] in C:\GitHub\Teste-Mobile\Teste Mobile\Assets\Tests\MainPanelManagerTestScript.cs:143
+        () [0x000bf] in C:\GitHub\Teste-Mobile\Teste Mobile\Assets\Tests\MainPanelManagerTestScript.cs:250
 
 '
       notRunnable: 0
@@ -815,7 +836,7 @@ MonoBehaviour:
       name: The_showAboutPanelFunction_Works
       fullName: Tests.MainPanelManagerTestScript.The_showAboutPanelFunction_Works
       resultStatus: 1
-      duration: 0.0060257
+      duration: 0.0143622
       messages: 
       output: 'Setup started
 
@@ -836,7 +857,7 @@ MonoBehaviour:
       name: The_showFeedbackPanelFunction_Works
       fullName: Tests.MainPanelManagerTestScript.The_showFeedbackPanelFunction_Works
       resultStatus: 1
-      duration: 0.0076373
+      duration: 0.0144987
       messages: 
       output: 'Setup started
 
@@ -857,7 +878,7 @@ MonoBehaviour:
       name: The_showGuidelinesPanelFunction_Works
       fullName: Tests.MainPanelManagerTestScript.The_showGuidelinesPanelFunction_Works
       resultStatus: 1
-      duration: 0.0088049
+      duration: 0.0162101
       messages: 
       output: 'Setup started
 
@@ -878,7 +899,7 @@ MonoBehaviour:
       name: The_showMainPanelFunction_Works
       fullName: Tests.MainPanelManagerTestScript.The_showMainPanelFunction_Works
       resultStatus: 1
-      duration: 0.0128446
+      duration: 0.0156391
       messages: 
       output: 'Setup started
 
@@ -899,9 +920,30 @@ MonoBehaviour:
       name: WrittenFeedbackPanelTestScript
       fullName: Tests.WrittenFeedbackPanelTestScript
       resultStatus: 1
-      duration: 4.8395195
+      duration: 1.2171512
       messages: 
-      output: 
+      output: 'There are 4 audio listeners in the scene. Please ensure there is always
+        exactly one audio listener in the scene.
+
+        There are 4 audio listeners
+        in the scene. Please ensure there is always exactly one audio listener in
+        the scene.
+
+        There are 4 audio listeners in the scene. Please ensure
+        there is always exactly one audio listener in the scene.
+
+        There are
+        4 audio listeners in the scene. Please ensure there is always exactly one
+        audio listener in the scene.
+
+        There are 4 audio listeners in the
+        scene. Please ensure there is always exactly one audio listener in the scene.
+
+        There
+        are 4 audio listeners in the scene. Please ensure there is always exactly
+        one audio listener in the scene.
+
+'
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -915,7 +957,7 @@ MonoBehaviour:
       name: LoadingWrittenInfoWorks
       fullName: Tests.WrittenFeedbackPanelTestScript.LoadingWrittenInfoWorks
       resultStatus: 1
-      duration: 0.2101917
+      duration: 0.0471686
       messages: 
       output: 'Setup started
 
@@ -936,7 +978,7 @@ MonoBehaviour:
       name: SavingWrittenTestWorks
       fullName: Tests.WrittenFeedbackPanelTestScript.SavingWrittenTestWorks
       resultStatus: 1
-      duration: 0.1448871
+      duration: 0.0418055
       messages: 
       output: 'Setup started
 
@@ -957,7 +999,7 @@ MonoBehaviour:
       name: SendingMailWorks
       fullName: Tests.WrittenFeedbackPanelTestScript.SendingMailWorks
       resultStatus: 1
-      duration: 4.249717
+      duration: 1.0609653
       messages: 
       output: 'Setup started
 
@@ -978,7 +1020,7 @@ MonoBehaviour:
       name: TheBackButtonFromTheWrittenFeedbackPanelWorks
       fullName: Tests.WrittenFeedbackPanelTestScript.TheBackButtonFromTheWrittenFeedbackPanelWorks
       resultStatus: 1
-      duration: 0.1218515
+      duration: 0.0337028
       messages: 
       output: 'Setup started
 
@@ -994,7 +1036,7 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1018
       parentUniqueId: Tests.dll/Tests/[Tests][Tests.WrittenFeedbackPanelTestScript][suite]
-    m_ResultText: 'TheBackButtonFromTheWrittenFeedbackPanelWorks (0,122s)
+    m_ResultText: 'TheBackButtonFromTheWrittenFeedbackPanelWorks (0,034s)
 
       ---
 
@@ -1004,7 +1046,7 @@ MonoBehaviour:
       Setup finished'
     m_ResultStacktrace: 
     m_TestListState:
-      scrollPos: {x: 0, y: 0}
+      scrollPos: {x: 0, y: 254}
       m_SelectedIDs: 3a0e8d24
       m_LastClickedID: 613223994
       m_ExpandedIDs: 2d1852adb51413b7d35dceb9674b3bd4e9a5e2e4c69cc6e68e3cc011537bbd2a2f5d863d8359db41ffffff7f
@@ -1094,7 +1136,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectBrowser
+  m_Name: ConsoleWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -1103,14 +1145,14 @@ MonoBehaviour:
     y: 315
     width: 1008
     height: 279
-  m_MinSize: {x: 231, y: 271}
-  m_MaxSize: {x: 10001, y: 10021}
-  m_ActualView: {fileID: 13}
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 13}
   - {fileID: 14}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1216,8 +1258,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 82c5ffff
-    m_LastClickedInstanceID: -14974
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c623000000000000
     m_RenameOverlay:
@@ -1292,8 +1334,8 @@ MonoBehaviour:
     y: 0
     width: 358
     height: 594
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -1336,4 +1378,4 @@ MonoBehaviour:
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 190
+  m_LastVerticalScrollValue: 0
