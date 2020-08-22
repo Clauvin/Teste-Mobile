@@ -27,16 +27,16 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 7707034728443229971}
-  - {fileID: 8228692261315754034}
-  - {fileID: 3797911375222991400}
-  - {fileID: 999560499974299098}
-  - {fileID: 6697505487849092497}
-  - {fileID: 4960538815961685104}
-  - {fileID: 8094453883708041991}
-  - {fileID: 2316217441911588726}
-  - {fileID: 9177508657530423808}
-  - {fileID: 5197379916936856434}
+  - {fileID: 438438284216562051}
+  - {fileID: 2221248818885099170}
+  - {fileID: 6365172102609841336}
+  - {fileID: 7007144658482961226}
+  - {fileID: 3464138694907441921}
+  - {fileID: 2897531786927217376}
+  - {fileID: 2068279092350758295}
+  - {fileID: 5532000848523657702}
+  - {fileID: 1422092346147835024}
+  - {fileID: 2648551389576857058}
   m_Father: {fileID: 5781816990966168584}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -164,7 +164,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 4681455910472142732}
   m_Direction: 2
   m_Value: 0.9999995
-  m_Size: 0.3892661
+  m_Size: 0.4149336
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1324,7 +1324,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 8094453883708041991}
+    m_TransformParent: {fileID: 2068279092350758295}
     m_Modifications:
     - target: {fileID: 74226264391037454, guid: 762d86f9ed6fd0f43b4358b6c4878b53,
         type: 3}
@@ -1375,6 +1375,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Text
       value: Using the guidelines at work would improve my productivity.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2567848240042785065, guid: 762d86f9ed6fd0f43b4358b6c4878b53,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2567848240042785065, guid: 762d86f9ed6fd0f43b4358b6c4878b53,
+        type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7769097087331525726, guid: 762d86f9ed6fd0f43b4358b6c4878b53,
         type: 3}
@@ -1618,7 +1628,7 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 1624511806649567061, guid: cd9635be431b3cb4481d0f908f15519b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: cd9635be431b3cb4481d0f908f15519b, type: 3}
---- !u!224 &999560499974299098 stripped
+--- !u!224 &7007144658482961226 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7845629041445814841, guid: cd9635be431b3cb4481d0f908f15519b,
     type: 3}
@@ -1629,7 +1639,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 8228692261315754034}
+    m_TransformParent: {fileID: 2221248818885099170}
     m_Modifications:
     - target: {fileID: 74226264391037454, guid: 762d86f9ed6fd0f43b4358b6c4878b53,
         type: 3}
@@ -1680,6 +1690,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Text
       value: I would find the guidelines useful in my job.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2567848240042785065, guid: 762d86f9ed6fd0f43b4358b6c4878b53,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2567848240042785065, guid: 762d86f9ed6fd0f43b4358b6c4878b53,
+        type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7769097087331525726, guid: 762d86f9ed6fd0f43b4358b6c4878b53,
         type: 3}
@@ -1923,7 +1943,7 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 1624511806649567061, guid: cd9635be431b3cb4481d0f908f15519b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: cd9635be431b3cb4481d0f908f15519b, type: 3}
---- !u!224 &2316217441911588726 stripped
+--- !u!224 &5532000848523657702 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7845629041445814841, guid: cd9635be431b3cb4481d0f908f15519b,
     type: 3}
@@ -1934,7 +1954,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 3797911375222991400}
+    m_TransformParent: {fileID: 6365172102609841336}
     m_Modifications:
     - target: {fileID: 74226264391037454, guid: 762d86f9ed6fd0f43b4358b6c4878b53,
         type: 3}
@@ -1985,6 +2005,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Text
       value: It would be easy for me to become skillful in the use of the guidelines.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2567848240042785065, guid: 762d86f9ed6fd0f43b4358b6c4878b53,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2567848240042785065, guid: 762d86f9ed6fd0f43b4358b6c4878b53,
+        type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7769097087331525726, guid: 762d86f9ed6fd0f43b4358b6c4878b53,
         type: 3}
@@ -2113,7 +2143,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 999560499974299098}
+    m_TransformParent: {fileID: 7007144658482961226}
     m_Modifications:
     - target: {fileID: 74226264391037454, guid: 762d86f9ed6fd0f43b4358b6c4878b53,
         type: 3}
@@ -2164,6 +2194,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Text
       value: "I wouldn\u2019t find the guidelines easy to use."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2567848240042785065, guid: 762d86f9ed6fd0f43b4358b6c4878b53,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2567848240042785065, guid: 762d86f9ed6fd0f43b4358b6c4878b53,
+        type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7769097087331525726, guid: 762d86f9ed6fd0f43b4358b6c4878b53,
         type: 3}
@@ -2407,7 +2447,7 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 1624511806649567061, guid: cd9635be431b3cb4481d0f908f15519b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: cd9635be431b3cb4481d0f908f15519b, type: 3}
---- !u!224 &3797911375222991400 stripped
+--- !u!224 &6365172102609841336 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7845629041445814841, guid: cd9635be431b3cb4481d0f908f15519b,
     type: 3}
@@ -2418,7 +2458,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 4960538815961685104}
+    m_TransformParent: {fileID: 2897531786927217376}
     m_Modifications:
     - target: {fileID: 74226264391037454, guid: 762d86f9ed6fd0f43b4358b6c4878b53,
         type: 3}
@@ -2469,6 +2509,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Text
       value: Using the guidelines would improve my performance in doing my job.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2567848240042785065, guid: 762d86f9ed6fd0f43b4358b6c4878b53,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2567848240042785065, guid: 762d86f9ed6fd0f43b4358b6c4878b53,
+        type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7769097087331525726, guid: 762d86f9ed6fd0f43b4358b6c4878b53,
         type: 3}
@@ -2597,7 +2647,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 5197379916936856434}
+    m_TransformParent: {fileID: 2648551389576857058}
     m_Modifications:
     - target: {fileID: 74226264391037454, guid: 762d86f9ed6fd0f43b4358b6c4878b53,
         type: 3}
@@ -2648,6 +2698,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Text
       value: "Using the guidelines wouldn\u2019t enhance my effectiveness in my job."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2567848240042785065, guid: 762d86f9ed6fd0f43b4358b6c4878b53,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2567848240042785065, guid: 762d86f9ed6fd0f43b4358b6c4878b53,
+        type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7769097087331525726, guid: 762d86f9ed6fd0f43b4358b6c4878b53,
         type: 3}
@@ -2891,7 +2951,7 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 1624511806649567061, guid: cd9635be431b3cb4481d0f908f15519b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: cd9635be431b3cb4481d0f908f15519b, type: 3}
---- !u!224 &4960538815961685104 stripped
+--- !u!224 &2897531786927217376 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7845629041445814841, guid: cd9635be431b3cb4481d0f908f15519b,
     type: 3}
@@ -2902,7 +2962,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 7707034728443229971}
+    m_TransformParent: {fileID: 438438284216562051}
     m_Modifications:
     - target: {fileID: 74226264391037454, guid: 762d86f9ed6fd0f43b4358b6c4878b53,
         type: 3}
@@ -2953,6 +3013,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Text
       value: I would find the guidelines easy to use.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2567848240042785065, guid: 762d86f9ed6fd0f43b4358b6c4878b53,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2567848240042785065, guid: 762d86f9ed6fd0f43b4358b6c4878b53,
+        type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7769097087331525726, guid: 762d86f9ed6fd0f43b4358b6c4878b53,
         type: 3}
@@ -3196,7 +3266,7 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 1624511806649567061, guid: cd9635be431b3cb4481d0f908f15519b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: cd9635be431b3cb4481d0f908f15519b, type: 3}
---- !u!224 &5197379916936856434 stripped
+--- !u!224 &2648551389576857058 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7845629041445814841, guid: cd9635be431b3cb4481d0f908f15519b,
     type: 3}
@@ -3207,7 +3277,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 2316217441911588726}
+    m_TransformParent: {fileID: 5532000848523657702}
     m_Modifications:
     - target: {fileID: 74226264391037454, guid: 762d86f9ed6fd0f43b4358b6c4878b53,
         type: 3}
@@ -3258,6 +3328,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Text
       value: Using the guidelines would enhance my effectiveness in my job.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2567848240042785065, guid: 762d86f9ed6fd0f43b4358b6c4878b53,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2567848240042785065, guid: 762d86f9ed6fd0f43b4358b6c4878b53,
+        type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7769097087331525726, guid: 762d86f9ed6fd0f43b4358b6c4878b53,
         type: 3}
@@ -3501,7 +3581,7 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 1624511806649567061, guid: cd9635be431b3cb4481d0f908f15519b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: cd9635be431b3cb4481d0f908f15519b, type: 3}
---- !u!224 &6697505487849092497 stripped
+--- !u!224 &3464138694907441921 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7845629041445814841, guid: cd9635be431b3cb4481d0f908f15519b,
     type: 3}
@@ -3627,7 +3707,7 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 1624511806649567061, guid: cd9635be431b3cb4481d0f908f15519b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: cd9635be431b3cb4481d0f908f15519b, type: 3}
---- !u!224 &7707034728443229971 stripped
+--- !u!224 &438438284216562051 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7845629041445814841, guid: cd9635be431b3cb4481d0f908f15519b,
     type: 3}
@@ -3638,7 +3718,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 9177508657530423808}
+    m_TransformParent: {fileID: 1422092346147835024}
     m_Modifications:
     - target: {fileID: 74226264391037454, guid: 762d86f9ed6fd0f43b4358b6c4878b53,
         type: 3}
@@ -3689,6 +3769,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Text
       value: I intend to use the guidelines regularly at work.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2567848240042785065, guid: 762d86f9ed6fd0f43b4358b6c4878b53,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2567848240042785065, guid: 762d86f9ed6fd0f43b4358b6c4878b53,
+        type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7769097087331525726, guid: 762d86f9ed6fd0f43b4358b6c4878b53,
         type: 3}
@@ -3817,7 +3907,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 6697505487849092497}
+    m_TransformParent: {fileID: 3464138694907441921}
     m_Modifications:
     - target: {fileID: 74226264391037454, guid: 762d86f9ed6fd0f43b4358b6c4878b53,
         type: 3}
@@ -3869,6 +3959,16 @@ PrefabInstance:
       propertyPath: m_Text
       value: "Using the guidelines wouldn\u2019t improve my performance in doing
         my job."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2567848240042785065, guid: 762d86f9ed6fd0f43b4358b6c4878b53,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2567848240042785065, guid: 762d86f9ed6fd0f43b4358b6c4878b53,
+        type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7769097087331525726, guid: 762d86f9ed6fd0f43b4358b6c4878b53,
         type: 3}
@@ -4112,7 +4212,7 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 1624511806649567061, guid: cd9635be431b3cb4481d0f908f15519b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: cd9635be431b3cb4481d0f908f15519b, type: 3}
---- !u!224 &8094453883708041991 stripped
+--- !u!224 &2068279092350758295 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7845629041445814841, guid: cd9635be431b3cb4481d0f908f15519b,
     type: 3}
@@ -4238,7 +4338,7 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 1624511806649567061, guid: cd9635be431b3cb4481d0f908f15519b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: cd9635be431b3cb4481d0f908f15519b, type: 3}
---- !u!224 &8228692261315754034 stripped
+--- !u!224 &2221248818885099170 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7845629041445814841, guid: cd9635be431b3cb4481d0f908f15519b,
     type: 3}
@@ -4364,7 +4464,7 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 1624511806649567061, guid: cd9635be431b3cb4481d0f908f15519b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: cd9635be431b3cb4481d0f908f15519b, type: 3}
---- !u!224 &9177508657530423808 stripped
+--- !u!224 &1422092346147835024 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7845629041445814841, guid: cd9635be431b3cb4481d0f908f15519b,
     type: 3}
