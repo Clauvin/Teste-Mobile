@@ -8,11 +8,13 @@ Given the vast amount of mobile devices, while we tried our best to make sure th
 
 ## Description
 
-An application that gets feedback about gamification guidelines (to be added to it when they're done) and send those to a research e-mail address.
+An application that gets feedback about gamification guidelines (to be added to it when they're done) and send those to a research e-mail address, made with Unity 2019.3.13f1.
 
-## How to Install
+## Where to Download
 
+[Desktop version.](https://github.com/Clauvin/Teste-Mobile/releases/tag/v1.0-Desktop)
 
+[Mobile version.](https://github.com/Clauvin/Teste-Mobile/releases/tag/v1.0-Mobile)
 
 ## In Case of Problems
 
@@ -29,3 +31,15 @@ Please contact gamification.feedback@gmail.com.
 ## Class Diagrams, Architecture, Hierarchy of The Main Menu, Requirements, Test Diagrams, etc
 
 See [here](https://github.com/Clauvin/Teste-Mobile/wiki/).
+
+## Lessons Learned
+
+Design patterns should be considered for a software engineering project as soon as the first class diagram is done, not only as a tool while a project is refactored.
+
+If you thought you had enough time to make a project, and you alotted extra time for inconveniences and unexpected hurdles, double that time, just to be sure.
+
+Always make and test a build as soon as you have something that works inside your IDE.
+
+Never forget the value of exploratory testing, specially if the exploratory testing is manual.
+
+Always weight the pros and cons of doing an app from a relative zero vs. using a solution for the type of app that you want to do.
