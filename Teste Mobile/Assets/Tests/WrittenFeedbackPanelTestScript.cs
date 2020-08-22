@@ -13,7 +13,7 @@ namespace Tests
     /// What it does: takes care of tests involving directly the WrittenFeedback Panel, and the buttons and sliders in it.
     /// </summary>
     [TestFixture]
-    [Author("Cláuvin", "")]
+    [Author("Clauvin", "gamification.feedback@gmail.com")]
     public class WrittenFeedbackPanelTestScript
     {
         GameObject main_panel_manager;

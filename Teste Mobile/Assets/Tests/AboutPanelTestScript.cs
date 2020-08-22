@@ -15,7 +15,7 @@ namespace Tests
     /// 
     /// </summary>
     [TestFixture]
-    [Author("Cláuvin", "")]
+    [Author("Clauvin", "gamification.feedback@gmail.com")]
     public class AboutPanelTestScript
     {
         GameObject prefab_main_menu;

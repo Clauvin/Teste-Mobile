@@ -13,7 +13,7 @@ namespace Tests
     /// 
     /// </summary>
     [TestFixture]
-    [Author("Cláuvin", "almeidaclauvin@gmail.com")]
+    [Author("Clauvin", "gamification.feedback@gmail.com")]
     public class MainPanelManagerTestScript
     {
         MainPanelManagerScript main_panel_manager_script;
