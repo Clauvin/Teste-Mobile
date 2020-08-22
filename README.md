@@ -1,16 +1,20 @@
 # Teste-Mobile
 
-TODO: Properly organize the repository and leave information here as necessary. Let's start with full disclosure and daily improvement, at the very least as QCFPunch.
-
 ## Warning
+
+Given the vast amount of mobile devices, while we tried our best to make sure that the app would work with any of those, bugs may appear. In this case, check "In Case of Problems", below.
 
 ## Description
 
+An application that gets feedback about gamification guidelines (to be added to it when they're done) and send those to a research e-mail address.
+
 ## How to Install
+
+
 
 ## In Case of Problems
 
-## Index
+Please contact gamification.feedback@gmail.com.
 
 ## Design Patterns Used
 
