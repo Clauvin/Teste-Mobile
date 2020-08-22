@@ -47,3 +47,5 @@ Always make and test a build as soon as you have something that works inside you
 Never forget the value of exploratory testing, specially if the exploratory testing is manual.
 
 Always weight the pros and cons of doing an app from a relative zero vs. using a solution for the type of app that you want to do.
+
+Never let the eagerness to fix a bug create commits that are less-than-optimal for future inspection.
