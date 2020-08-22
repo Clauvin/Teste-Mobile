@@ -10,11 +10,15 @@ Given the vast amount of mobile devices, while we tried our best to make sure th
 
 An application that gets feedback about gamification guidelines (to be added to it when they're done) and send those to a research e-mail address, made with Unity 2019.3.13f1.
 
+## Where the Code Is
+
+Script code is [here](https://github.com/Clauvin/Teste-Mobile/tree/master/Teste%20Mobile/Assets/Script), test code is [here](https://github.com/Clauvin/Teste-Mobile/tree/master/Teste%20Mobile/Assets/Tests).
+
 ## Where to Download
 
-[Desktop version.](https://github.com/Clauvin/Teste-Mobile/releases/tag/v1.0-Desktop)
+[Desktop](https://github.com/Clauvin/Teste-Mobile/releases/tag/v1.0-Desktop) version.
 
-[Mobile version.](https://github.com/Clauvin/Teste-Mobile/releases/tag/v1.0-Mobile)
+[Mobile](https://github.com/Clauvin/Teste-Mobile/releases/tag/v1.0-Mobile) version.
 
 ## In Case of Problems
 
